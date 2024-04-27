@@ -1,6 +1,6 @@
-# Web-Development Course (Bühler)
+# Web-Development Course 
 
-This repository contains all the materials for the internal web-development course at Bühler AG.
+This repository contains all the materials for the web-development course.
 
 ## Course Contents
 
