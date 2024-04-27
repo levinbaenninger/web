@@ -1,0 +1,77 @@
+@use '../abstracts' as *;
+
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value;
+  }
+
+  .text-hover-#{$key} {
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      color: $value;
+    }
+  }
+
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  // Create shades and tints for each color
+  @for $i from 100 through 900 {
+    @if ($i % 100 == 0) {
+      @if ($i <= 500) {
+        .text-#{$key}-#{$i} {
+          color: lighten($value, (500 - $i) * 0.1%);
+        }
+
+        .bg-#{$key}-#{$i} {
+          background-color: lighten($value, (500 - $i) * 0.1%);
+        }
+      } @else {
+        .text-#{$key}-#{$i} {
+          color: darken($value, ($i - 500) * 0.1%);
+        }
+
+        .bg-#{$key}-#{$i} {
+          background-color: darken($value, ($i - 500) * 0.1%);
+        }
+      }
+    }
+  }
+}
+
+@each $key, $value in $neutrals {
+  .text-#{$key} {
+    color: $value;
+  }
+
+  .bg-#{$key} {
+    background-color: $value;
+  }
+
+  // Create shades and tints for gray
+  @if ($key == 'gray') {
+    @for $i from 100 through 900 {
+      @if ($i % 100 == 0) {
+        @if ($i <= 500) {
+          .text-#{$key}-#{$i} {
+            color: lighten($value, (500 - $i) * 0.05%);
+          }
+
+          .bg-#{$key}-#{$i} {
+            background-color: lighten($value, (500 - $i) * 0.05%);
+          }
+        } @else {
+          .text-#{$key}-#{$i} {
+            color: darken($value, ($i - 500) * 0.1%);
+          }
+
+          .bg-#{$key}-#{$i} {
+            background-color: darken($value, ($i - 500) * 0.1%);
+          }
+        }
+      }
+    }
+  }
+}

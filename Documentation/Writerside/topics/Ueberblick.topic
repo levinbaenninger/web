@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic id="Ueberblick"
+       title="Überblick"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd">
+
+
+    <section-starting-page>
+        <title>Webentwicklung</title>
+        <description>
+            Diese Dokumentation befasst sich mit der Webentwicklung im Frontend. Hier lernst du HTML, CSS und
+            JavaScript.
+        </description>
+
+        <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
+        <spotlight>
+            <a href="HTML.md" summary="Hier lernst du alles über HTML, was es ist und die Syntax dahinter"
+               type="mixed">HTML</a>
+            <a href="CSS.md" summary="Hier lernst du alles über CSS, was es ist und die Syntax dahinter"
+               type="creative">CSS</a>
+        </spotlight>
+
+        <!--    Add several topics that are most important for this section.    -->
+        <primary>
+            <title>JavaScript</title>
+            <a href="JavaScript.md">JavaScript</a>
+            <a href="Grundlagen.md" summary="Hier lernst du die Grundlagen von JavaScript: Variablen, Verzweigungen, Objekte, etc.">Grundlagen</a>
+            <a href="DOM.md">DOM</a>
+            <a href="JavaScript-Behind-The-Scenes.md" summary="Hier lernst du, wie JavaScript wirklich funktioniert, wie es kompiliert bzw. interpretiert wird, wieso manches so ist wie es ist, etc.">JavaScript: Behind the Scenes</a>
+        </primary>
+
+        <!--    Add several topics that are less important or are relevant only for advanced/experienced users.    -->
+        <secondary>
+            <title>Fortgeschrittene Themen</title>
+            <a href="TypeScript.md">TypeScript</a>
+            <a href="Sass.md">SCSS</a>
+        </secondary>
+
+        <!--    Optionally add additional cards and links to topics that are not in this section but may be relevant.    -->
+        <misc>
+            <cards>
+                <title>Angular</title>
+                <a href="Angular.md">Angular</a>
+                <a href="Grundlegendes-Angular.md">Grundlagen</a>
+                <a href="Komponenten.md">Components</a>
+                <a href="Data-Binding.md">Data Binding</a>
+            </cards>
+
+            <links>
+                <group>
+                    <title>Referenzen</title>
+                    <a href="https://developer.mozilla.org/en-US/"
+                       summary="Web reference with all possible information about web development">MDN - Web Docs</a>
+                    <a href="https://www.w3schools.com/tags/default.asp"
+                       summary="HTML reference with tags, attributes, colors, etc.">W3Schools
+                        - HTML Reference</a>
+                    <a href="https://www.w3schools.com/cssref/index.php"
+                       summary="CSS reference with properties, units, selectors, colors, etc.">W3Schools - CSS
+                        Reference</a>
+                    <a href="https://www.w3schools.com/jsref/default.asp"
+                       summary="JavaScript reference with JS objects, windows objects, DOM objects and Web APIs">W3Schools
+                        - JavaScript Reference</a>
+                    <a href="https://angular.dev/overview" summary="Official Angular Documentation from Google">Google - Angular Documentation</a>
+                </group>
+                <group>
+                    <title>Tutorials</title>
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn" summary="HTML, CSS, JS Tutorial from MDN">MDN
+                        - Learning Area</a>
+                    <a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
+                       summary="HTML and CSS Tutorial from Udemy">Udemy
+                        - HTML and CSS</a>
+                    <a href="https://www.udemy.com/course/advanced-css-and-sass/"
+                       summary="Advanced CSS and SASS Tutorial from Udemy">Udemy - Advanced CSS</a>
+                    <a href="https://www.udemy.com/course/the-complete-javascript-course/"
+                       summary="JS Tutorial from Udemy">Udemy - JavaScript</a>
+                    <a href="https://www.udemy.com/course/der-angular-2-kurs/" summary="Angular Tutorial from Udemy">Udemy - Angular</a>
+                </group>
+                <group>
+                    <title>Nützliche Ressourcen und Cheatsheets</title>
+                    <a href="https://www.instagram.com/frontendcharm/" summary="Cheatsheets all about Web Development">FrontendCharm
+                        - Cheatsheets</a>
+                    <a href="https://uiverse.io/" summary="A collection of different UI Components">UIverse -
+                        Components</a>
+                    <a href="https://quickref.me/" summary="Here you find cheatsheets and references for everything">QuickRef.ME
+                        - Cheatsheets and References</a>
+                </group>
+            </links>
+        </misc>
+    </section-starting-page>
+
+</topic>

@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <a
+        [routerLink]="['']"
+        [queryParams]="{ token: 500 }"
+        [fragment]="'anchor'"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+      <a
+        [routerLink]="['user', input.value]"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >User</a
+      >
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-xs-12">
+      <input type="text" #input (input)="(0)" />
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
