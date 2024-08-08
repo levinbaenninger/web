@@ -1,0 +1,25 @@
+<h1>Attribute Directives</h1>
+<h2>ngClass / ngStyle</h2>
+<div [ngStyle]="{ 'background-color': color }"></div>
+<div [ngClass]="{ yellow: attachClass }"></div>
+
+<hr />
+
+<h1 class="mt-4">Stuctural Directives</h1>
+<h2>*ngIf</h2>
+<p *ngIf="switch">Nicht immer zu sehen</p>
+<button (click)="switch = !switch" class="btn btn-primary">Switch</button>
+
+<h2 class="mt-2">*ngFor</h2>
+<ul>
+  <li *ngFor="let element of elements; let i = index">
+    {{ element }} - (Index: {{ i }})
+  </li>
+</ul>
+
+<h2 class="mt-2">*ngSwitch</h2>
+<div [ngSwitch]="value">
+  <p *ngSwitchCase="10">10</p>
+  <p *ngSwitchCase="100">100</p>
+  <p *ngSwitchDefault>Irgendwas</p>
+</div>

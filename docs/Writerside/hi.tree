@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi" name="Webentwicklung"
+                  start-page="Ueberblick.topic">
+
+    <toc-element topic="Ueberblick.topic"/>
+    <toc-element topic="HTML.md">
+        <toc-element topic="HTML-Syntax.md">
+            <toc-element topic="Elemente.md"/>
+            <toc-element topic="Attribute.md"/>
+            <toc-element topic="HTML-Dokument.md">
+                <toc-element topic="DOCTYPE-html.md"/>
+                <toc-element topic="html-element.md"/>
+                <toc-element topic="head.md"/>
+                <toc-element topic="meta-charset-utf-8.md"/>
+                <toc-element topic="title.md"/>
+                <toc-element topic="body.md"/>
+            </toc-element>
+            <toc-element topic="Kommentare.md"/>
+            <toc-element topic="Entities.md"/>
+        </toc-element>
+        <toc-element topic="Metadata.md">
+            <toc-element topic="Element-title.md"/>
+            <toc-element topic="Element-meta.md"/>
+            <toc-element topic="Sprache-festlegen.md"/>
+            <toc-element topic="Favicon.md"/>
+            <toc-element topic="CSS-und-JavaScript-einbinden.md"/>
+        </toc-element>
+        <toc-element topic="Textelemente.md">
+            <toc-element topic="Paragraphen.md"/>
+            <toc-element topic="Headings.md"/>
+            <toc-element topic="Listen.md"/>
+            <toc-element topic="Blockquote.md"/>
+            <toc-element topic="Abbreveations.md"/>
+            <toc-element topic="Hoch-und-tiefstellen.md"/>
+        </toc-element>
+        <toc-element topic="Hyperlink.md">
+            <toc-element topic="Das-target-Attribut.md"/>
+        </toc-element>
+        <toc-element topic="Webseitenstruktur.md">
+            <toc-element topic="Semantische-Elemente.md">
+                <toc-element topic="Header.md"/>
+                <toc-element topic="Navigation.md"/>
+                <toc-element topic="Main.md">
+                    <toc-element topic="Artikel.md"/>
+                    <toc-element topic="Sektion.md"/>
+                    <toc-element topic="Sidebar.md"/>
+                </toc-element>
+                <toc-element topic="Footer.md"/>
+            </toc-element>
+            <toc-element topic="Nicht-Semantische-Elemente.md">
+                <toc-element topic="Span.md"/>
+                <toc-element topic="Division.md"/>
+            </toc-element>
+            <toc-element topic="Weitere-Elemente.md">
+                <toc-element topic="Line-Break.md"/>
+                <toc-element topic="Horizontal-Rules.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="Medien.md">
+            <toc-element topic="Bilder.md">
+            </toc-element>
+            <toc-element topic="Videos.md"/>
+            <toc-element topic="Audio.md"/>
+        </toc-element>
+        <toc-element topic="Tabellen.md">
+        </toc-element>
+    </toc-element>
+    <toc-element topic="CSS.md">
+        <toc-element topic="Grundlegendes-CSS.md">
+            <toc-element topic="Syntax.md"/>
+            <toc-element topic="CSS-einbinden.md"/>
+            <toc-element topic="Einheiten.md">
+                <toc-element topic="Farbmodelle.md"/>
+            </toc-element>
+            <toc-element topic="Kommentare-CSS.md"/>
+        </toc-element>
+        <toc-element topic="Selektoren.md">
+            <toc-element topic="Selektoren-Basics.md"/>
+            <toc-element topic="Selektoren-Verknüpfungen.md"/>
+            <toc-element topic="Selektoren-Attribute.md"/>
+            <toc-element topic="Pseudo-Klassen.md"/>
+            <toc-element topic="Pseudo-Elemente.md"/>
+        </toc-element>
+        <toc-element topic="Cascade-Specificity-und-Inheritance.md">
+            <toc-element topic="Cascade.md"/>
+            <toc-element topic="Specificity.md"/>
+            <toc-element topic="Inheritance.md"/>
+        </toc-element>
+        <toc-element topic="Das-Boxmodel.md">
+            <toc-element topic="Content.md"/>
+            <toc-element topic="Border.md"/>
+            <toc-element topic="Padding.md"/>
+            <toc-element topic="Margin.md"/>
+            <toc-element topic="Fill-Area.md"/>
+            <toc-element topic="Berechnen-der-Höhe-und-Breite.md"/>
+            <toc-element topic="Block-und-Inline-Boxen.md"/>
+        </toc-element>
+        <toc-element topic="Text.md">
+            <toc-element topic="Schrift.md"/>
+            <toc-element topic="Text-Layout.md"/>
+            <toc-element topic="Listen-Styling.md"/>
+            <toc-element topic="Links.md"/>
+        </toc-element>
+        <toc-element topic="Verschiedenes.md">
+            <toc-element topic="Hintergründe.md"/>
+            <toc-element topic="Overflow.md"/>
+            <toc-element topic="Bilder-CSS.md"/>
+            <toc-element topic="Transitions.md"/>
+            <toc-element topic="Transforms.md"/>
+        </toc-element>
+        <toc-element topic="Layout.md">
+            <toc-element topic="Flexbox.md">
+                <toc-element topic="Properties-für-das-Parent.md">
+                    <toc-element topic="Flex-Direction.md"/>
+                    <toc-element topic="Flex-Wrap.md"/>
+                    <toc-element topic="flex-flow.md"/>
+                    <toc-element topic="justify-content.md"/>
+                    <toc-element topic="align-itmes.md"/>
+                    <toc-element topic="align-content.md"/>
+                    <toc-element topic="gap-row-gap-column-gap.md"/>
+                </toc-element>
+                <toc-element topic="Item-Properties.md">
+                    <toc-element topic="oder.md"/>
+                    <toc-element topic="flex-grow.md"/>
+                    <toc-element topic="flex-shrink.md"/>
+                    <toc-element topic="flex-basis.md"/>
+                    <toc-element topic="flex.md"/>
+                    <toc-element topic="align-self.md"/>
+                </toc-element>
+            </toc-element>
+            <toc-element topic="Grid.md">
+                <toc-element topic="Container-Properties.md">
+                    <toc-element topic="grid-templat-columns-grid-template-rows.md"/>
+                    <toc-element topic="grid-template-areas.md"/>
+                    <toc-element topic="column-gap-row-gap.md"/>
+                    <toc-element topic="justify-items.md"/>
+                    <toc-element topic="align-items.md"/>
+                    <toc-element topic="place-items.md"/>
+                    <toc-element topic="justify-content-grid.md"/>
+                    <toc-element topic="align-content-grid.md"/>
+                    <toc-element topic="place-content.md"/>
+                </toc-element>
+                <toc-element topic="Item-Properties-Grid.md">
+                    <toc-element topic="grid-column-start-grid-column-end-grid-row-start-grid-row-end.md"/>
+                    <toc-element topic="grid-column-grid-row.md">
+                    </toc-element>
+                    <toc-element topic="grid-area.md"/>
+                    <toc-element topic="justify-self.md"/>
+                    <toc-element topic="align-self-grid.md"/>
+                </toc-element>
+                <toc-element topic="Spezielle-Einheiten-und-Funktionen.md">
+                    <toc-element topic="fr-Einheit.md"/>
+                    <toc-element topic="Sizing-Keywords.md"/>
+                    <toc-element topic="Sizing-Funktionen.md"/>
+                </toc-element>
+            </toc-element>
+            <toc-element topic="Positioning.md">
+                <toc-element topic="Static-Positioning.md"/>
+                <toc-element topic="Relative-Positioning.md"/>
+                <toc-element topic="Absolute-Positioning.md"/>
+                <toc-element topic="Fixed-Positioning.md"/>
+                <toc-element topic="Sticky-Positioning.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="Responsive-Design.md">
+            <toc-element topic="Media-Queries.md">
+                <toc-element topic="Media-Query-Basics.md">
+                </toc-element>
+                <toc-element topic="Media-Queries-Logik.md"/>
+                <toc-element topic="Breakpoints-auswählen.md"/>
+            </toc-element>
+            <toc-element topic="Responsive-Layout.md"/>
+            <toc-element topic="Responsive-Bilder.md"/>
+            <toc-element topic="Responsive-Typography.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="JavaScript.md">
+        <toc-element topic="Grundlagen.md">
+            <toc-element toc-title="Basics">
+                <toc-element topic="Eine-JavaScript-Datei-verlinken.md"/>
+                <toc-element topic="Variablen-und-Werte.md"/>
+                <toc-element topic="Datentypen.md"/>
+                <toc-element topic="let-const-und-var.md"/>
+                <toc-element topic="Operatoren.md">
+                    <toc-element topic="Reihenfolge-der-Operatoren.md"/>
+                </toc-element>
+                <toc-element topic="Strings.md"/>
+            </toc-element>
+            <toc-element toc-title="Verzweigungen">
+                <toc-element topic="if-else-Anweisungen.md"/>
+                <toc-element topic="switch-Anweisung.md"/>
+                <toc-element topic="Boolean-Logik.md"/>
+                <toc-element topic="Der-Conditional-Operator.md"/>
+            </toc-element>
+            <toc-element topic="Funktionen.md">
+                <toc-element topic="Funktionsdeklarationen-vs-ausdrücke.md"/>
+                <toc-element topic="Arrow-Funktionen.md"/>
+            </toc-element>
+            <toc-element topic="Arrays.md">
+                <toc-element topic="Auf-Daten-zugreifen-und-sie-manipulieren.md"/>
+                <toc-element topic="Array-Methoden.md"/>
+            </toc-element>
+            <toc-element topic="Objekte.md">
+                <toc-element topic="Objekte-Datenzugriff-und-modifikation.md"/>
+                <toc-element topic="Objekte-Methoden.md"/>
+            </toc-element>
+            <toc-element toc-title="Loops">
+                <toc-element topic="for-Loops.md">
+                    <toc-element topic="Loops-Arrays.md"/>
+                </toc-element>
+                <toc-element topic="Loops-while-Schleife.md"/>
+                <toc-element topic="break-und-continue.md"/>
+            </toc-element>
+            <toc-element toc-title="Sonstiges">
+
+                <toc-element topic="Typkonvertierung-und-zwang.md"/>
+                <toc-element topic="Truthy-und-Falsy-Werte.md"/>
+                <toc-element topic="vs.md"/>
+                <toc-element topic="Stikter-Modus.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="DOM.md">
+            <toc-element topic="Auswahl-und-Manipulation.md">
+                <toc-element topic="querySelector.md"/>
+                <toc-element topic="getElementByID-getElementByClassName.md"/>
+                <toc-element topic="CSS-Styles-manipulieren.md"/>
+                <toc-element topic="Mit-Klassen-arbeiten.md"/>
+            </toc-element>
+            <toc-element topic="Events.md">
+                <toc-element topic="Click-Events.md"/>
+                <toc-element topic="Keypress-Event.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="JavaScript-Behind-The-Scenes.md">
+            <toc-element topic="JavaScript-Engine-und-Runtime.md"/>
+            <toc-element topic="Execution-Contexts-und-der-Call-Stack.md"/>
+            <toc-element topic="Scope-und-die-Scope-Chain.md"/>
+            <toc-element topic="Hoistung-und-die-TDZ.md"/>
+            <toc-element topic="Das-this-Keyword.md"/>
+            <toc-element topic="Regular-Functions-vs-Arrow-Functions.md"/>
+            <toc-element topic="Primitve-vs-Objekte.md"/>
+        </toc-element>
+        <toc-element topic="Datenstrukturen-Moderne-Operatoren-und-Strings.md">
+            <toc-element topic="Moderne-Operatoren.md">
+                <toc-element topic="Destructuring-Arrays.md"/>
+                <toc-element topic="Destructuring-Objects.md"/>
+                <toc-element topic="Spread.md"/>
+                <toc-element topic="Rest-Pattern-und-Parameter.md"/>
+                <toc-element topic="Kurzschlüsse-und.md"/>
+                <toc-element topic="Der-Nullish-Coalescing-Operator.md"/>
+                <toc-element topic="Die-Logischen-Zuweisungsoperatoren.md"/>
+            </toc-element>
+            <toc-element topic="Datenstrukturen.md">
+                <toc-element topic="For-Of-Loop.md"/>
+                <toc-element topic="Object-Literals-Verbesserungen.md"/>
+                <toc-element topic="Optional-Chaining.md"/>
+                <toc-element topic="Über-Objekte-loopen.md"/>
+            </toc-element>
+            <toc-element topic="Datenstrukturen-real.md">
+                <toc-element topic="Sets.md"/>
+                <toc-element topic="Maps.md"/>
+            </toc-element>
+            <toc-element topic="Strings-js.md">
+                <toc-element topic="Strings-Grundlagen.md"/>
+                <toc-element topic="Strings-Wichtige-Methoden.md"/>
+                <toc-element topic="Strings-Weitere-Methoden.md"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="Functions.md">
+            <toc-element topic="Default-Parameters.md"/>
+            <toc-element topic="Higher-Order.md">
+                <toc-element topic="Funktion-die-Callback-Funktionen-annehmen.md"/>
+                <toc-element topic="Funktionen-die-Funktionen-zurückgeben.md"/>
+            </toc-element>
+            <toc-element topic="call-und-apply-Methoden.md"/>
+            <toc-element topic="bind-Methode.md"/>
+        </toc-element>
+    </toc-element>
+
+    <toc-element topic="TypeScript.md">
+        <toc-element topic="Grundlagen-TS.md">
+            <toc-element topic="Installation-TS.md"/>
+            <toc-element topic="TypeScript-Kompilieren.md"/>
+            <toc-element topic="Workflow.md"/>
+        </toc-element>
+        <toc-element topic="Types.md">
+            <toc-element topic="Dynamic-Type.md"/>
+            <toc-element topic="Type-Aliasse.md"/>
+        </toc-element>
+        <toc-element topic="Funktionen-TS.md"/>
+        <toc-element topic="DOM-TS.md"/>
+        <toc-element topic="Klassen.md"/>
+        <toc-element topic="Module.md"/>
+        <toc-element topic="Interfaces.md"/>
+        <toc-element topic="Generics.md"/>
+    </toc-element>
+    <toc-element topic="Sass.md">
+        <toc-element topic="Grundlagen-SCSS.md">
+            <toc-element topic="Installation-SCSS.md"/>
+            <toc-element topic="Kompilierung.md"/>
+        </toc-element>
+        <toc-element topic="Variablen.md"/>
+        <toc-element topic="Partials.md"/>
+        <toc-element topic="Verschachtelte-Regeln.md"/>
+        <toc-element topic="Mathematik.md"/>
+        <toc-element topic="Maps-SCSS.md"/>
+        <toc-element topic="Loops-SCSS.md"/>
+        <toc-element topic="Conditionals.md"/>
+        <toc-element topic="Parent-Selektoren.md"/>
+        <toc-element topic="Mixins.md"/>
+    </toc-element>
+    <toc-element topic="Angular.md">
+        <toc-element topic="Grundlegendes-Angular.md">
+            <toc-element topic="Installation.md"></toc-element>
+            <toc-element topic="Applikation-erstellen.md"></toc-element>
+            <toc-element topic="Grundaufbau.md"></toc-element>
+        </toc-element>
+        <toc-element topic="Komponenten.md">
+        </toc-element>
+        <toc-element topic="Data-Binding.md">
+            <toc-element topic="String-Interpolation.md"/>
+            <toc-element topic="Property-Binding.md"/>
+            <toc-element topic="Event-Binding.md"/>
+            <toc-element topic="Two-Way-Binding.md"/>
+        </toc-element>
+        <toc-element topic="Directives.md">
+            <toc-element topic="Attribute-Directives.md"/>
+            <toc-element topic="Structural-Directives.md"/>
+        </toc-element>
+        <toc-element topic="Services.md"/>
+        <toc-element topic="Routing.md">
+            <toc-element topic="Routes-aufsetzen-konfigurieren-und-aufrufen.md"/>
+            <toc-element topic="Navigation-mittels-Links.md"/>
+            <toc-element topic="Routingparameter.md">
+                <toc-element topic="Query-Parameter.md"/>
+                <toc-element topic="Fragements.md"/>
+            </toc-element>
+            <toc-element topic="Child-Routes.md"/>
+            <toc-element topic="Umleitungen-Weiterleitungen.md"/>
+            <toc-element topic="Aktive-Pfade.md"/>
+        </toc-element>
+        <toc-element topic="Formulare.md">
+            <toc-element topic="Template-Driven.md"/>
+            <toc-element topic="Reactive.md"/>
+        </toc-element>
+        <toc-element topic="Pipes.md"/>
+        <toc-element topic="HTTP.md">
+            <toc-element topic="Error-Handling.md">
+            </toc-element>
+            <toc-element topic="Daten-aktualisieren.md"/>
+        </toc-element>
+        <toc-element topic="Unit-Testing.md"/>
+        <toc-element topic="Verschiedenes-ng.md">
+            <toc-element topic="Referenzen-im-HTML.md"/>
+        </toc-element>
+    </toc-element>
+
+    <toc-element topic="Web-Design.md"/>
+</instance-profile>

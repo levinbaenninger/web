@@ -1,0 +1,62 @@
+<h2>Template Driven</h2>
+<form (ngSubmit)="onSubmit(form)" #form="ngForm">
+  <div ngModelGroup="userData">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        class="form-control"
+        id="username"
+        name="username"
+        [ngModel]="user.username"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        [ngModel]="user.email"
+        pattern="^[\w!#$%&'*+\-/=?\^`{|}~]+(\.[\w!#$%&'*+\-/=?\^`{|}~]+)*@[\-\w]+[\.\-\w]*\.[a-zA-Z]{2,9}$"
+        required
+        email
+        #email="ngModel"
+      />
+      <span *ngIf="!email.valid && email.touched" class="text-danger small"
+        >Invalid E-Mail</span
+      >
+    </div>
+  </div>
+  <div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        name="password"
+        [ngModel]="user.password"
+        required
+      />
+    </div>
+  </div>
+  <div>
+    <div class="form-group" *ngFor="let gender of genders">
+      <label for="radio">
+        <input
+          type="radio"
+          name="gender"
+          [ngModel]="user.gender"
+          [value]="gender"
+        />
+        {{ gender }}
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3" [disabled]="!form.valid">
+    Submit
+  </button>
+</form>

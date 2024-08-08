@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rules SYSTEM "https://resources.jetbrains.com/writerside/1.0/redirection-rules.dtd">
+<rules>
+    <!-- format is as follows
+    <rule id="<unique id>">
+        <accepts>page.html</accepts>
+    </rule>
+    -->
+    <rule id="18d33b80">
+        <description>Created after removal of "Bilder - Responsive" from Webentwicklung</description>
+        <accepts>Responsive-Bilder.html</accepts>
+    </rule>
+    <rule id="25046484">
+        <description>Created after removal of "Vektorgrafiken" from Webentwicklung</description>
+        <accepts>Vektorgrafiken.html</accepts>
+    </rule>
+    <rule id="251a18a3">
+        <description><![CDATA[Created after removal of "<Tabellen-Grundlagen.md>" from Webentwicklung]]></description>
+        <accepts>Tabellen-Grundlagen.html</accepts>
+    </rule>
+    <rule id="52b77f56">
+        <description>Created after removal of "Konflikte" from Webentwicklung</description>
+        <accepts>Konflikte.html</accepts>
+    </rule>
+    <rule id="e104fd9">
+        <description>Created after removal of "Cascade Layers" from Webentwicklung</description>
+        <accepts>Cascade-Layers.html</accepts>
+    </rule>
+    <rule id="11f93e96">
+        <description>Created after removal of "Sonstiges" from Webentwicklung</description>
+        <accepts>Sonstiges.html</accepts>
+    </rule>
+    <rule id="7b02c04">
+        <description>Created after removal of "Frontend und Backend" from Webentwicklung</description>
+        <accepts>Frontend-und-Backend.html</accepts>
+    </rule>
+    <rule id="3b53b4e2">
+        <description>Created after removal of "Grundlegendes" from Webentwicklung</description>
+        <accepts>Grundlegendes.html</accepts>
+    </rule>
+    <rule id="4a5ffafa">
+        <description>
+            <![CDATA[Created after removal of "<Fundamentales-Text-und-Schrift-Styling.md>" from Webentwicklung]]></description>
+        <accepts>Fundamentales-Text-und-Schrift-Styling.html</accepts>
+    </rule>
+    <rule id="3cdd6a22">
+        <description>Created after removal of "Das Position Property" from Webentwicklung</description>
+        <accepts>Das-Postition-Property.html</accepts>
+    </rule>
+    <rule id="2365ea70">
+        <description>Created after removal of "grid-template" from Webentwicklung</description>
+        <accepts>grid-template.html</accepts>
+    </rule>
+    <rule id="418b7b5a">
+        <description>Created after removal of "grid" from Webentwicklung</description>
+        <accepts>grid-shorthand.html</accepts>
+    </rule>
+    <rule id="20377d45">
+        <description>Created after removal of "Floats" from Webentwicklung</description>
+        <accepts>Floats.html</accepts>
+    </rule>
+    <rule id="24456445">
+        <description>Created after removal of "Enums" from Webentwicklung</description>
+        <accepts>Enums.html</accepts>
+    </rule>
+    <rule id="6fe99ca6">
+        <description>Created after removal of "Tupel" from Webentwicklung</description>
+        <accepts>Tupel.html</accepts>
+    </rule>
+    <rule id="2413dea4">
+        <description>Created after removal of "Forms" from Webentwicklung</description>
+        <accepts>Forms.html</accepts>
+    </rule>
+</rules>
