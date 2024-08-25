@@ -3,11 +3,7 @@
                xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd">
 
     <variables>
-        <primary-color>deep-ocean</primary-color>
-        <algolia-id>VZBQR26DXM</algolia-id>
-        <algolia-index>prod_Web</algolia-index>
-        <algolia-api-key>f21fc9dff048cba915164cd3b9b3dbee</algolia-api-key>
-        <web-root>https://baenningerlevin.github.io/web</web-root>
+        <primary-color>blue-berry</primary-color>
     </variables>
     <build-profile instance="hi">
         <variables>
