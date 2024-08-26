@@ -4,6 +4,9 @@
 
     <variables>
         <primary-color>blue-berry</primary-color>
+        <algolia-id>P86HFGX67S</algolia-id>
+        <algolia-index>prod_WEB</algolia-index>
+        <algolia-api-key>a563d8a6b2547da4eebb12d553b595d6</algolia-api-key>
     </variables>
     <build-profile instance="hi">
         <variables>
