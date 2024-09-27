@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Reservation } from '../models/reservation';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class ReservationService {
   private apiUrl = 'http://localhost:3000';
@@ -31,6 +31,9 @@ export class ReservationService {
     id: string,
     updateReservation: Reservation
   ): Observable<void> {
-    return this.http.put<void>(this.apiUrl + '/reservation/' + id, updateReservation);
+    return this.http.put<void>(
+      this.apiUrl + '/reservation/' + id,
+      updateReservation
+    );
   }
 }

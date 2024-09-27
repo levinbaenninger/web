@@ -2,7 +2,7 @@ import { EventEmitter, Injectable } from '@angular/core';
 import { LogService } from './log.service';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class DataService {
   private data: string[] = [];

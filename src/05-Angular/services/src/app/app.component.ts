@@ -6,7 +6,7 @@ import { ServiceComponent } from './service/service.component';
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  imports: [RouterOutlet, ServiceComponent],
+  imports: [RouterOutlet, ServiceComponent]
 })
 export class AppComponent {
   title = 'services';

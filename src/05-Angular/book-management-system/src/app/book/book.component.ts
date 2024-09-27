@@ -8,7 +8,7 @@ import { Book } from '../models/book.model';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './book.component.html',
-  styleUrl: './book.component.scss',
+  styleUrl: './book.component.scss'
 })
 export class BookComponent implements OnInit {
   newBookTitle: string = '';
@@ -26,7 +26,7 @@ export class BookComponent implements OnInit {
       let book: Book = {
         id: Date.now(),
         title: this.newBookTitle,
-        author: this.newBookAuthor,
+        author: this.newBookAuthor
       };
 
       this.books.push(book);

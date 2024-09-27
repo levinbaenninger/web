@@ -13,10 +13,10 @@ indem wir einen Parameter in der Funktion des Event-Listeners übergeben.
 
 After we’ve done all that we can check if the typed key equals, for example `Escape` and then we can say it should add the classes `hidden`.
 
-````Javascript
+```Javascript
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
       closeModal();
   }
 });
-````
+```

@@ -6,7 +6,7 @@ Wenn wir nun eine Funktion in einem Component brauchen, müssen wir nur den Serv
 
 Aufgaben von Services:
 
-- Daten bereitstellen und speichern, sowie Interaktion mit Daten ermöglichen - Interaktion mit Server welcher auf Datenbank zugreift 
+- Daten bereitstellen und speichern, sowie Interaktion mit Daten ermöglichen - Interaktion mit Server welcher auf Datenbank zugreift
 - Kommunikation zwischen Components/Klassen ermöglichen
 - Zentralisierung von häufig genutzten Routinen
 
@@ -14,13 +14,13 @@ Aufgaben von Services:
 
 Wir können einen Service mit der Angular CLI erstellen:
 
-````Console
+```Console
 ng g s <service-name>
-````
+```
 
 Angular erstellt und dann folgenden Code:
 
-````Typescript
+```Typescript
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -29,7 +29,7 @@ import { Injectable } from '@angular/core';
 export class LogService {
 
 }
-````
+```
 
 In der Klasse können wir nun unsere Methoden definieren.
 
@@ -39,19 +39,19 @@ Damit wir nun unseren erstellen Service in einem unserer Components nutzen könn
 
 Wir als Entwickler teilen Angular im Constructor mit, dass wir Dependency Injection nutzen wollen:
 
-````Typescript
+```Typescript
 constructor(argument: Service) {}
-````
+```
 
 Wenn wir eine einzelne Instanz für eine Component wollen, dann müssen wir im `@Component`-Decorator das `providers`-Property mit dem Service befüllen:
 
-````Typescript
+```Typescript
 @Component({
 ...
 providers: [DataService, LogService],
 ...
 })
-````
+```
 
 Wenn wir das machen, haben wir eine einzelne Instanz für diese Komponente erstellt. Sollen aber Daten bspw. komponentenübergreifend geteilt werden, dann können wir das `providers`-Property einfach weglassen.
 
@@ -61,7 +61,7 @@ Nachdem die Dependency Injection erfolgt ist, können wir die Methoden unseres S
 
 <path>**cmp-a.component.ts**</path>
 
-````Typescript
+```Typescript
 constructor(
     private logService: LogService,
     private dataService: DataService
@@ -78,11 +78,11 @@ onStore(value: string) {
 onGet() {
   this.items = this.dataService.getData();
 }
-````
+```
 
 <path>**log.service.ts**</path>
 
-````Typescript
+```Typescript
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -93,11 +93,11 @@ export class LogService {
     console.log(message);
   }
 }
-````
+```
 
 <path>**data.service.ts**</path>
 
-````Typescript
+```Typescript
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -114,22 +114,21 @@ export class DataService {
     return this.data;
   }
 }
-````
-
+```
 
 ## Services in Services
 
 Wir können auch andere Services in einem Service nutzen. Dafür müssen wir sichergehen, dass wir in den Services folgenden Decorator haben:
 
-````Typescript
+```Typescript
 @Injectable({
     providedIn: 'root';
 })
-````
+```
 
 Jetzt können wir den Service nutzen:
 
-````Typescript
+```Typescript
 private data: string[] = [];
 
 constructor(private logService: LogService) {}
@@ -138,7 +137,7 @@ addData(data: string) {
   this.data.push(data);
   this.logService.log('Data added: ' + data);
 }
-````
+```
 
 ## Kommunikation zwischen Components
 
@@ -146,21 +145,21 @@ Services ermöglichen es uns die ewig langen Ketten von `@Output` und `@Input` z
 
 Zuerst müssen wir in unserem Service einen neuen `EventEmitter` erstellen:
 
-````Typescript
+```Typescript
 pushedData = new EventEmitter<string>();
-````
+```
 
 Danach definieren wir die Funktion, die die Daten weiterleiten soll:
 
-````Typescript
+```Typescript
 pushData(data: string) {
   this.pushedData.emit(data);
 }
-````
+```
 
 Nun können wir in unserem Component, welcher die Daten empfangen soll eine Subscription erstellen:
 
-````Typescript
+```Typescript
 
 
 ngOnInit() value = '';{
@@ -168,6 +167,6 @@ ngOnInit() value = '';{
     (data: string) => (this.value = data)
   );
 }
-````
+```
 
 Jetzt haben wir den `pushedData`-EventEmitter abonniert. Falls dieser sich ändert, dann wird der Wert der vom EventEmitter versendet wird automatisch in unser `value`-Property gespeichert.

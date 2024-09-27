@@ -1,10 +1,10 @@
 # Variablen
 
-Variablen sind vor allem dann nützlich, wenn man z.B. bestimmte Farben, Schriftgrössen, Schriftfamilien, etc. immer wieder braucht. 
+Variablen sind vor allem dann nützlich, wenn man z.B. bestimmte Farben, Schriftgrössen, Schriftfamilien, etc. immer wieder braucht.
 
 In SCSS wir eine Variable immer mit einem `$` kreiert:
 
-````CSS
+```CSS
 // Theme Colors
 $primary: #326dee;
 $secondary: #1ac886;
@@ -18,11 +18,11 @@ $base-margin: 0.75rem;
 // Borders
 $base-border-thickness: 1px;
 $base-border-radius: 20px;
-````
+```
 
 Diese Variablen können wir nun ganz einfach mit ihrem Namen in unseren Regeln referenzieren:
 
-````CSS
+```CSS
 h1 {
   color: $primary;
   margin-bottom: $base-margin;
@@ -55,6 +55,6 @@ button {
   padding: $base-padding;
   border-radius: $base-border-radius;
 }
-````
+```
 
 Wie wir hier sehen, wäre es sehr mühsam Anpassungen vorzunehmen, wenn wir bspw. die Farbe oder die Margin verändern wollten.

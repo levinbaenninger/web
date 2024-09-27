@@ -6,11 +6,11 @@ Flexbox ist eine ein-dimensionale Layout-Methode, um Elemente in Reihe oder Spal
 
 Das definiert einen Flex Container; inline oder Block je nach gegebenem Wert. Sie ermöglicht einen Flex Context für alle direct Children.
 
-````CSS
+```CSS
 .container {
     display: flex | inline-flex;
 }
-````
+```
 
 ## Inhaltsverzeichnis - Flexbox
 

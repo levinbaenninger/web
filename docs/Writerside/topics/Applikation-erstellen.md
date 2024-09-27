@@ -2,15 +2,15 @@
 
 Um nun unser erstes Angular-Projekt zu erstellen, nutzen wir erneut die Angular CLI. Nun geben wir im Terminal folgendes ein:
 
-````Console
-ng new <name-of-app> 
-````
+```Console
+ng new <name-of-app>
+```
 
 > Ein weiterer Parameter, den wir mitgeben können ist, folgender: `--skip-tests`, so werden keine Dateien für Unit-Tests erstellt
-> 
-> ````Console
+>
+> ```Console
 > ng new <name-of-app> --skip-tests
-> ````
+> ```
 
 { style="warning" }
 
@@ -20,6 +20,6 @@ Wenn wir nun <shortcut>↵ Enter</shortcut> drücken, wird das Angular CLI uns e
 
 Um unsere Angular-Applikation zu starten, nutzen wir folgenden Command:
 
-````Console
+```Console
 ng serve -o
-````
+```

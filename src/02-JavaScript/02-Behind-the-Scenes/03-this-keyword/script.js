@@ -25,13 +25,13 @@ const jonas = {
   calcAge() {
     console.log(this); // jonas object
     console.log(2037 - this.year);
-  },
+  }
 };
 
 jonas.calcAge();
 
 const matilda = {
-  year: 2017,
+  year: 2017
 };
 
 // Method borrowing
@@ -44,7 +44,7 @@ const levin = {
   calcAge: () => {
     console.log(this); // window object
     console.log(2037 - this.year); // NaN
-  },
+  }
 };
 
 levin.calcAge();

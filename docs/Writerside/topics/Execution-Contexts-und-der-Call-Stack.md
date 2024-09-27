@@ -21,15 +21,17 @@ Alle diese Execution Contexts zusammen bilden den Call Stack.
 Innerhalb eines Ausführungskontextes sind:
 
 1. **Variable Environment**
-    - `let`, `const` und `var` Deklarationen
-    - Funktionen
-    - `arguments` Objekt
+
+   - `let`, `const` und `var` Deklarationen
+   - Funktionen
+   - `arguments` Objekt
 
 2. **Scope Chain**
-    - Verweise auf Variablen außerhalb der aktuellen Funktion
+
+   - Verweise auf Variablen außerhalb der aktuellen Funktion
 
 3. `this` Schlüsselwort
-    - Besondere Variable
+   - Besondere Variable
 
 All diese Dinge werden während der **Erstellungsphase**, direkt vor der Ausführung, erstellt.
 

@@ -4,7 +4,7 @@ Das `gap`-Property kontrolliert den Abstand zwischen Flex-Elementen.
 
 ![](gap-1.png) { width="300" }
 
-````CSS
+```CSS
   display: flex;
   ...
   gap: 10px;
@@ -12,5 +12,4 @@ Das `gap`-Property kontrolliert den Abstand zwischen Flex-Elementen.
   row-gap: 10px;
   column-gap: 20px;
 }
-````
-
+```

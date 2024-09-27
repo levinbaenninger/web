@@ -13,7 +13,7 @@ unserem Dokument ist.
 
 ## Beispiel
 
-````Javascript
+```Javascript
 'use strict';
 
 let hasDriversLicense = false;
@@ -23,4 +23,4 @@ if (passTest) hasDriverLicense = true; //! Uncaught ReferenceError: hasDriverLic
 if (hasDriversLicense) console.log('I can drive!');
 
 const interface = 'Audio'; //! Uncaught SyntaxError: Unexpected strict mode reserved word
-````
+```

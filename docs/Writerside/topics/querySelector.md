@@ -9,9 +9,9 @@
 Es gibt mehrere Möglichkeiten, Elemente auszuwählen. Die gängigste Methode ist die `queryselector()`-Methode. Sie gibt das erste Element innerhalb des
 Dokuments zurück, das mit dem angegebenen Selektor übereinstimmt. Wenn keine Übereinstimmung gefunden wird, wird `null` zurückgegeben.
 
-````Javascript
+```Javascript
 document.querySelector(selectors)
-````
+```
 
 Ein Selektor kann eine Klasse, eine ID, ein Element, ... sein ([Selektoren](Selektoren.md))
 
@@ -26,18 +26,18 @@ document.querySelectorAll(selectors)
 
 ### Beispiel
 
-````Javascript
+```Javascript
 document.querySelector('.message');
 document.querySelectorAll('.score');
-````
+```
 
 Jetzt haben wir das erste Element ausgewählt, das die Klasse `message` hat und alle Elemente, die die Klasse `score` haben.
 
 Normalerweise speichert man die Selektion in einer Variables, sodass man dasselbe nicht etliche Male schreiben muss:
 
-````Javascript
+```Javascript
 const message = document.querySelector('.message');
-````
+```
 
 ## Manipulieren
 
@@ -45,25 +45,25 @@ const message = document.querySelector('.message');
 
 Um den Text von Textelementen zu modifizieren, benutzen wir das `textContent`-Attribut:
 
-````Javascript
+```Javascript
 document.querySelector('.message').textContent = '🎉 Correct Number!';
-````
+```
 
 ### Inputfeld
 
 Um den Wert von Inputfeldern zu manipulieren, benutzen wir das `value`-Attribut:
 
-````Javascript
+```Javascript
 document.querySelector('.guess').value = 23;
-````
+```
 
 ## Attribute von Elementen erfahren
 
 Jedes Element hat dutzende von Attributen, welche wir über das DOM bearbeiten können. Wir können `console.dir()` benutzen, um die Attribute des
 Elements zu erfahren:
 
-````Javascript
+```Javascript
 console.dir(document.querySelector('.message'));
-````
+```
 
 Diese Methode gibt uns dann das Objekt des Elements zurück mit allen Attributen.

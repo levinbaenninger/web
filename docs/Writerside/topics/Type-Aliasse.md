@@ -2,7 +2,7 @@
 
 Mit TypeScript können wir unsere eigenen Typen erstellen. So verhindern wir ganz einfach redundanten Code.
 
-````Typescript
+```Typescript
 type LoadingLocationState = {
   state: 'Loading';
 };
@@ -32,5 +32,4 @@ const printLocation = (location: LocationState) => {
       break;
   }
 };
-````
-
+```

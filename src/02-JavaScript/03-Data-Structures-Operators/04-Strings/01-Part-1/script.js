@@ -38,4 +38,3 @@ const checkMiddleSeat = function (seat) {
 checkMiddleSeat('11B'); // You got the middle seat 😬
 checkMiddleSeat('23C'); // You got lucky 😎
 checkMiddleSeat('3E'); // You got the middle seat 😬
-

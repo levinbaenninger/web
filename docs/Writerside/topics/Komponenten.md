@@ -22,7 +22,7 @@ Ein Component hat immer einen sogenannten **Decorator**, ein Feature von TypeScr
 
 Beispiel für einen Standard-Component:
 
-````Typescript
+```Typescript
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -36,7 +36,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'components-databinding';
 }
-````
+```
 
 ## Komponente rendern
 
@@ -44,14 +44,14 @@ Um nun unsere Komponente zu rendern, müssen wir den `selector` in <path>other.c
 
 **app.component.html**
 
-````HTML
+```HTML
 <h1>Root component</h1>
 <app-other></app-other>
-````
+```
 
 **app.component.ts**
 
-````Typescript
+```Typescript
 import { OtherComponent } from './other/other.component';
 
 @Component({
@@ -60,30 +60,30 @@ import { OtherComponent } from './other/other.component';
   imports: [RouterOutlet, OtherComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-````
+```
 
 Nun wird auf unserer Seite der Inhalt von <path>other.component.html</path> gerendert. Mit dem Import-Statement können wir auch andere Module importieren, bspw. das `FormsModule`:
 
-````Typescript
+```Typescript
 import { FormsModule } from @angular/forms;
 @Component({
     ...
     imports: [RouterOutlet, FormsModule],
     ...
 }})
-````
+```
 
 ## Inline Templates und Styles
 
 Wenn wir eine Komponente möchten ohne externes HTML/SCSS File können wir folgendes bei der Erstellung des Components machen:
 
-````Console
+```Console
 ng g c <name-of-component> -t -s
-````
+```
 
 Nun erstellt das CLI uns nur die TypeScript-Datei, die wie folgt aussieht:
 
-````Typescript
+```Typescript
 import { Component } from '@angular/core';
 
 @Component({
@@ -98,7 +98,7 @@ import { Component } from '@angular/core';
   `,
 })
 export class AnotherComponent {}
-````
+```
 
 Wie wir sehen können wir hier direkt im TypeScript-File HTML und CSS schreiben.
 
@@ -108,11 +108,11 @@ Im Gegensatz zu Vanilla Webseiten werden Styles nur auf Elemente angewendet, die
 
 <path><b>another.component.scss</b></path>
 
-`````CSS
+```CSS
 p {
     color: red;
 }
-`````
+```
 
 Diese Styles werden jedoch nicht global angewendet, sondern nur für alle `<p>`-Tags in diesem Component. Für globale Styles verwenden wir die <path>styles.scss</path> Datei im <path>src</path> Ordner bzw. die Datei die wir in <path>angular.json</path> angegeben haben.
 
@@ -122,16 +122,16 @@ Mit `<ng-content>` können wir Code in die Component hineinschieben, den wir zwi
 
 <path>**other.component.html**</path>
 
-````HTML
+```HTML
 <p>Die andere Komponente</p>
 <app-another>
   <p>Ich bin jetzt in der anderen Komponente</p>
 </app-another>
-````
+```
 
 <path>**another.component.ts**</path>
 
-````Typescript
+```Typescript
 import { Component } from '@angular/core';
 
 @Component({
@@ -146,6 +146,6 @@ import { Component } from '@angular/core';
   styles: ``,
 })
 export class AnotherComponent {}
-````
+```
 
 Hier nutzen wir `<ng-content>`, um den Code zwischen dem Tag in dem Component zu rendern.

@@ -2,9 +2,8 @@
 
 `flex` ist das Shorthand für `flex-grow`, `flex-shrink` und `flex-basis`. Der zweite und dritte Parameter ist optional.
 
-````CSS
+```CSS
 .item {
   flex: none | [ <flex-grow> <flex-shrink>? || <flex-basis> ]
 }
-````
-
+```

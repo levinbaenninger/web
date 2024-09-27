@@ -6,11 +6,11 @@ Dieses Property richtet die Zeilen eines Flex-Containers aus, wenn es freien Pla
 
 ![](align-content.png) { width="300" }
 
-````CSS
+```CSS
 .container {
   align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | baseline;
 }
-````
+```
 
 - `normal` (default): Elemente sind in deren Standardposition, als ob kein Wert gesetzt wurde
 - `flex-start`: Elemente werden an den Start des Containers gepackt

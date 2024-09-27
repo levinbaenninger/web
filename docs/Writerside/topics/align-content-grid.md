@@ -12,80 +12,80 @@ Funktioniert gleich, wie `justify-content` einfach auf der **Block-Achse** (Spal
 - `space-between` - platziert eine gleichmässige Menge an Platz zwischen jedes Grid-Item, ohne Platz am Ende
 - `space-evenly` - platziert eine gleichmässige Menge an Platz zwischen jedes Grid-Item, mit gleich viel Platz am Anfang und Ende
 
-````CSS
+```CSS
 .container {
-  align-content: start | end | center | stretch | space-around | space-between | space-evenly;    
+  align-content: start | end | center | stretch | space-around | space-between | space-evenly;
 }
-````
+```
 
 ## Beispiele
 
 ### Start
 
-````CSS
+```CSS
 .container {
-  align-content: start;    
+  align-content: start;
 }
-````
+```
 
 ![](align-content-start.jpg) { width="250" }
 
 ### End
 
-````CSS
+```CSS
 .container {
-  align-content: end;    
+  align-content: end;
 }
-````
+```
 
 ![](align-content-end.jpg) { width="250" }
 
 ### Center
 
-````CSS
+```CSS
 .container {
-  align-content: center;    
+  align-content: center;
 }
-````
+```
 
 ![](align-content-center.jpg) { width="250" }
 
 ### Stretch
 
-````CSS
+```CSS
 .container {
-  align-content: stretch;    
+  align-content: stretch;
 }
-````
+```
 
 ![](align-content-stretch.jpg) { width="250" }
 
 ### Space-Around
 
-````CSS
+```CSS
 .container {
-  align-content: space-around;    
+  align-content: space-around;
 }
-````
+```
 
 ![](align-content-space-around.jpg) { width="250" }
 
 ### Space-Between
 
-````CSS
+```CSS
 .container {
-  align-content: space-between;    
+  align-content: space-between;
 }
-````
+```
 
 ![](align-content-space-between.jpg) { width="250" }
 
 ### Space-Evenly
 
-````CSS
+```CSS
 .container {
-  align-content: space-evenly;    
+  align-content: space-evenly;
 }
-````
+```
 
 ![](align-content-space-evenly.jpg) { width="250" }

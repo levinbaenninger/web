@@ -8,13 +8,16 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './user.component.html',
-  styles: ``,
+  styles: ``
 })
 export class UserComponent implements OnInit, OnDestroy {
   id!: string;
   private subscription!: Subscription;
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
     // this.id = this.activatedRoute.snapshot.params['id'];
@@ -30,7 +33,7 @@ export class UserComponent implements OnInit, OnDestroy {
   onNavigate() {
     this.router.navigate(['/'], {
       queryParams: { token: 100 },
-      fragment: 'anchor',
+      fragment: 'anchor'
     });
   }
 }

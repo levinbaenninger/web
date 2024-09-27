@@ -8,7 +8,7 @@ import { ReferencesComponent } from './references/references.component';
   standalone: true,
   imports: [RouterOutlet, DatabindingComponent, ReferencesComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'components-databinding';

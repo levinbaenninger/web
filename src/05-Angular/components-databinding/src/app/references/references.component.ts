@@ -5,7 +5,7 @@ import { Component, ContentChild, ElementRef, ViewChild } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './references.component.html',
-  styleUrl: './references.component.scss',
+  styleUrl: './references.component.scss'
 })
 export class ReferencesComponent {
   @ViewChild('input', { static: true }) input!: ElementRef;

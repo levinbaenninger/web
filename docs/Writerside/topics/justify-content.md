@@ -4,11 +4,11 @@ Dieses Attribut definiert die Ausrichtung an der **Main Axis**.
 
 ![justify-content.png](justify-content.png) { width="300" }
 
-````CSS
+```CSS
 .container {
   justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 }
-````
+```
 
 - `flex-start` (default): Elemente werden an den Anfang der Achse gepackt
 - `flex-end`: Elemente werden an das Ende der Achse gepackt

@@ -9,7 +9,7 @@ import { MultiplyPipe } from '../pipes/multiply.pipe';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [RouterOutlet, CommonModule, MultiplyPipe, FilterPipe],
+  imports: [RouterOutlet, CommonModule, MultiplyPipe, FilterPipe]
 })
 export class AppComponent {
   text = 'Some text to transform';
@@ -23,6 +23,6 @@ export class AppComponent {
     'Whole grain bread',
     'Almond Milk',
     'Feta Cheese',
-    'Toast Bread',
+    'Toast Bread'
   ];
 }

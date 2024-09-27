@@ -7,9 +7,9 @@ Da man meistens nicht alle Projektdateien in einem einzigen Ordner haben möchte
 
 Jetzt gibt es jedoch ein Problem, da das kompilierte JavaScript-File im selben Verzeichnis sein muss, wie das TypeScript-File. Um das zu umgehen, erstellt man ein <path>tsconfig.json</path>-File:
 
-````Typescript
+```Typescript
 tsc --init
-````
+```
 
 ## tsconfig.json
 
@@ -18,8 +18,6 @@ Der obige Befehl erstellt uns ein <path>.json</path>-Konfigurationsfile, in welc
 Um nun unser anfängliches Problem zu lösen, kommentieren wir `"rootDir"` aus und setzen dort den Pfad unseres TypeScript-Files. Anschliessend kommentieren wir noch `"outDir"` aus und setzen dort den Pfad unseres <path>public</path> Verzeichnisses.
 
 Am Schluss müssen wir noch etwas ergänzen, sodass nur TypeScript-Dateien aus dem `src`-Ordner kompiliert werden:
-
-
 
 <code-block lang="JSON" validate="false">
 {
@@ -33,7 +31,7 @@ Am Schluss müssen wir noch etwas ergänzen, sodass nur TypeScript-Dateien aus d
 }
 </code-block>
 
-Jetzt können wir ganz einfach mit `tsc -w` wieder unseren Kompiliervorgang starten. 
+Jetzt können wir ganz einfach mit `tsc -w` wieder unseren Kompiliervorgang starten.
 
 <seealso>
     <category ref="weitere">

@@ -26,13 +26,13 @@ Es ist auch viel einfacher, mehrzeilige Strings mit einem Template-Literal zu sc
 ```JavaScript
 console.log('String with multiple lines: \n\
 like this,\n\
-and this.'); // String with multiple lines: 
-                like this, 
+and this.'); // String with multiple lines:
+                like this,
                 and this.
 
-console.log(`String with multiple lines: 
+console.log(`String with multiple lines:
 like this,
-and this.`); // String with multiple lines: 
-                like this, 
+and this.`); // String with multiple lines:
+                like this,
                 and this.
 ```

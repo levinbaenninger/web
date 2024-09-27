@@ -2,11 +2,11 @@
 
 Standardmässig, versuchen alle Flex Items auf eine Reihe zu passen. Das ist veränderbar mit `flex-wrap`:
 
-````CSS
+```CSS
 .container {
   flex-wrap: nowrap | wrap | wrap-reverse;
 }
-````
+```
 
 - `nowrap` (default): alle Flex Items werden auf einer Linie sein
 - `wrap`: Flex Items werden von oben nach unten auf mehreren Zeilen verteilt

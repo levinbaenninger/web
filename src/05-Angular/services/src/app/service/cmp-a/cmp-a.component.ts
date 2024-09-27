@@ -7,7 +7,7 @@ import { LogService } from '../log.service';
   selector: 'app-cmp-a',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './cmp-a.component.html',
+  templateUrl: './cmp-a.component.html'
 })
 export class CmpAComponent {
   value = '';

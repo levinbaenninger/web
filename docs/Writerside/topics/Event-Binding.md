@@ -6,15 +6,15 @@ Mit Event Binding können wir auf **DOM-Events reagieren**, bspw. `click`, `mous
 
 Um auf ein Event zu warten, geben wir dem Element, auf welches gewartet werden soll ein Event mit:
 
-````HTML
+```HTML
 <button (click)="onClick()">Klick mich</button>
-````
+```
 
 Hier führen wir die Aktion `onClick()` aus, falls der Button gedrückt wird. Wir können aber auch direkt unseren TypeScript-Code zwischen die Hochkommas schreiben:
 
-````HTML
+```HTML
 <button (click)="attachClass = false">Klick mich</button>
-````
+```
 
 ## $event
 
@@ -22,18 +22,18 @@ Mit der Variable `$event` können wir unserer Funktion ein Objekt mit den Inform
 
 <path>**databinding.component.html**</path>
 
-````HTML
+```HTML
 <button (click)="onClick($event)">Klick mich</button>
-````
+```
 
 <path>**databinding.component.ts**</path>
 
-````Typescript
+```Typescript
 onClick(event: Event) {
     console.log(event);
     alert('Clicked!');
 }
-````
+```
 
 ## Eigene Events verarbeiten
 
@@ -41,13 +41,13 @@ In Angular können wir auch eigene Events erstellen, um beispielsweise auf Prope
 
 <path>**event-binding.component.html**</path>
 
-````HTML
+```HTML
 <div (click)="onClick()"></div>
-````
+```
 
 <path>**event-binding.component.ts**</path>
 
-````Typescript
+```Typescript
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
@@ -69,7 +69,7 @@ export class EventBindingComponent {
     this.clicked.emit('You have clicked the div!');
   }
 }
-````
+```
 
 Hier müssen wir den `Output`-Decorator nutzen, um von aussen aus auf das Event zu reagieren. Dann erstellen wir mit `new EvenEmitter<T>()` ein neues Event. `<T>` ist ein Generic, das heisst, dass wir hier sagen, welchen Typen wir übermitteln.
 

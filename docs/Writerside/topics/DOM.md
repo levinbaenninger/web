@@ -18,9 +18,9 @@ wenn wir über das DOM sprechen.
 Das DOM beginnt immer mit dem **`document`-Objekt** ganz oben. Das `document`-Objekt ist ein spezielles Objekt, auf das wir in JavaScript Zugriff
 haben. Dieses Objekt dient als Einstiegspunkt in das DOM. Das `document`-Objekt hat viele Methoden, um die Knoten des DOM auszuwählen, zum Beispiel:
 
-````Javascript
+```Javascript
 document.querySelector();
-````
+```
 
 ## Inhaltsverzeichnis - DOM
 

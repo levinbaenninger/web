@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'multiply',
-  standalone: true,
+  standalone: true
 })
 export class MultiplyPipe implements PipeTransform {
   transform(value: any, args: number): any {

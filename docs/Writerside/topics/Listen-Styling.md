@@ -4,7 +4,7 @@
 
 Mit `list-style-type` können wir die Art der Aufzählungspunkte ändern:
 
-````CSS
+```CSS
 /* Partial list of types */
 list-style-type: disc;
 list-style-type: circle;
@@ -20,22 +20,22 @@ list-style-type: '-';
 
 /* Keyword value */
 list-style-type: none;
-````
+```
 
 ## Aufzählungspunkt-Position
 
 Mit dem Property `list-style-position` können wir die Position des Aufzählungspunktes bestimmen.
 
-````CSS
+```CSS
 /* inside oder outside */
 list-style-position: inside;
 list-style-position: outside;
-````
+```
 
 ## list-style Shorthand
 
 Es gibt noch ein Shorthand für das `list-style`-Property:
 
-````CSS
+```CSS
 list-style: square inside;
-````
+```

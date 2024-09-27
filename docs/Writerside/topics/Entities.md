@@ -7,7 +7,7 @@ In HTML sind die Charaktere `<`, `>`, `"`, `'`, und `&` Spezialcharaktere. Man k
 Deshalb gibt es sogenannte Entities:
 
 | Charakter | Entity   |
-|-----------|----------|
+| --------- | -------- |
 | <         | `&lt;`   |
 | >         | `&gt;`   |
 | "         | `&quot;` |

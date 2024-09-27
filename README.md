@@ -7,15 +7,15 @@ Welcome to the web repository! This repository contains comprehensive documentat
 ## Table of Contents
 
 - [Web](#web)
-  * [Overview](#overview)
-  * [Table of Contents](#table-of-contents)
-  * [Introduction](#introduction)
-  * [Getting Started](#getting-started)
-  * [Documentation](#documentation)
-  * [Examples](#examples)
-  * [Contributing](#contributing)
-  * [License](#license)
-  * [Contact](#contact)
+  - [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Getting Started](#getting-started)
+  - [Documentation](#documentation)
+  - [Examples](#examples)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Introduction
 

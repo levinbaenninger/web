@@ -9,50 +9,50 @@ Mit `align-items` richten wir Elemente an der Block-Achse (Spalte) aus. Dieser W
 - `center` - zentriert Elemente in der Zelle
 - `stretch` - füllt die ganze Zellenhöhe aus
 
-````CSS
+```CSS
 .item {
   align-self: start | end | center | stretch;
 }
-````
+```
 
 ## Beispiele
 
 ### Start
 
-````CSS
+```CSS
 .item-a {
   align-self: start;
 }
-````
+```
 
 ![](align-self-start.jpg) { width="250" }
 
 ### End
 
-````CSS
+```CSS
 .item-a {
   align-self: end;
 }
-````
+```
 
 ![](align-self-end.jpg) { width="250" }
 
 ### Center
 
-````CSS
+```CSS
 .item-a {
   align-self: center;
 }
-````
+```
 
 ![](align-self-center.jpg) { width="250" }
 
 ### Stretch
 
-````CSS
+```CSS
 .item-a {
   align-self: stretch;
 }
-````
+```
 
 ![](align-self-stretch.jpg) { width="250" }

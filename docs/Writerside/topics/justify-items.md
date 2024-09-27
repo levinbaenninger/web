@@ -9,50 +9,50 @@ Mit `justify-items` richten wir Elemente an der Inline-Achse (Zeile) aus. Dieser
 - `center` - zentriert Elemente in der Zelle
 - `stretch` - füllt die ganze Zellenbreite aus
 
-````CSS
+```CSS
 .container {
   justify-items: start | end | center | stretch;
 }
-````
+```
 
 ## Beispiele
 
 ### Start
 
-````CSS
+```CSS
 .container {
   justify-items: start;
 }
-````
+```
 
 ![](justify-items-start.jpg) { width="250" }
 
 ### End
 
-````CSS
+```CSS
 .container {
   justify-items: end;
 }
-````
+```
 
 ![](justify-items-end.jpg) { width="250" }
 
 ### Center
 
-````CSS
+```CSS
 .container {
   justify-items: center;
 }
-````
+```
 
 ![](justify-items-center.jpg) { width="250" }
 
 ### Stretch
 
-````CSS
+```CSS
 .container {
   justify-items: stretch;
 }
-````
+```
 
 ![](justify-items-stretch.jpg) { width="250" }

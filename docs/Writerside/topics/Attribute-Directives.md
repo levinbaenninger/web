@@ -4,17 +4,17 @@
 
 ## ngStyle
 
-Mit `ngStyle` können wir den Style eines Elements dynamisch anpassen. Das Directive erwartet dabei ein JavaScript Objekt. Als CSS-Attribut nutzen wir wie gewohnt bspw. `background-color` und als Wert können wir beispielsweise ein Property unserer Komponente mitgeben. 
+Mit `ngStyle` können wir den Style eines Elements dynamisch anpassen. Das Directive erwartet dabei ein JavaScript Objekt. Als CSS-Attribut nutzen wir wie gewohnt bspw. `background-color` und als Wert können wir beispielsweise ein Property unserer Komponente mitgeben.
 
 <path>**app.component.html**</path>
 
-````HTML
+```HTML
 <div [ngStyle]="{'background-color': color}"></div>
-````
+```
 
 <path>**app.component.ts**</path>
 
-````Typescript
+```Typescript
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -35,22 +35,22 @@ export class AppComponent {
     }, 1000);
   }
 }
-````
+```
 
 Hier sehen wir, dass wir `background-color` dynamisch verändern: Zuerst ist das `<div>` rot, nach einer Sekunde ist es blau.
 
 > **Wichtig:** Wir müssen in unserem TypeScript-File das `CommonModule` importieren:
-> 
-> ````Typescript
+>
+> ```Typescript
 > import { CommonModule } from '@angular/common';
 > ...
-> 
+>
 > @Component({
 > ...
 > imports: [RouterOutlet, CommonModule],
 > ...
 > })
-> ````
+> ```
 
 { style="warning" }
 
@@ -60,13 +60,13 @@ Mit `ngClass` können wir CSS-Klassen dynamisch einem Element hinzufügen bzw. w
 
 <path>**app.component.html**</path>
 
-````HTML
+```HTML
 <div [ngClass]="{'yellow': attachClass}"></div>
-````
+```
 
 <path>**app.component.ts**</path>
 
-````Typescript
+```Typescript
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
@@ -88,6 +88,6 @@ export class AppComponent {
     }, 2000);
   }
 }
-````
+```
 
 Hier fügen wir die Klasse erst nach zwei Sekunden hinzu, da der Wert von `attachClass` nach zwei Sekunden auf `true` gesetzt werden.

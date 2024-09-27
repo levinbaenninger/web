@@ -6,4 +6,3 @@ Man kann nicht nur die gewohnten Einheiten benutzen, sondern auch Keywords:
 - `max-content`: die maximale Grösse von Inhalt. Bspw. beim Sart von oben, die Länge vom ganzen Satz.
 - `auto`: dieses Keyword ist ähnlich, wie `fr`-Einheiten, ausser, dass sie den Kampf gegen `fr`-Einheiten verlieren, wenn sie den restlichen Platz
   verteilen.
-

@@ -6,18 +6,18 @@ Diese Properties sind Shorthands für `grid-colum-start` + `grid-column-end` und
 
 - `<start-line>` / `<end-line>`
 
-````CSS
+```CSS
 .item {
   grid-column: <start-line> / <end-line> | <start-line> / span <value>;
   grid-row: <start-line> / <end-line> | <start-line> / span <value>;
 }
-````
+```
 
 ## Beispiel
 
-````CSS
+```CSS
 .item-c {
   grid-column: 3 / span 2;
   grid-row: 2 / 4;
 }
-````
+```

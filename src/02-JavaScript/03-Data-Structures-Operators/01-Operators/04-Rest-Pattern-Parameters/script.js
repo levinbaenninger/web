@@ -7,16 +7,16 @@ const restaurant = {
   openingHours: {
     thu: {
       open: 12,
-      close: 22,
+      close: 22
     },
     fri: {
       open: 11,
-      close: 23,
+      close: 23
     },
     sat: {
       open: 0, // Open 24 hours
-      close: 24,
-    },
+      close: 24
+    }
   },
 
   orderPizza: function (mainIngredient, ...otherIngredients) {
@@ -37,7 +37,10 @@ console.log(a, b, others); // 1 2 [3, 4, 5]
 //* Rest with arrays
 
 // Rest must be the last element and only one per destructuring assignment
-const [pizza, , Risotto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+const [pizza, , Risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu
+];
 
 console.log(pizza, Risotto, otherFood); // Pizza Risotto ['Foccacia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad']
 

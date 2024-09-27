@@ -6,17 +6,17 @@ In CSS kann man verschiedene Hintergründe erstellen, hier befassen wir uns mit 
 
 Mit dem Property `background-color` können wir die Hintergrundfarbe eines Elements bestimmen:
 
-````CSS
+```CSS
 background-color: #567895
-````
+```
 
 ## Hintergrundbild
 
 Mit dem Property `background-image` können wir ein Hintergrundbild einfügen, damit das aber gut aussieht, müssen weitere Properties benutzt werden.
 
-````CSS
+```CSS
 background-image: url(hero.jpg)
-````
+```
 
 ### Steuerung der Hintergrund-Wiederholung
 
@@ -27,10 +27,10 @@ Mit `background-reapet` bestimmen wir, was geschehen soll, wenn ein Bild noch ni
 - `repeat-y` - Der Hintergrund wird vertikal wiederholt
 - `repeat` - der Standard; wiederholt sich in beide Richtungen
 
-````CSS
+```CSS
 background-image: url(hero.jpg);
 background-repeat: no-reapeat;
-````
+```
 
 ### Größe des Hintergrundbildes
 
@@ -40,20 +40,19 @@ gibt es noch folgende Keywords:
 - `cover` - Das Bild deckt sicher das ganze Element ab
 - `contain` - Das Bild passt genau in das Element, vlt. gibt es Ränder, wenn die Seitenverhältnisse nicht stimmen.
 
-````CSS
+```CSS
 background-image: url(hero.jpg);
 background-repeat: no-reapeat;
 background-size: contain;
-````
+```
 
 ### Position des Hintergrundbilds
 
 Mit dem Property `background-position` können wir die Position des Hintergrundbilds verändern. Das geht einerseits mit Längen und Prozenten,
 andererseits mit Keywords, wie `top` und `right`.
 
-````CSS
+```CSS
 background-image: url(hero.png);
 background-repeat: no-repeat;
 background-position: top right;
-````
-
+```

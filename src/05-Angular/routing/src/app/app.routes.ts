@@ -6,5 +6,5 @@ import { userRoutes } from './user/user.routes';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'user/:id', component: UserComponent, children: userRoutes },
-  { path: '**', redirectTo: '/' },
+  { path: '**', redirectTo: '/' }
 ];

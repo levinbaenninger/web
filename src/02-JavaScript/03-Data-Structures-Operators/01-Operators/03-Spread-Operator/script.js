@@ -5,15 +5,17 @@ const restaurant = {
   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-  orderPasta: function(ing1, ing2, ing3) {
-    console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, and ${ing3}`);
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your delicious pasta with ${ing1}, ${ing2}, and ${ing3}`
+    );
   }
 };
 
 //* Arrays
 // Spread Operator
 const arr = [7, 8, 9];
-const newArr = [1, 2, ...arr];  
+const newArr = [1, 2, ...arr];
 
 console.log(newArr); // [1, 2, 7, 8, 9]
 
@@ -33,7 +35,11 @@ console.log(letters); // ['J', 'o', 'n', 'a', 's', ' ', 'S.']
 
 //* Functions
 
-const ingredients = [prompt('Let\'s make pasta! Ingredient 1?'), prompt('Ingredient 2?'), prompt('Ingredient 3?')];
+const ingredients = [
+  prompt("Let's make pasta! Ingredient 1?"),
+  prompt('Ingredient 2?'),
+  prompt('Ingredient 3?')
+];
 restaurant.orderPasta(...ingredients); // Here is your delicious pasta with 1, 2, 3
 
 //* Objects

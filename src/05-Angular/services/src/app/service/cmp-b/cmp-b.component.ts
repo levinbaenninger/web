@@ -7,7 +7,7 @@ import { LogService } from '../log.service';
   selector: 'app-cmp-b',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './cmp-b.component.html',
+  templateUrl: './cmp-b.component.html'
 })
 export class CmpBComponent implements OnInit {
   value = '';

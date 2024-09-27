@@ -6,35 +6,32 @@ Um Data Binding zu ermöglichen, gibt es verschiedene **Methoden**:
 
 **String Interpolation**:
 
-````HTML
+```HTML
 {{ Ausdruck, der in einen String resultiert }}
-````
+```
 
 Mit String Interpolation können wir ein Property aus unserer Klasse im Template ausgeben.
 
 **Property Binding**:
 
-````HTML
+```HTML
 <button [disabled]="Ausdruck, der in einen benötigten Property Type resultiert">
-````
+```
 
 Mit Property Binding können wir bestimmten Code an ein HTML Element binden.
 
 **Event Binding**:
 
-````HTML
+```HTML
 <button (click)="Ausdruck, der das Event behandelt">
-````
+```
 
 Event Binding erlaubt es uns auf Events zu reagieren.
 
 **Two-Way Binding**:
 
-````HTML
+```HTML
 <input [(ngModel)]="gebundene Datenquelle"
-````
+```
 
 Mit Two-Way Data Binding können wir Daten einerseits anzeigen lassen, andererseits hinzufügen können.
-
-
-

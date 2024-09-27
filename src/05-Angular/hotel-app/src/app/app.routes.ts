@@ -6,18 +6,18 @@ import { ReservationListComponent } from './reservation/reservation-list/reserva
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    component: HomeComponent
   },
   {
     path: 'list',
-    component: ReservationListComponent,
+    component: ReservationListComponent
   },
   {
     path: 'new',
-    component: ReservationFormComponent,
+    component: ReservationFormComponent
   },
   {
     path: 'edit/:id',
-    component: ReservationFormComponent,
-  },
+    component: ReservationFormComponent
+  }
 ];

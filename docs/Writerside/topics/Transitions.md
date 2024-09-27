@@ -25,7 +25,7 @@ Hier kann man sagen, wie lange die Transition warten soll, bis sie ausgeführt w
 
 ## Beispiel
 
-````CSS
+```CSS
 .circle {
     width: 300px;
     height: 300px;
@@ -37,4 +37,4 @@ Hier kann man sagen, wie lange die Transition warten soll, bis sie ausgeführt w
     background-color: cyan;
     border-radius: 50%;
 }
-````
+```

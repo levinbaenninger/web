@@ -4,10 +4,10 @@ Mit ES6 kamen einige Verbesserungen für Object Literals.
 
 ## Andere Object Literals referenzieren
 
-Vor ES6 musste man einen Namen und den Wert für ein Objekt angeben, dass man referenzieren möchte. Das hat sich mit ES6 geändert. Man kann nun 
+Vor ES6 musste man einen Namen und den Wert für ein Objekt angeben, dass man referenzieren möchte. Das hat sich mit ES6 geändert. Man kann nun
 einfach den Namen des zu referenzierenden Objektes angeben:
 
-````Javascript
+```Javascript
 const openingHours = {
   thu: {
     open: 12,
@@ -34,13 +34,13 @@ const restaurant = {
   //! openingHours: openingHours // Before ES6
   openingHours, // After ES6
 };
-````
+```
 
 ## Verbesserte Syntax für Methoden
 
 Auch die Syntax von Methoden hat sich geändert, so muss das `funtion`-Keyword nicht mehr verwendet werden:
 
-````Javascript
+```Javascript
 //* ES6 enhanced object literals (Methods)
 order: function (starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
@@ -49,13 +49,13 @@ order: function (starterIndex, mainIndex) {
 order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]; // After ES6
 },
-````
+```
 
 ## Berechnete Property-Namen
 
 Mit berechneten Property-Namen muss man die Namen nicht selber angeben, sondern kann sie beispielsweise aus einem Array holen:
 
-````Javascript
+```Javascript
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
 //* ES6 enhanced object literals (Computed property names)
@@ -73,4 +73,4 @@ const openingHours = {
     close: 24,
   },
 };
-````
+```

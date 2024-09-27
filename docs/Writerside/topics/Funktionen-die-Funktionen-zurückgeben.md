@@ -2,16 +2,15 @@
 
 Am besten fangen wir mit einem Beispiel an:
 
-````Javascript
+```Javascript
 const greet = function (greeting) {
   return function (name) {
     console.log(`${greeting} ${name}`);
   }
 }
-````
+```
 
 Wenn wir nun diese Funktion aufrufen, erhalten wir eine Funktion zurück:
-
 
 <tabs>
     <tab title="JavaScript">
@@ -30,21 +29,21 @@ Wenn wir nun diese Funktion aufrufen, erhalten wir eine Funktion zurück:
 
 Um nun die erhaltene Funktion aufzurufen, speichern wir den Wert vom Funktionsaufruf `greet` in einer Variabel:
 
-````Javascript
+```Javascript
 const greeterHey = greet('Hey');
-````
+```
 
 Wenn wir nun `greeterHey(...)` aufrufen erhalten wir einen Wert zurück:
 
-````Javascript
+```Javascript
 greeterHey('Jonas'); // 'Hey Jonas'
-````
+```
 
-Das funktioniert aufgrund einer sogenannten **Closure**, die wir uns später ansehen werden. Wir müssen die Funktion jedoch nicht zwingend in einer 
+Das funktioniert aufgrund einer sogenannten **Closure**, die wir uns später ansehen werden. Wir müssen die Funktion jedoch nicht zwingend in einer
 Variable speichern, sondern können die Funktion sofort aufrufen:
 
-````Javascript
+```Javascript
 greet('Hello')('Jonas');
-````
+```
 
-Dieses Konzept ist sehr wichtig für ein Paradigma namens **Funktionale Programmierung**. 
+Dieses Konzept ist sehr wichtig für ein Paradigma namens **Funktionale Programmierung**.

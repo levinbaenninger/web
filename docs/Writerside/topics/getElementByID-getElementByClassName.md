@@ -14,9 +14,9 @@ Die Elementmanipulation funktioniert gleich wie bei `querySelector()`.
 
 Mit `getElementById()` kann man Elemente mit bestimmten IDs auswählen:
 
-````Javascript
+```Javascript
 document.getElementById(Id);
-````
+```
 
 Der `return`-Wert ist ein Element.
 
@@ -24,9 +24,9 @@ Der `return`-Wert ist ein Element.
 
 Mit `getElementsByClassName()` kann man alle Elemente mit einer bestimmten Klasse auswählen:
 
-````Javascript
+```Javascript
 document.getElementsByClassName(class);
-````
+```
 
 Der `return`-Wert ist eine [HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)
 
@@ -34,9 +34,9 @@ Der `return`-Wert ist eine [HTMLCollection](https://developer.mozilla.org/en-US/
 
 Mit `getElementsByName()` kann man alle Elemente mit einem bestimmten Namen auswählen:
 
-````Javascript
+```Javascript
 document.getElementsByName(name);
-````
+```
 
 Der `return`-Wert ist eine [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList)
 
@@ -44,9 +44,9 @@ Der `return`-Wert ist eine [NodeList](https://developer.mozilla.org/en-US/docs/W
 
 Mit getElementsByTagName() kann man alle Element mit dem bestimmten Tagnamen auswählen:
 
-````Javascript
+```Javascript
 document.getElementsByTagName(name)
-````
+```
 
 Der `return`-Wert ist bei neueren WebKit Browsern eine [NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList), bei älteren
 eine [HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection)

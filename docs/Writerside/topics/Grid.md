@@ -6,11 +6,11 @@ Das Grid Layout ist ein zwei-dimensionales Layout-System. Mit Grid kann man Inha
 
 Dieses Property definiert das Element als Grid-Container.
 
-````CSS
+```CSS
 .container {
   display: grid | inline-grid;
 }
-````
+```
 
 ## Inhaltsverzeichnis - Grid
 

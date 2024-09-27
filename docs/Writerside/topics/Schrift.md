@@ -4,22 +4,22 @@
 
 Mit dem Property `color` können wir die Farbe des Textes verändern:
 
-````CSS
+```CSS
 p {
   color: red;
 }
-````
+```
 
 ## Schriftart
 
 Mit dem Property `font-family` können wir die Schriftart verändern. Der Browser wendet die Schriftart nur an, wenn die Schriftart auf dem Computer
 des Clients vorhanden ist, wenn nicht, nutzt der Browser die Standardschrift.
 
-````CSS
+```CSS
 p {
   font-family: Arial;
 }
-````
+```
 
 ### Web-Safe Schriftarten
 
@@ -35,11 +35,11 @@ CSS gibt uns einige Standardschriften mit: serif, sans-serif, monospace, cursive
 Da wir die Verfügbarkeit von Schriftarten nicht garantieren können, gibt es sogenannte **Font Stacks**. Mit ihnen können wir dem Browser sagen,
 welche Schriften er noch ausprobieren soll, falls sie nicht vorhanden sind:
 
-````CSS
+```CSS
 p {
   font-family: "Trebuchet MS", Verdana, sans-serif;
 }
-````
+```
 
 Der Browser beginnt bei der ersten Schriftart, wenn diese nicht verfügbar ist, geht er zur Zweiten, etc.
 
@@ -49,11 +49,11 @@ Mehr zu Schriftarten hier:
 
 Die Schriftgrösse können wir mit dem Property `font-size` bestimmen:
 
-````CSS
+```CSS
 p {
   font-size: 0.75rem;
 }
-````
+```
 
 ## Schriftstil, Schriftstärke, Textumwandlung, Textgestaltung
 
@@ -61,36 +61,36 @@ p {
 
 Mit dem `font-style`-Property können wir kursiven Text aktivieren bzw. deaktivieren.
 
-````CSS
+```CSS
 /* italic oder normal */
 font-style: italic;
 fon-style: normal;
-````
+```
 
 ### Schriftstärke
 
 Mit dem Property `font-weight` können wir die Schriftstärke verändern:
 
-````CSS
+```CSS
 /* Von 100 bis 900 */
 font-weight: 100;
 font-weight: 900;
-````
+```
 
 ### Textumwandlung
 
 Mit dem Property `text-transform` können wir den Text umwandeln:
 
-````CSS
+```CSS
 /* none, uppercase, lowercase, capitalize, full-width */
 text-transform: uppercase;
-````
+```
 
 ### Textgestaltung
 
 Mit `text-decoration` können wir die Gestaltung von Text ändern:
 
-````CSS
+```CSS
 /* none, underline, overline, line-through */
 text-decoration: underline blue wavy;
-````
+```

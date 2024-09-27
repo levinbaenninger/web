@@ -5,7 +5,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './event-binding.component.html',
-  styleUrl: './event-binding.component.scss',
+  styleUrl: './event-binding.component.scss'
 })
 export class EventBindingComponent {
   @Output() clicked = new EventEmitter<string>();

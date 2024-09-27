@@ -5,7 +5,7 @@ import {
   FormGroup,
   FormsModule,
   ReactiveFormsModule,
-  Validators,
+  Validators
 } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { HomeComponent } from '../../home/home.component';
@@ -17,7 +17,7 @@ import { ReservationService } from '../reservation.service';
   standalone: true,
   templateUrl: './reservation-form.component.html',
   styleUrl: './reservation-form.component.scss',
-  imports: [FormsModule, ReactiveFormsModule, CommonModule, HomeComponent],
+  imports: [FormsModule, ReactiveFormsModule, CommonModule, HomeComponent]
 })
 export class ReservationFormComponent implements OnInit {
   reservationForm: FormGroup = new FormGroup({});
@@ -35,7 +35,7 @@ export class ReservationFormComponent implements OnInit {
       checkOutDate: ['', Validators.required],
       guestName: ['', Validators.required],
       guestEmail: ['', [Validators.required, Validators.email]],
-      roomNumber: ['', Validators.required],
+      roomNumber: ['', Validators.required]
     });
 
     let id = this.activatedRoute.snapshot.paramMap.get('id');
@@ -56,12 +56,14 @@ export class ReservationFormComponent implements OnInit {
 
       if (id) {
         reservation.id = id;
-        this.reservationService.updateReservation(id, reservation).subscribe((() => {
-          console.log("Update request processed.")
-        }));
+        this.reservationService
+          .updateReservation(id, reservation)
+          .subscribe(() => {
+            console.log('Update request processed.');
+          });
       } else {
         this.reservationService.createReservation(reservation).subscribe(() => {
-          console.log("Create request processed.")
+          console.log('Create request processed.');
         });
       }
 

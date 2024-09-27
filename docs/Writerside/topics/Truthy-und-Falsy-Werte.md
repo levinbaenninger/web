@@ -20,7 +20,7 @@ Alles andere sind sogenannte truthy-Werte, also Werte, die in wahr umgewandelt w
 
 ## Beispiel
 
-````Javascript
+```Javascript
 // Falsy values: 0, '', undefined, null, NaN
 console.log(Boolean(0)); // false
 console.log(Boolean(undefined)); // false
@@ -44,4 +44,4 @@ if (height) {
 } else {
   console.log('Height is undefined');
 }
-````
+```

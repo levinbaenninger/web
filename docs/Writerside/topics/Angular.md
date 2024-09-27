@@ -24,6 +24,6 @@ Eine Angular-Applikation ist eine sogenannte SPA (Single Page Application), d.h.
 
 AngularJS (Version 1.x) wurde 2010 von Google veröffentlicht. Angular, oft auch "Angular 2+" ist ein vollständig überarbeitetes Framework, dass viele Aspekte von AngularJS änderte und nue Konzepte einführte.
 
-Ein grosser Unterschied zwischen AngularJS und Angular ist die Programmiersprache, JavaScript bei AngularJS, TypeScript bei Angular. Zudem folgte AngularJS einem MVC Ansatz, während Angular einer Komponentenstruktur folgen. Ausserdem ist Angular deutlich performanter. 
+Ein grosser Unterschied zwischen AngularJS und Angular ist die Programmiersprache, JavaScript bei AngularJS, TypeScript bei Angular. Zudem folgte AngularJS einem MVC Ansatz, während Angular einer Komponentenstruktur folgen. Ausserdem ist Angular deutlich performanter.
 
 Es gibt noch etliche weitere Unterschiede...

@@ -4,25 +4,25 @@ Fragments sind der Teil in der URL mit dem `#`. Das sorgt dafür, dass auf diese
 
 ## Übergabe
 
-Die Übergabe über die `navigate()`-Methode funktioniert so: 
+Die Übergabe über die `navigate()`-Methode funktioniert so:
 
-````Typescript
+```Typescript
 this.router.navigate(['/'], {
   fragment: 'anchor',
 });
-````
+```
 
 Um ein Fragement über den Link zu übergeben, brauchen wir erneut ein neues Attribut:
 
-````Typescript
+```Typescript
 <a [routerLink]="['']" [fragment]="'anchor'">Home</a>
-````
+```
 
 ## Extrahierung
 
 Die Extrahierung funktioniert genau gleich, wie bei Query Parameter:
 
-````Typescript
+```Typescript
 private subscriptionFragment!: Subscription;
 fragment!: string | null;
 
@@ -40,4 +40,4 @@ ngOnDestroy(): void {
   this.subscription.unsubscribe();
   this.subscriptionFragment.unsubscribe();
 }
-````
+```

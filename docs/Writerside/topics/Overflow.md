@@ -11,55 +11,55 @@ Mit dem `overflow` Property können wir bestimmen, was passieren soll, falls es 
 
 Um den Inhalt der übersteht abzuschneiden, können wir `hidden` benutzen.
 
-````CSS
+```CSS
 .box {
   border: 1px solid #333333;
   width: 350px;
   height: 100px;
   overflow: hidden;
 }
-````
+```
 
 ### Overflow: Scrollen
 
 Eine andere Möglichkeit wäre es, Scrollbars hinzuzufügen; das geht mit
 `scroll`.
 
-````CSS
+```CSS
 .box {
   border: 1px solid #333333;
   width: 350px;
   height: 100px;
   overflow: scroll;
 }
-````
+```
 
 #### Overflow: Scrollen (x oder y)
 
 Darüber hinaus können wir noch bestimmen, ob wir die Scrollbar nur horizontal bzw. vertikal haben wollen mit `overflow-y: scroll` oder
 `overflow-x: scroll`.
 
-````CSS
+```CSS
 .box {
   border: 1px solid #333333;
   width: 350px;
   height: 100px;
   overflow-y: scroll;
 }
-````
+```
 
 ### Overflow: Automatische Erkennung
 
 Mit `auto` können wir sagen, dass die Scrollbars nur erscheinen sollen, wenn der Inhalt Overflow ist.
 
-````CSS
+```CSS
 .box {
   border: 1px solid #333333;
   width: 350px;
   height: 100px;
   overflow: auto;
 }
-````
+```
 
 ### Overflow: Zeilenumbruch
 
@@ -68,11 +68,11 @@ Mit `overflow-wrap` können wir sagen, ob der Browser Zeilenumbrüche bei String
 - `normal` - Nur Zeilenumbrüche bei normalen Punkten (bspw. ein Leerzeichen zwischen zwei Wörtern)
 - `anywhere` - Jeder String kann überall auf eine neue Zeile gehen.
 
-````CSS
+```CSS
 .word {
 border: 5px solid #333333;
 width: 100px;
 font-size: 250%;
 overflow-wrap: anywhere;
 }
-````
+```

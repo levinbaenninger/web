@@ -12,7 +12,7 @@ Der andere wird **loser Gleichheitsoperator** genannt und führt einen Typenzwan
 
 ## Beispiel
 
-````Javascript
+```Javascript
 // We use the Number() function to convert the string to a number, so we can compare it with the number 23 and 7.
 const favourite = Number(prompt("What's your favourite number?"));
 
@@ -23,6 +23,6 @@ if (favourite === 23) {
 } else {
   console.log("You're number isn't cool!");
 }
-````
+```
 
 > Die Daumenregel lautet, möglichst den losen Gleichheitsoperator zu vermeiden.

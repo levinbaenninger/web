@@ -1,7 +1,14 @@
 //* Looping Objects: Object Keys, Values, and Entries
 
 //* Creating Sets
-const ordersSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza'
+]);
 console.log(ordersSet); // Set(3) {"Pasta", "Pizza", "Risotto"}
 
 const nameSet = new Set('Levin');
@@ -30,7 +37,6 @@ console.log(ordersSet); // Set(3) {"Pasta", "Pizza", "Garlic Bread"}
 
 //* Looping over Sets
 for (const order of ordersSet) console.log(order); // Pasta Pizza Garlic Bread
-
 
 //* Example
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];

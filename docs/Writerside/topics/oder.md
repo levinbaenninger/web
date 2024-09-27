@@ -4,9 +4,8 @@ Standardmässig wird die Reihenfolge durch die Reihenfolge im Source Code festge
 
 ![](order.png)
 
-````CSS
+```CSS
 .item {
   order: 5; /* default is 0 */
 }
-````
-
+```

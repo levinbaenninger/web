@@ -40,9 +40,7 @@
       *ngFor="let book of books; index as i"
     >
       {{ book.title }} - {{ book.author }}
-      <button class="btn btn-danger" (click)="deleteBook(i)">
-        Delete
-      </button>
+      <button class="btn btn-danger" (click)="deleteBook(i)">Delete</button>
     </li>
   </ul>
 </div>

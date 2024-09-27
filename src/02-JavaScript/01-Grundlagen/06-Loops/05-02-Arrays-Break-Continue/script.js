@@ -1,7 +1,13 @@
 // 5. Loops
 
 //* 5.2 Looping Arrays, Breaking and Continuing
-const levin = ['Levin', 'Bänninger', 2023 - 2007, 'student', ['Michael', 'Peter', 'Steven']];
+const levin = [
+  'Levin',
+  'Bänninger',
+  2023 - 2007,
+  'student',
+  ['Michael', 'Peter', 'Steven']
+];
 
 // Reading from array
 for (let i = 0; i < levin.length; i++) {

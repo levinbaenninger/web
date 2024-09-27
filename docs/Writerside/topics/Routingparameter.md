@@ -4,11 +4,11 @@ Mit Routingparameter können wir beispielsweise eine bestimmte ID eines Users mi
 
 <path>**app.routes.ts**</path>
 
-````Typescript
+```Typescript
 ...
 { path: 'user/:id', component: UserComponent },
 ...
-````
+```
 
 Wie du siehst legen wir einen Routingparameter mit `:` und irgendeinem Namen fest.
 
@@ -16,7 +16,7 @@ Wie du siehst legen wir einen Routingparameter mit `:` und irgendeinem Namen fes
 
 Um nun zu einer Seite mit solch einem Routingparameter zu navigieren, können wir folgendes machen:
 
-````HTML
+```HTML
 <div class="row">
     <div class="col-xs-12">
       <a [routerLink]="['']">Home</a>
@@ -29,7 +29,7 @@ Um nun zu einer Seite mit solch einem Routingparameter zu navigieren, können wi
       <input type="text" #input (input)="(0)" />
     </div>
   </div>
-````
+```
 
 Hier gibt der User eine `id` ein und zu dieser Seite wird er dann geleitet.
 
@@ -37,7 +37,7 @@ Hier gibt der User eine `id` ein und zu dieser Seite wird er dann geleitet.
 
 Um Parameter aus der Route zu extrahieren, gibt es zwei Wege:
 
-````Typescript
+```Typescript
 id!: string;
 
 constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
@@ -45,11 +45,11 @@ constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
 ngOnInit(): void {
   this.id = this.activatedRoute.snapshot.params['id'];
 }
-````
+```
 
 Mit diesem Weg kreieren wir einen Snapshot der aktuellen Route, wenn der Component initialisiert wird. Das kann jedoch ein Problem sein, wenn der Component gar nicht neu initialisiert wird, denn dann wir der Wert nicht aktualisiert. Deshalb gibt es einen weiteren Weg:
 
-````Typescript
+```Typescript
 id!: string;
 private subscription!: Subscription;
 
@@ -64,6 +64,6 @@ ngOnInit(): void {
 ngOnDestroy() {
   this.subscription.unsubscribe();
 }
-````
+```
 
 Hier erstellen wir, wenn die Komponente das erste Mal initialisiert wird eine Subscription mit welcher wir die Änderungen von `id` verfolgen. Wichtig ist, dass wir die Subscription wieder entnehmen, falls der Component zerstört wird, denn ansonsten kommt es zu einem Memory Leak und unser Speicher läuft voll.

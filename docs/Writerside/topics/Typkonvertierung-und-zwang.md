@@ -12,7 +12,7 @@ Kulissen bedeutet.
 
 Eine Typumwandlung liegt vor, wenn wir eine Variable explizit von einem Typ in einen anderen umwandeln wollen.
 
-````Javascript
+```Javascript
 const inputYear = '1991';
 
 // Number() = converts a string to a number
@@ -30,7 +30,7 @@ console.log(Number.isNaN('Jonas')); // true
 // String() = converts a number to a string
 // We can convert a number to a string with String()
 console.log(String(23)); // '23'
-````
+```
 
 Um den Datentyp in Zahlen oder Strings zu ändern, verwenden wir die Funktionen `Number()` oder `String()`. Wenn wir der Funktion `Number()` einen
 nicht-numerischen Wert übergeben, erhalten wir `NaN` zurück.
@@ -42,7 +42,7 @@ Um zu prüfen, ob eine Zahl `NaN` ist, können wir die Funktion `isNaN()` verwen
 Typenzwang tritt immer dann auf, wenn ein Operator mit zwei Werten zu tun hat, die unterschiedliche Typen haben. In diesem Fall wandelt JavaScript
 einen der Werte um, damit er mit dem anderen Wert übereinstimmt und die Operation am Ende ausgeführt werden kann.
 
-````Javascript
+```Javascript
 // The + operator converts the number to a string, in this case it will convert 23 to '23'
 console.log('I am ' + 23 + ' years old'); // 'I am 23 years old'
 
@@ -50,5 +50,4 @@ console.log('I am ' + 23 + ' years old'); // 'I am 23 years old'
 console.log('23' - '10' - 3); // 10
 console.log('23' * '2'); // 46
 console.log('23' > '18'); // true
-````
-
+```

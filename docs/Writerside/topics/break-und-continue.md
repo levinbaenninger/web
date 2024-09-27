@@ -8,9 +8,9 @@ Die `break`-Anweisung wird verwendet, um die Schleife sofort zu beenden, wenn si
 
 ### Syntax - break
 
-````Javascript
+```Javascript
 break;
-````
+```
 
 ### Funktionsweise der break-Anweisung
 
@@ -37,9 +37,9 @@ Iteration über.
 
 ### Syntax - continue
 
-````Javascript
+```Javascript
 continue;
-````
+```
 
 ### Funktionsweise der continue-Anweisung
 

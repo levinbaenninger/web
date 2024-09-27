@@ -7,9 +7,9 @@ den Bereich und die Scope Chain konzentrieren.
 
 ## Scope Konzepte
 
-**Scoping:** Wie die Variablen in unserem Programm **organisiert** und auf sie **zugegriffen** wird. *"Wo befinden sich die Variablen? "* oder *"Wo
+**Scoping:** Wie die Variablen in unserem Programm **organisiert** und auf sie **zugegriffen** wird. _"Wo befinden sich die Variablen? "_ oder _"Wo
 können wir
-auf eine bestimmte Variable zugreifen, und wo nicht?";*
+auf eine bestimmte Variable zugreifen, und wo nicht?";_
 
 **Lexical Scoping:** Das Scoping wird durch **Platzierung** von Funktionen und Blöcken im Code gesteuert;
 
@@ -22,18 +22,18 @@ Scope, den function Scope und den block scope;
 
 ### Global Scope
 
-````Javascript
+```Javascript
 const me = 'Jonas';
 const job = 'teacher';
 const year = 1989;
-````
+```
 
 - **Außerhalb** einer Funktion oder eines Blocks
 - Im globalen Bereich deklarierte Variablen sind **überall** zugänglich
 
 ### Function Scope
 
-````Javascript
+```Javascript
 function calcAge(birthYear) {
 	const now = 2037;
 	const age = now - birthyear;
@@ -41,7 +41,7 @@ function calcAge(birthYear) {
 }
 
 console.log(now); // ReferenceError
-````
+```
 
 - Variablen sind nur **in Funktionen** zugänglich, nicht ausserhalb
 - Gilt für **alle Funktionstypen**
@@ -49,14 +49,14 @@ console.log(now); // ReferenceError
 
 ### Block Scope
 
-````Javascript
+```Javascript
 if (year >= 1981 && year <= 1996) {
 	const millenial = true;
 	const food = 'Avocado toast';
 }
 
 console.log(millenial); // ReferenceError
-````
+```
 
 - Variablen sind nur `innerhalb des Blocks` zugänglich
 - Gilt nur für `let` und `const` Variablen

@@ -8,7 +8,14 @@ const division = 10 / 5;
 const modulo = 10 % 5;
 const exponentiation = 10 ** 5;
 
-console.log(addition, subtraction, multiplication, division, modulo, exponentiation); // 15 5 50 2 0 100000
+console.log(
+  addition,
+  subtraction,
+  multiplication,
+  division,
+  modulo,
+  exponentiation
+); // 15 5 50 2 0 100000
 
 // ? Concatenation operator
 const firstName = 'Levin';

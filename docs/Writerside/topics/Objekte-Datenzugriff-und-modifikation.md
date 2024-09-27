@@ -13,13 +13,13 @@ Es gibt zwei Möglichkeiten, auf Daten eines Objekts zuzugreifen:
 
 Die Syntax der Punktnotation sieht wie folgt aus:
 
-````Javascript
+```Javascript
 objName.property;
-````
+```
 
 Es ist ziemlich einfach. Beispiel mit unseren Personendaten:
 
-````Javascript
+```Javascript
 const levin = {
   firstName: 'Levin',
   lastName: 'Bänninger',
@@ -31,23 +31,23 @@ const levin = {
 console.log(levin.lastName); // Bänninger
 console.log(levin.age); // 16
 console.log(levin.friends); // (3) ["Jonas", "Marie", "Peter"]
-````
+```
 
 ### Klammernotation
 
 Die Syntax für die Klammerschreibweise sieht wie folgt aus:
 
-````Javascript
+```Javascript
 objName['expression'];
-````
+```
 
 Wie du sehen kannst, ist das auch ziemlich einfach. Wieder das Beispiel mit unseren Personendaten:
 
-````Javascript
+```Javascript
 console.log(levin['lastName']); // Bänninger
 console.log(levin['age']); // 16
 console.log(levin['friends']); // (3) ["Jonas", "Marie", "Peter"]
-````
+```
 
 > Das gilt für beide Notationen. Wenn wir versuchen, auf eine Eigenschaft zuzugreifen, die nicht existiert, erhalten wir `undefined`.
 
@@ -56,11 +56,11 @@ console.log(levin['friends']); // (3) ["Jonas", "Marie", "Peter"]
 Der große Unterschied, zwischen den beiden ist, dass ich mit der Klammerschreibweise einen Ausdruck eintippen kann. Du könntest zum Beispiel Folgendes
 tun:
 
-````Javascript
+```Javascript
 const nameKey = 'Name';
 console.log(levin['first' + nameKey]); // Levin
 console.log(levin['last' + nameKey]); // Bänninger
-````
+```
 
 Das ist nicht möglich mit der Punktnotation.
 
@@ -71,24 +71,23 @@ Das ist nicht möglich mit der Punktnotation.
 
 ### Eine Eigenschaft hinzufügen
 
-````Javascript
+```Javascript
 levin.location = 'Switzerland';
 levin['twitter'] = '@LevinBaenninger';
-````
+```
 
 ### Eine Eigenschaft bearbeiten
 
-````Javascript
+```Javascript
 levin.job = 'programmer';
 levin['location'] = 'Zurich';
 console.log(levin); // {firstName: "Levin", lastName: "Bänninger", age: 16, job: "programmer", friends: Array(3), …}
-````
+```
 
 ### Eine Eigenschaft löschen
 
-````Javascript
+```Javascript
 delete levin.location;
 delete levin['twitter'];
 console.log(levin); // {firstName: "Levin", lastName: "Bänninger", age: 16, job: "programmer", friends: Array(3), …}
-````
-
+```

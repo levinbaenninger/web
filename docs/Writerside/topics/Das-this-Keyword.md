@@ -9,16 +9,18 @@ der Funktion an, in der das Schlüsselwort `this` verwendet wird (zeigt auf ihn)
 aufgerufen wird.
 
 > **Method** -> `this` = `<object that is calling the method>`
-> ````Javascript
+>
+> ```Javascript
 >   const jonas = {
->	name: 'Jonas',
->	year: 1989,
->	calcAge: function() {
->		return 2037 - this.year
->	}
+> 	name: 'Jonas',
+> 	year: 1989,
+> 	calcAge: function() {
+> 		return 2037 - this.year
+> 	}
 > };
 > jonas.calcAge(); // 48
-> ````
+> ```
+>
 > **Simple function call** -> `this` = `undefined`
 >
 > **Arrow functions** -> `this` = `<this of surrounding function (lexical <mark>this)>`

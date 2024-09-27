@@ -9,22 +9,22 @@ Sie werden vor allem dazu gebraucht Duplikate in Arrays zu entfernen
 
 Wir erstellen Sets mit dem `new`-Keyword:
 
-````Javascript
+```Javascript
 const ordersSet = new Set(['Pasta', 'Pizza', 'Pizza', 'Risotto', 'Pasta', 'Pizza']);
-````
+```
 
 Hier sieht man bereits, dass wir mehrere Duplikate haben, wenn wir dieses Set nun ausgeben, werden wir sehen, dass die Duplikate entfernt wurden:
 
-````Javascript
+```Javascript
 console.log(ordersSet); // Set(3) {"Pasta", "Pizza", "Risotto"}
-````
+```
 
 Wir können aber nicht nur Arrays in das Set einfügen, sondern alle Iterables stehen uns zur Verfügung, also Arrays, aber unter anderem auch Strings:
 
-````Javascript
+```Javascript
 const nameSet = new Set('Levin');
 console.log(nameSet); // Set(5) {"L", "e", "v", "i", "n"}
-````
+```
 
 ## Datenzugriff- und Modifikation
 
@@ -32,34 +32,34 @@ console.log(nameSet); // Set(5) {"L", "e", "v", "i", "n"}
 
 Mit dem `size`-Property können wir die Grösse eines Sets bestimmen:
 
-````Javascript
+```Javascript
 console.log(ordersSet.size); // 3
-````
+```
 
 ### Überprüfen, ob ein Element in einem Set ist
 
 Um zu überprüfen, ob ein bestimmtes Element in einem Set ist, benutzen wir die Methoder `has()`.
 
-````Javascript
+```Javascript
 console.log(ordersSet.has('Pizza')); // true
 console.log(ordersSet.has('Bread')); // false
-````
+```
 
 ### Neue Elemente hinzufügen
 
 Mit der `add()`-Methode können wir neue Elemente hinzufügen:
 
-````Javascript
+```Javascript
 ordersSet.add('Garlic Bread');
 console.log(ordersSet); // Set(5) {"Pasta", "Pizza", "Risotto", "Garlic Bread"}
-````
+```
 
 ### Elemente löschen
 
-````Javascript
+```Javascript
 ordersSet.delete('Risotto');
 console.log(ordersSet); // Set(4) {"Pasta", "Pizza", "Garlic Bread"}
-````
+```
 
 ### Elemente abrufen
 
@@ -70,32 +70,32 @@ Reihenfolge egal ist und es keine Duplikate gibt. Es reicht uns mit `has()` zu �
 
 Da Sets Iterables sind, können wir auch über sie loopen. Das macht man standardmässig wieder mit dem `for .. of`-Loop.
 
-````Javascript
+```Javascript
 for (const order of ordersSet) console.log(order); // Pasta Pizza Garlic Bread
-````
+```
 
 ## Beispiel
 
 Oft will man mit Sets einfach die Dupikate aus einem Array herausfischen.
 
-````Javascript
+```Javascript
 const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
-````
+```
 
 Hier haben wir bspw. ein Array mit den Mitarbeitern, wollen jetzt aber die einzelnen Berufe haben. Hierfür erstellen wir ein Set:
 
-````Javascript
+```Javascript
 const roles = new Set(staff);
-````
+```
 
 Damit wir nun direkt wieder ein Set herausbekommen, können wir den Spread-Operator verwenden:
 
-````Javascript
+```Javascript
 const roles = [...new Set(staff)];
-````
+```
 
 Wenn wir uns nun den Array `roles` anschauen sehen wir, dass die Duplikate entfernt wurden und dass es immer noch ein Array ist:
 
-````Javascript
+```Javascript
 console.log(roles); // (3) ["Waiter", "Chef", "Manager"]
-````
+```

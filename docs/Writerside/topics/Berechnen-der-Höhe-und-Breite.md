@@ -6,7 +6,7 @@
 
 Im standard Boxmodel werden die Breiten und Höhen wie folgt berechnet:
 
-````CSS
+```CSS
 .box {
   width: 350px;
   height: 150px;
@@ -14,7 +14,7 @@ Im standard Boxmodel werden die Breiten und Höhen wie folgt berechnet:
   padding: 25px;
   border: 5px solid black;
 }
-````
+```
 
 - **Breite**: `width` + `padding-left` + `padding-right` + `border-left` + `border-right`
 - **Höhe**: `width` + `padding-top` + `padding-bottom` + `border-top` + `border-bottom`
@@ -27,7 +27,7 @@ Hier ist die Breite und Höhe um einiges grösser als unsere `width` und `height
 
 Im alternativen Boxmodel ist unsere `width` auch genau die Breite unserer Box, analog Höhe. Um es zu aktivieren machen wir folgendes:
 
-````CSS
+```CSS
 html {
   box-sizing: border-box;
 }
@@ -46,7 +46,7 @@ html {
   padding: 25px;
   border: 5px solid black;
 }
-````
+```
 
 Jetzt sieht unsere Box so aus:
 

@@ -4,9 +4,8 @@ Dieses Property bestimmt die Standardgrösse, bevor der verbleibende Platz verte
 
 Das `auto`-Keyword heisst, "schaue auf mein `width` oder `height` Property".
 
-````CSS
+```CSS
 .item {
   flex-basis:  | auto; /* default auto */
 }
-````
-
+```

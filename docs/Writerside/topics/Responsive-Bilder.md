@@ -2,11 +2,10 @@
 
 Um Bilder responsive zu machen, müssen wir sagen, dass diese nie die Container-Breite überschreiten. Ein möglicher Ansatz wäre folgender:
 
-````CSS
+```CSS
 img,
 picture,
 video {
   max-width: 100%;
 }
-````
-
+```

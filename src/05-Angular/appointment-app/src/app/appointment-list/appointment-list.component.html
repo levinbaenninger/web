@@ -39,7 +39,7 @@
       class="list-group-item d-flex justify-content-between align-items-center"
       *ngFor="let appointment of appointments; index as i"
     >
-      {{ appointment.title }} - {{ appointment.date | date : "dd.MM.yyyy" }}
+      {{ appointment.title }} - {{ appointment.date | date: 'dd.MM.yyyy' }}
       <button class="btn btn-danger" (click)="deleteAppointment(i)">
         Delete
       </button>

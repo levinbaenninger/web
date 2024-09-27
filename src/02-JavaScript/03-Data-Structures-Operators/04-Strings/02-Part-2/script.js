@@ -9,7 +9,8 @@ console.log(airline.toUpperCase()); // TAP AIR PORTUGAL
 // Fix capitalization in name
 const passenger = 'jOnAS';
 const passengerLower = passenger.toLowerCase();
-const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1); // Jonas
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1); // Jonas
 
 function correctName(name) {
   const lower = name.toLowerCase();
@@ -34,7 +35,8 @@ const priceUS = priceGB.replace('£', '$').replace(',', '.');
 
 console.log(priceUS); // 288.97$
 
-const announcement = 'All passengers come to boarding door 23. Boarding door 23!';
+const announcement =
+  'All passengers come to boarding door 23. Boarding door 23!';
 const announcementCorrect = announcement.replace(/door/g, 'gate');
 
 console.log(announcementCorrect); // All passengers come to boarding gate 23. Boarding gate 23!

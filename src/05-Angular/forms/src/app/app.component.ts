@@ -13,8 +13,8 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
     RouterOutlet,
     TemplateDrivenComponent,
     ReactiveComponent,
-    FormBuilderComponent,
-  ],
+    FormBuilderComponent
+  ]
 })
 export class AppComponent {
   title = 'forms';

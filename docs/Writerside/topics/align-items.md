@@ -10,50 +10,50 @@ Mit `align-items` richten wir Elemente an der Block-Achse (Spalte) aus. Dieser W
 - `center` - zentriert Elemente in der Zelle
 - `baseline` - richtete Elemente nach der Text-Baseline aus
 
-````CSS
+```CSS
 .container {
   align-items: start | end | center | stretch;
 }
-````
+```
 
 ## Beispiele
 
 ### Start
 
-````CSS
+```CSS
 .container {
   align-items: start;
 }
-````
+```
 
 ![](align-items-start.jpg) { width="250" }
 
 ### End
 
-````CSS
+```CSS
 .container {
   align-items: end;
 }
-````
+```
 
 ![](align-items-end.jpg) { width="250" }
 
 ### Center
 
-````CSS
+```CSS
 .container {
   align-items: center;
 }
-````
+```
 
 ![](align-items-center.jpg) { width="250" }
 
 ### Stretch
 
-````CSS
+```CSS
 .container {
   align-items: stretch;
 }
-````
+```
 
 ![](align-items-stretch.jpg) { width="250" }

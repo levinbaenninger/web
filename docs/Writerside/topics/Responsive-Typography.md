@@ -2,7 +2,7 @@
 
 Auch Text sollte immer entsprechend der Bildschirmgrösse angepasst werden. Ansonsten kann es auf Mobilgeräten schnell sehr unübersichtlich werden.
 
-````CSS
+```CSS
 h1 {
   font-size: 2rem;
 }
@@ -12,4 +12,4 @@ h1 {
     font-size: 4rem;
   }
 }
-````
+```

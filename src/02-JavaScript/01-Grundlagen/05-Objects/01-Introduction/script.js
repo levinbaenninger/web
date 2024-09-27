@@ -6,7 +6,7 @@ const levin = {
   lastName: 'Bänninger',
   age: 16,
   job: 'Student',
-  friends: ['Jonas', 'Marie', 'Peter'],
+  friends: ['Jonas', 'Marie', 'Peter']
 };
 
 console.log(levin); // {firstName: "Levin", lastName: "Bänninger", age: 16, job: "Student", friends: Array(3)}

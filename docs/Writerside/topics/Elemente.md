@@ -24,6 +24,7 @@ Elemente können in andere Elemente platziert werden. Das wird als _Nesting_ bez
 Wichtig ist, dass wir das Element _in_ dem anderen Element **als erstes schliessen**.
 
 > Das wäre **falsch**:
+>
 > ```HTML
 > <p>My cat is <strong>very grumpy.</p></strong>
 > ```

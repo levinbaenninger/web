@@ -4,9 +4,9 @@
 
 Um unseren SCSS-Code in CSS-Code zu kompilieren, nutzen wir die Konsole:
 
-````Console
+```Console
 sass .\src\styles.scss .\public\styles.css -w
-````
+```
 
 Nun wird ein neues File namens <path>styles.css</path> erstellt. Diese Datei können wir jetzt in unserem HTML verlinken.
 
@@ -16,22 +16,22 @@ Nun wird ein neues File namens <path>styles.css</path> erstellt. Diese Datei kö
 
 Dieser SCSS-Code
 
-````CSS
+```CSS
 h1 {
   a {
     color: red;
   }
 }
 
-````
+```
 
 wird in folgenden CSS-Code kompiliert:
 
-````CSS
+```CSS
 h1 a {
   color: red;
 }
-````
+```
 
 ## SCSS mit Vite
 
@@ -39,26 +39,26 @@ Heutzutage nutzt man oftmals Vite. Vite ist ein Frontend-Tool um Web-Applikation
 
 Um ein Vite-Projekt mit TypeScript zu erstellen, geben wir folgendes in die Konsole ein:
 
-````Bash
+```Bash
 npm create vite@latest
-````
+```
 
 Jetzt können wir unserem Projekt einen Namen geben, ein Framework auswählen und uns zwischen JavaScript und TypeScript entscheiden.
 
 Vite erstellt uns direkt eine saubere Ordnerstruktur. Um nun SCSS hinzuzufügen, müssen wir noch folgendes in die Kommandozeile eingeben:
 
-````Bash
+```Bash
 npm add -D sass
-````
+```
 
 Danach müssen wir im <path>main.ts</path>-File unser <path>styles.scss</path>-File importieren und das wars:
 
-````Typescript
+```Typescript
 import './styles.scss'
-````
+```
 
 Um den Server zu starten, nutzen wir folgenden Command:
 
-````Bash
+```Bash
 npm run dev
-````
+```

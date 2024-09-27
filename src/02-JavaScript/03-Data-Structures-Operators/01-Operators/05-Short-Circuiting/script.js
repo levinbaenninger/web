@@ -9,7 +9,7 @@ console.log(undefined || 0 || '' || 'Hello' || 23 || null); // Hello
 
 // Example
 const restaurant = {
-  name: 'Classico Italiano',
+  name: 'Classico Italiano'
 };
 
 const guests = restaurant.numGuests || 10; // 10 because numGuests is undefined, therefore falsy

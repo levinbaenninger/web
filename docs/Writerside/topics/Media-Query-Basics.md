@@ -2,11 +2,11 @@
 
 Die Syntax eines Media Query sieht so aus:
 
-````CSS
+```CSS
 @media media-type and (media-feature-rule) {
   /* CSS rules go here */
 }
-````
+```
 
 Es besteht aus:
 
@@ -24,13 +24,13 @@ Die möglichen Medientypen sind:
 
 Der folgende Media Query setzt die Schriftgrösse nur auf `12pt`, wenn die Seite gedruckt wird:
 
-````CSS
+```CSS
 @media print {
   body {
     font-size: 12pt;
   }
 }
-````
+```
 
 ## Media Feature Rules
 
@@ -41,13 +41,13 @@ Nachdem wir den Typ spezifiziert haben, können wir ein Media-Feature mit einer 
 Das Feature, welches wir am meisten antreffen werden ist die **viewport width**. Wir können bestimmen, ob wir, die CSS-Regeln anwenden wollen,
 wenn die Breite kleiner, grösser oder genau der Breite des Viewports entspricht. Dafür nutzen wir `max-width`, `min-width` oder `width`.
 
-````CSS
+```CSS
 @media screen and (max-width: 600px) {
   body {
     color: blue;
   }
 }
-````
+```
 
 Dieser Media Query wird angewendet, wenn der Viewport kleiner oder gleich 600px breit ist.
 
@@ -55,13 +55,13 @@ Dieser Media Query wird angewendet, wenn der Viewport kleiner oder gleich 600px 
 
 Mit dme Feature `orientation` können wir testen ob das Gerät im Portrait- oder Landscape-Modus ist.
 
-````CSS
+```CSS
 @media (orientation: landscape) {
   body {
     color: rebeccapurple;
   }
 }
-````
+```
 
 Hier ändert sich die Farbe, wenn das Gerät im Landscape-Modus ist.
 
@@ -69,8 +69,8 @@ Hier ändert sich die Farbe, wenn das Gerät im Landscape-Modus ist.
 
 Mit der **ranged Syntax** können wir überprüfen, ob bspw. die Viewport Width zwischen zwei Werten ist:
 
-````CSS
+```CSS
 @media (30em <= width <= 50em) {
   /* … */
 }
-````
+```

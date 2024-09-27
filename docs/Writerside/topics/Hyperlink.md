@@ -33,11 +33,11 @@ Auch Bilder können in Links umgewandelt werden:
 ## Verschiedene Formate
 
 | Format                       | Link                     |
-|------------------------------|--------------------------|
+| ---------------------------- | ------------------------ |
 | Webseiten                    | http(s)://www.domain.com |
 | Mail                         | mailto:name@gmail.com    |
 | Phone                        | tel:+41787001640         |
 | File                         | filename.html            |
 | File (anderes Verzeichnis)   | /folder/folder/file.html |
 | Aktuelle Seite               | #                        |
-| Ort auf aktueller Seite (id) | #id                      |  
+| Ort auf aktueller Seite (id) | #id                      |

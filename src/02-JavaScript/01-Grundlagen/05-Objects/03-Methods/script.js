@@ -27,7 +27,7 @@ const levin = {
     return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he has ${
       this.hasDriversLicense ? 'a' : 'no'
     } driver's license`;
-  },
+  }
 };
 
 /* console.log(levin.calcAge(2007)); // 16 */

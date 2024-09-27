@@ -5,9 +5,11 @@ const lufthansa = {
   iataCode: 'LH',
   bookings: [],
   book(flightNum, name) {
-    console.log(`${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`);
-    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name});
-  },
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
+  }
 };
 
 lufthansa.book(239, 'Levin Bänninger');
@@ -17,8 +19,8 @@ console.log(lufthansa);
 const eurowings = {
   airline: 'Eurowings',
   iataCode: 'EW',
-  bookings: [], 
-}
+  bookings: []
+};
 
 const book = lufthansa.book;
 // book(23, 'Sarah Williams'); //! Error, because this keyword is undefined
@@ -37,4 +39,3 @@ console.log(eurowings);
 
 book.call(eurowings, ...flightData);
 console.log(eurowings);
-

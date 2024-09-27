@@ -2,7 +2,13 @@
 
 // 5.3 Looping Backwards and Loops in Loops
 
-const levin = ['Levin', 'Bänninger', 2023 - 2007, 'student', ['Michael', 'Peter', 'Steven']];
+const levin = [
+  'Levin',
+  'Bänninger',
+  2023 - 2007,
+  'student',
+  ['Michael', 'Peter', 'Steven']
+];
 
 //* Looping Backwards
 for (let i = levin.length - 1; i >= 0; i--) {

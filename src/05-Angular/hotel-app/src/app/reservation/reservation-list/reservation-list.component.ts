@@ -10,7 +10,7 @@ import { ReservationService } from '../reservation.service';
   standalone: true,
   templateUrl: './reservation-list.component.html',
   styleUrl: './reservation-list.component.scss',
-  imports: [CommonModule, RouterModule, HomeComponent],
+  imports: [CommonModule, RouterModule, HomeComponent]
 })
 export class ReservationListComponent implements OnInit {
   reservations: Reservation[] = [];

@@ -1,6 +1,6 @@
 # SCSS
 
-SCSS ist eine Erweiterung von CSS mit neuen Funktionen und einfacheren Schreibweisen. SCSS macht das Schreiben von CSS-Code einfacher, flexibler und wiederverwendbar. 
+SCSS ist eine Erweiterung von CSS mit neuen Funktionen und einfacheren Schreibweisen. SCSS macht das Schreiben von CSS-Code einfacher, flexibler und wiederverwendbar.
 
 SCSS stellt uns Funktionen, Loops, Verzweigungen, Variablen, Vererbung und vieles mehr zur Verfügung. SCSS macht es uns also deutlich leichter komplexe CSS-Probleme zu lösen.
 

@@ -25,7 +25,7 @@ const levin = {
   },
 
   // Arrow function
-  greet: () => console.log(`Hey ${this.firstName}`), // Hey undefined
+  greet: () => console.log(`Hey ${this.firstName}`) // Hey undefined
 };
 
 levin.calcAge();

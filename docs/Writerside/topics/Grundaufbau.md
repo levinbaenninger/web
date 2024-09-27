@@ -17,7 +17,7 @@ Wichtige Konfigurationen:
 
 ### NPM
 
-Im File <path>package.json</path> finden wir alle Informationen zu Dependencies, also installierten Paketen. 
+Im File <path>package.json</path> finden wir alle Informationen zu Dependencies, also installierten Paketen.
 
 ### TypeScript
 

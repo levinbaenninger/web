@@ -4,8 +4,8 @@ Das Property `align-self` erlaubt es, die Standardausrichtung zu überschreiben 
 
 ![](align-self.png) { width="300" }
 
-````CSS
+```CSS
 .item {
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
-````
+```

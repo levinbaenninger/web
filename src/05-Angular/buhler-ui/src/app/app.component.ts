@@ -7,7 +7,7 @@ import { BadgeSize, BadgeType, UiCoreModule } from '@buhler/ui-core';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
-  imports: [CommonModule, UiCoreModule],
+  imports: [CommonModule, UiCoreModule]
 })
 export class AppComponent {
   caption = 'click me';

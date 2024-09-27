@@ -9,10 +9,10 @@ Navigation oder Hauptinhalt ist.
 
 In diesem Kapitel werden folgende Themen behandelt:
 
-* [Header](Header.md)
-* [Navigation](Navigation.md)
-* [Main](Main.md)
-    * [Article](Artikel.md)
-    * [Section](Sektion.md)
-    * [Sidebar](Sidebar.md)
-* [Footer](Footer.md)
+- [Header](Header.md)
+- [Navigation](Navigation.md)
+- [Main](Main.md)
+  - [Article](Artikel.md)
+  - [Section](Sektion.md)
+  - [Sidebar](Sidebar.md)
+- [Footer](Footer.md)

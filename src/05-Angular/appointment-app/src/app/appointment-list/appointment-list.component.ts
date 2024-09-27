@@ -8,7 +8,7 @@ import { Appointment } from '../models/appointment';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './appointment-list.component.html',
-  styleUrl: './appointment-list.component.scss',
+  styleUrl: './appointment-list.component.scss'
 })
 export class AppointmentListComponent implements OnInit {
   newAppointmentTitle: string = '';
@@ -25,7 +25,7 @@ export class AppointmentListComponent implements OnInit {
       let newAppointment: Appointment = {
         id: Date.now(),
         title: this.newAppointmentTitle,
-        date: this.newAppointmentDate,
+        date: this.newAppointmentDate
       };
 
       this.appointments.push(newAppointment);

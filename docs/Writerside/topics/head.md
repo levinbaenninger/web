@@ -12,7 +12,7 @@ Zeichensatz-Deklarationen und vieles mehr.
 <!DOCTYPE html>
 <html>
     <head>
-        
+
     </head>
 </html>
 ```

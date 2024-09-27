@@ -20,7 +20,7 @@ Margin hat folgende Properties:
 
 Die Margin hat ebenfalls ein Shorthand:
 
-````CSS
+```CSS
 /* Apply to all four sides */
 margin: 1em;
 margin: -3px;
@@ -33,4 +33,4 @@ margin: 1em auto 2em;
 
 /* top | right | bottom | left */
 margin: 2px 1em 0 auto;
-````
+```

@@ -4,7 +4,7 @@ Directives sind Befehle, die wir im DOM platzieren, die dann Angular dazu bringe
 
 ## Attribute und Structural Directives
 
-Bei Directives gibt es zwei Arten: **Attribute Directives** und **Structural Directives**. 
+Bei Directives gibt es zwei Arten: **Attribute Directives** und **Structural Directives**.
 
 ### Attribute Directives
 
@@ -17,9 +17,9 @@ Beispiele:
 
 Attribute Directive werden so bezeichnet, da sie genau wie normale Attribute benutzt werden:
 
-````HTML
+```HTML
 <input ngClass="..." />
-````
+```
 
 > Attribute Directive müssen weder Property noch Event-Binding nutzen
 
@@ -34,7 +34,6 @@ Beispiele:
 
 Sie werden deshalb **Structural Directives** genannt, da sie die Struktur des DOM verändern:
 
-````HTML
+```HTML
 <div *ngIf="...">
-````
-
+```

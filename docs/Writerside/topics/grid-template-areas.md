@@ -8,17 +8,17 @@ Grid-Area wiederholst, wird der Inhalt auf diese Zellen ausgedehnt.
 - `<grid-area-name>` - der Name von einer Grid-Area
 - `.` - eine leere Zelle
 
-````CSS
+```CSS
 .container {
-  grid-template-areas: 
+  grid-template-areas:
     "<grid-area-name> | . | none | ..."
     "...";
 }
-````
+```
 
 ## Beispiel
 
-````CSS
+```CSS
 .item-a {
   grid-area: header;
 }
@@ -36,11 +36,11 @@ Grid-Area wiederholst, wird der Inhalt auf diese Zellen ausgedehnt.
   display: grid;
   grid-template-columns: 50px 50px 50px 50px;
   grid-template-rows: auto;
-  grid-template-areas: 
+  grid-template-areas:
     "header header header header"
     "main main . sidebar"
     "footer footer footer footer";
 }
-````
+```
 
 ![template-areas](template-areas.jpg) { width="250" }

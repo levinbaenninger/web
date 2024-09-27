@@ -1,6 +1,5 @@
 # Unit Testing
 
-
 Mit Unit Testing testen wir einzelne Teile unseres Codes auf die Korrektheit. Zum Beispiel können wir einen Unit-Test erstellen um zu verifizieren, dass eine Komponente erhaltene Daten korrekt rendert.
 
 Diese Tests können wir für fast alle Teile einer Angular-Applikation erstellen, bspw. Components, Services, Pipes, Directives, etc.
@@ -24,20 +23,20 @@ Zusätzlich nutzen wir das **Karma** Framework, um unsere Tests laufen zu lassen
 
 ## Unit-Tests schreiben
 
-Wir schreiben unsere Unit-Tests in einem sogenannten <path>spec</path>-File, z.B. <path>book-list.component.spec.ts</path>. 
+Wir schreiben unsere Unit-Tests in einem sogenannten <path>spec</path>-File, z.B. <path>book-list.component.spec.ts</path>.
 
 ### Aufbau eines Unit-Tests
 
 Ein Unit-Test besteht immer aus einer **Test-Suite**, einer Kollektion an Unit-Tests. Danach definieren wir einen einzelnen **Fall**, den wir testen wollen und darin testen wir, ob eine bestimmte Kondition erfüllt wird.
 
-````Typescript
+```Typescript
 describe('AppComponent', () => {
   it('should have a defined title', () => {
     const component = new AppComponent();
     expect(component.title).toBeDefined();
   });
 });
-````
+```
 
 - **`describe()`** - Das ist unsere Test-Suite, hier erstellen wir alle Unit-Tests für unsere `AppComponent`-Klasse
 - **`it()`** - Mit `it()` testen wir einen einzelnen Fall. Als Argument geben wir eine Beschreibung mit und eine Callback-Funktion welche überprüft, ob eine bestimmte Kondition erfüllt ist
@@ -47,9 +46,9 @@ describe('AppComponent', () => {
 
 Um nun unseren Unit-Test auszuführen, nutzen wir das folgende Kommando:
 
-````Console
+```Console
 ng test
-````
+```
 
 Dieses Kommando öffnet nun ein Browser-Fenster, in welche wir sehen können, ob unsere Tests erfolgreich waren oder nicht.
 
@@ -57,18 +56,18 @@ Dieses Kommando öffnet nun ein Browser-Fenster, in welche wir sehen können, ob
 
 Bei Services müssen wir noch ein paar Sachen zusätzlich machen, bevor wir damit anfangen können. Wir müssen nämlich noch unseren Service vor jedem Unit-Test injizieren, das machen wir so:
 
-````Typescript
+```Typescript
 let service: UserService;
 
 beforeEach(() => {
   TestBed.configureTestingModule({});
   service = TestBed.inject(UserService);
 });
-````
+```
 
 So haben wir bei jedem Test eine frische Instanz unseres Services. Danach können wir natürlich alles Mögliche testen; hier zwei Beispiele:
 
-````Typescript
+```Typescript
 it('should be created', () => {
   expect(service).toBeTruthy();
 });
@@ -77,13 +76,13 @@ it('should get users', () => {
   let users = service.getUsers();
   expect(users.length).toBeGreaterThan(0);
 });
-````
+```
 
 ### Komponenten testen
 
 Auch um Komponenten zu testen brauchen wir einige Anweisungen:
 
-````Typescript
+```Typescript
 describe('UserListComponent', () => {
   let component: UserListComponent;
   let fixture: ComponentFixture<UserListComponent>;
@@ -107,16 +106,16 @@ describe('UserListComponent', () => {
       ])
     );
   });
-  
+
   ...
 });
-````
+```
 
 > Das `providers`-Property und andere Service bezogene Dinge brauchen wir nicht zwingend, nur wenn unsere Komponente einen Service nutzt.
 
 Auch hier können wir jetzt verschiedene Fälle testen, hier sind einige Beispiele:
 
-````Typescript
+```Typescript
 it('should create', () => {
   expect(component).toBeTruthy();
 });
@@ -136,7 +135,7 @@ it('should retrieve users from the UserService when the refresh button is clicke
 
   expect(userServiceSpy).toHaveBeenCalled();
 });
-````
+```
 
 ## Weitere Informationen
 

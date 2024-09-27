@@ -7,7 +7,7 @@ die `this`-Variable verwenden.
 
 Das kann zu Problemen führen. Deshalb solltest du nie oder nur selten Pfeilfunktionen verwenden, wenn du Methoden für Objekte deklarierst.
 
-````Javascript
+```Javascript
 const levin = {
   firstName: 'Levin',
   year: 2017,
@@ -23,7 +23,7 @@ const levin = {
 
 levin.calcAge();
 levin.greet();
-````
+```
 
 Es gibt jedoch einen Anwendungsfall für Pfeilfunktionen in Objekten: Wenn wir eine Funktion in einer Methode haben und auf Eigenschaften des Objekts
 in dieser Funktion zugreifen müssen. In diesem Fall können wir zwei Dinge tun:
@@ -31,7 +31,7 @@ in dieser Funktion zugreifen müssen. In diesem Fall können wir zwei Dinge tun:
 - In der Methode eine Variable "self" zuweisen und auf "this" setzen
 - Eine Pfeilfunktion verwenden, weil sie das übergeordnete "this" verwendet
 
-````Javascript
+```Javascript
 const levin = {
   firstName: 'Levin',
   year: 2017,
@@ -56,4 +56,4 @@ const levin = {
     isMillenial2();
   },
 };
-````
+```

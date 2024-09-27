@@ -7,31 +7,31 @@ Diese Properties sagen, wo ein Item in einem Grid ist, indem es die Grid-Linien 
 - `<line>` - Eine Nummer, die auf eine nummerierte Grid-Linie verweist
 - `span <number>` - Das Element erstreckt sich über die angegebene Anzahl Grid-Tracks
 
-````CSS
+```CSS
 .item {
   grid-column-start: <number> | span <number>;
   grid-column-end: <number> | span <number>;
   grid-row-start: <number> | span <number>;
   grid-row-end: <number> | span <number>;
 }
-````
+```
 
 ## Beispiele
 
-````CSS
+```CSS
 .item-a {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3
 }
-````
+```
 
-````CSS
+```CSS
 .item-b {
     grid-column-start: 1;
     grid-colum-start: span 3;
     grid-row-start: 2;
     grid-row-end: span 2;
 }
-````
+```

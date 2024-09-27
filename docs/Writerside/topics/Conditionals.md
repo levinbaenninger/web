@@ -2,7 +2,7 @@
 
 Conditionals werden mit `@if` erstellt:
 
-````CSS
+```CSS
 @if ($i % 100 == 0) {
     @if ($i <= 500) {
       ...
@@ -12,6 +12,6 @@ Conditionals werden mit `@if` erstellt:
     }
   }
 }
-````
+```
 
 Wie wir sehen können wir auch mehrere `if`-Statements verschachteln und `else` nutzen.

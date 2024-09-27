@@ -11,10 +11,10 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
     CommonModule,
     PropertyBindingComponent,
     FormsModule,
-    EventBindingComponent,
+    EventBindingComponent
   ],
   templateUrl: './data-binding.component.html',
-  styleUrl: './data-binding.component.scss',
+  styleUrl: './data-binding.component.scss'
 })
 export class DatabindingComponent {
   string = 'This is a string';

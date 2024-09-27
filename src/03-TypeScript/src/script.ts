@@ -39,7 +39,7 @@ form.addEventListener('submit', (e: Event) => {
       tofrom: tofrom.value,
       details: details.value,
       amount: amount.valueAsNumber,
-      type: 'invoice',
+      type: 'invoice'
     };
   } else {
     doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
@@ -47,7 +47,7 @@ form.addEventListener('submit', (e: Event) => {
       tofrom: tofrom.value,
       details: details.value,
       amount: amount.valueAsNumber,
-      type: 'payment',
+      type: 'payment'
     };
   }
 

@@ -8,26 +8,26 @@ Gibt einem Element einen Namen, sodass es von einem Template referenziert werden
 - `<name>` - ein Name vom Template
 - `<row-start>` / `column-start` / `row-end` / `column-end`
 
-````CSS
+```CSS
 .item {
   grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
 }
-````
+```
 
 ## Beispiele
 
 ### Mit Name
 
-````CSS
+```CSS
 .item {
   grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
 }
-````
+```
 
 ### Als Shorthand
 
-````CSS
+```CSS
 .item-d {
   grid-area: 1 / 4 / 4 / 6;
 }
-````
+```

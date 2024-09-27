@@ -6,16 +6,16 @@ const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 const openingHours = {
   [weekdays[3]]: {
     open: 12,
-    close: 22,
+    close: 22
   },
   [weekdays[4]]: {
     open: 11,
-    close: 23,
+    close: 23
   },
   [weekdays[5]]: {
     open: 0, // Open 24 hours
-    close: 24,
-  },
+    close: 24
+  }
 };
 
 const restaurant = {
@@ -36,7 +36,7 @@ const restaurant = {
 
   order(starterIndex, mainIndex) {
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]]; // After ES6
-  },
+  }
 };
 
 console.log(restaurant);

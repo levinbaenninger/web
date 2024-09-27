@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './user-edit.component.html',
   styles: ``
 })
-export class UserEditComponent {
-
-}
+export class UserEditComponent {}

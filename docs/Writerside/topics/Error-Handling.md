@@ -2,9 +2,9 @@
 
 Gelegentlich kann es dazu kommen, das unsere API natürlich Fehler ausspuckt, wie `500` oder `404`. Diese Fehler können wir mit Angular natürlich abfangen.
 
-Um in unserem Service mögliche Fehler abzufangen hängen wir an unseren Request eine `pipe` an. Mit der `pipe`-Methode können wir unser erhaltenes Observable weiterleiten. 
+Um in unserem Service mögliche Fehler abzufangen hängen wir an unseren Request eine `pipe` an. Mit der `pipe`-Methode können wir unser erhaltenes Observable weiterleiten.
 
-````Typescript
+```Typescript
 getRecipes(): Observable<Recipe[]> {
   return this.http
     .get<Recipe[]>(`${environment.baseApiUrl}/${this.url}`)
@@ -15,7 +15,7 @@ getRecipes(): Observable<Recipe[]> {
       })
     );
 }
-````
+```
 
 Darin rufen wir die den `catchError`-Operator von RxJs auf, mit ihm verhindern wir, dass wir einen Runtime-Error bekommen und unsere App abstürzt.
 
@@ -23,7 +23,7 @@ Als argument geben wir den erhaltenen HTTP-Status-Code mit. Darin nutzen wir den
 
 **<path>error-handle.service.ts</path>**
 
-````Typescript
+```Typescript
 import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
@@ -44,5 +44,4 @@ export class ErrorHandleService {
     }
   }
 }
-````
-
+```

@@ -6,7 +6,7 @@ const levin = {
   lastName: 'Bänninger',
   age: 16,
   job: 'Student',
-  friends: ['Jonas', 'Marie', 'Peter'],
+  friends: ['Jonas', 'Marie', 'Peter']
 };
 
 // Dot notation
@@ -32,7 +32,9 @@ const interestedIn = prompt(
 if (levin[interestedIn]) {
   console.log(levin[interestedIn]);
 } else {
-  console.log('Wrong request! Choose between firstName, lastName, age, job and friends');
+  console.log(
+    'Wrong request! Choose between firstName, lastName, age, job and friends'
+  );
 }
 
 console.log(

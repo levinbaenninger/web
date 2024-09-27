@@ -7,7 +7,7 @@ import { FormsModule, NgForm } from '@angular/forms';
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './template-driven.component.html',
-  styleUrl: './template-driven.component.scss',
+  styleUrl: './template-driven.component.scss'
 })
 export class TemplateDrivenComponent {
   user = {

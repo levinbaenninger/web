@@ -2,11 +2,11 @@
 
 Der `for .. of`-Loop ist eine neue Art, um durch einen Array zu loopen. Die Syntax sieht so aus:
 
-````Javascript
+```Javascript
 for (const iterator of array) {
   // statements
 }
-````
+```
 
 Der Iterator ist dabei jedes einzelne Element, bzw. unser `i` in einer normalen Loop. Der Array ist ganz einfach der Array, durch welchen wir
 loopen wollen. Beispiel:
@@ -35,23 +35,23 @@ loopen wollen. Beispiel:
 Was ist, wenn wir auch den Index brauchen? Es gibt eine Lösungsmöglichkeit: die `entries()`-Methode. Diese gibt uns für jedes Element einen Array
 zurück, der folgende Form hat:
 
-````Console
+```Console
 [Index, Item]
-````
+```
 
 Bei unserem Beispiel würden unsere Einträge, so aussehen:
 
-````Console
+```Console
 [0, "Foccacia"]
 [1, "Bruschetta"]
 [2, "Garlic Bread"]
 ...
-````
+```
 
 ### Beispiel
 
-````Javascript
+```Javascript
 for (const [i, el] of menu.entries()) {
   console.log(`${i + 1}: ${el}`);
 }
-````
+```

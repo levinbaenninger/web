@@ -2,7 +2,7 @@
 
 Mit Parent-Selektoren können wir Pseudoklassen und -elemente mit deutlich wenige Schreibaufwand erstellen:
 
-````CSS
+```CSS
 .text-hover-#{$key} {
     transition: all 0.1s ease-in-out;
 
@@ -10,6 +10,6 @@ Mit Parent-Selektoren können wir Pseudoklassen und -elemente mit deutlich wenig
       color: $value;
     }
   }
-````
+```
 
-Um das Parent zu selektieren, nutzen wir ganz einfach das `&`. 
+Um das Parent zu selektieren, nutzen wir ganz einfach das `&`.

@@ -17,6 +17,7 @@ Ungeordnete Listen haben standardmässig Bulletpoints als Aufzählungszeichen.
 ```
 
 > **Ungeordnete Liste**:
+>
 > - Apfel
 > - Birne
 > - Banane
@@ -34,6 +35,7 @@ Geordnete Listen haben standardmässig Zahlen als Aufzählungszeichen.
 ```
 
 > **Geordnete Liste**:
+>
 > 1. Apfel
 > 2. Birne
 > 3. Banane

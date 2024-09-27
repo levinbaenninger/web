@@ -4,11 +4,10 @@ Sticky Positioning ist ein Hybrid zwischen relative und fixed Positioning. Dadur
 relativ positioniert, bis es bis zu einem bestimmten Schwellenwert (z. B. 10 Pixel vom oberen Rand des Ansichtsfensters) gescrollt wird. Danach wird
 es fixiert.
 
-````CSS
+```CSS
 .positioned {
   position: sticky;
   top: 30px;
   left: 30px;
 }
-````
-
+```

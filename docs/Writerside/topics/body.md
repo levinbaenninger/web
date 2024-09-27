@@ -12,9 +12,9 @@ Dieses Element beinhaltet jeglichen Inhalt, der auf der Seite angezeigt wird, in
     <meta charset="utf-8" />
     <title>Meine Testseite</title>
   </head>
-  
+
   <body>
-    
+
   </body>
 
 </html>

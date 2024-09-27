@@ -14,7 +14,7 @@ In diesem Kapitel werden folgende Themen behandelt:
 - [Der Nullish Coalescing Operator (??)](Der-Nullish-Coalescing-Operator.md)
 - [Die logischen Zuweisungsoperatoren](Die-Logischen-Zuweisungsoperatoren.md)
 
-### Moderne Features 
+### Moderne Features
 
 - [`for .. of`-Loop](For-Of-Loop.md)
 - [Object Literals - Verbesserungen](Object-Literals-Verbesserungen.md)

@@ -14,7 +14,7 @@ describe('UserListComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [UserListComponent],
-      providers: [UserService],
+      providers: [UserService]
     }).compileComponents();
 
     fixture = TestBed.createComponent(UserListComponent);
@@ -24,7 +24,7 @@ describe('UserListComponent', () => {
     userServiceSpy = spyOn(userService, 'getUsers').and.returnValue(
       of([
         { id: 1, name: 'John Doe' },
-        { id: 2, name: 'Maria Doe' },
+        { id: 2, name: 'Maria Doe' }
       ])
     );
   });
@@ -43,7 +43,7 @@ describe('UserListComponent', () => {
 
     userServiceSpy.calls.reset();
 
-    const button = fixture.debugElement.query(By.css('button'))
+    const button = fixture.debugElement.query(By.css('button'));
     button.triggerEventHandler('click', null);
 
     expect(userServiceSpy).toHaveBeenCalled();

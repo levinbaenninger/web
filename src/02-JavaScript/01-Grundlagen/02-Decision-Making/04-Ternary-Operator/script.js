@@ -17,6 +17,13 @@ if (age >= 18) {
 console.log(`I like to drink ${drink2}`);
 
 // if/else ladder as ternary operator
-const drink3 = age >= 18 ? 'wine 🍷' : age >= 16 ? 'beer 🍺' : age >= 10 ? 'soda 🥤' : 'water 💧';
+const drink3 =
+  age >= 18
+    ? 'wine 🍷'
+    : age >= 16
+      ? 'beer 🍺'
+      : age >= 10
+        ? 'soda 🥤'
+        : 'water 💧';
 
 console.log(`I like to drink ${drink3}`);

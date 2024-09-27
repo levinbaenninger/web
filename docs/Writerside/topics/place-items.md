@@ -6,9 +6,9 @@
 
 `<align-items>` / `<justify-items>` - Wenn der zweite Wert weggelassen wird, wird der erste Wert zu beiden Properties zugewiesen.
 
-````CSS
+```CSS
 .center {
   display: grid;
   place-items: center;
 }
-````
+```

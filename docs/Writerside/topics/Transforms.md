@@ -7,7 +7,7 @@ Das `transform` Property ist sehr mächtig, wir können damit jede mögliche Tex
 Mit der `rotate()`-Funktion kann man Elemente um einen fixen Punkt im 2D Raum drehen, ohne es zu deformieren. Darüber hinaus gibt es `rotateX()`,
 `rotateY()` und `rotateZ()`, diese drehen das Element auf der jeweiligen Achse.
 
-````CSS
+```CSS
 h1 {
 	transform: rotate(90deg);
 }
@@ -19,13 +19,13 @@ h1 {
 h1 {
 	transform: rotate(0.25turn);
 }
-````
+```
 
 ## scale()
 
 Mit der `scale()`-Funktion kann man etwas vergrössern bzw. verkleinern.
 
-````CSS
+```CSS
 h1 {
 	transform: scale(0.5)
 }
@@ -34,17 +34,17 @@ h1 {
 h1 {
 	transform: scale(0.5, 1.3)
 }
-````
+```
 
 ## translate()
 
 Mit der `translate()`-Funktion kann man Elemente verschieben.
 
-````CSS
+```CSS
 h1 {
 	transform: translate(100px, -50px)
 }
-````
+```
 
 <seealso>
     <category ref="weitere">

@@ -5,7 +5,7 @@ import {
   FormBuilder,
   FormGroup,
   ReactiveFormsModule,
-  Validators,
+  Validators
 } from '@angular/forms';
 
 @Component({
@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './form-builder.component.html',
-  styleUrl: './form-builder.component.scss',
+  styleUrl: './form-builder.component.scss'
 })
 export class FormBuilderComponent implements OnInit {
   formBuilderForm!: FormGroup;
@@ -24,10 +24,10 @@ export class FormBuilderComponent implements OnInit {
     this.formBuilderForm = this.formBuilder.group({
       userData: this.formBuilder.group({
         username: ['', Validators.required],
-        email: ['', [Validators.required, Validators.email]],
+        email: ['', [Validators.required, Validators.email]]
       }),
       password: ['', [Validators.required, Validators.minLength(8)]],
-      hobbies: this.formBuilder.array([this.formBuilder.control('')]),
+      hobbies: this.formBuilder.array([this.formBuilder.control('')])
     });
   }
 

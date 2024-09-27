@@ -2,9 +2,9 @@
 
 Absolute Positioning nimmt das Element aus dem Flow heraus. Jetzt ist das Element auf seiner eigenen Ebene.
 
-````CSS
+```CSS
 position: absolute;
-````
+```
 
 Zudem verhalten sich `top`, `bottom`, `left` und `right` jetzt anders. Sie orientieren sich jetzt am Container des Elements, hier das `div`.
 
@@ -17,9 +17,9 @@ das Element relativ zum Viewport ausgerichtet wird.
 
 Wir können aber auch den **Positioning Context** ändern indem wir einem Parent- oder Grandparent-Element folgende Regel geben:
 
-````CSS
+```CSS
 position: relative;
-````
+```
 
 ## Der z-index
 

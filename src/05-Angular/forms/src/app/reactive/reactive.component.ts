@@ -5,7 +5,7 @@ import {
   FormControl,
   FormGroup,
   ReactiveFormsModule,
-  Validators,
+  Validators
 } from '@angular/forms';
 
 @Component({
@@ -13,7 +13,7 @@ import {
   standalone: true,
   imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './reactive.component.html',
-  styleUrl: './reactive.component.scss',
+  styleUrl: './reactive.component.scss'
 })
 export class ReactiveComponent implements OnInit {
   reactiveForm!: FormGroup;
@@ -22,13 +22,13 @@ export class ReactiveComponent implements OnInit {
     this.reactiveForm = new FormGroup({
       userData: new FormGroup({
         username: new FormControl('', Validators.required),
-        email: new FormControl('', [Validators.required, Validators.email]),
+        email: new FormControl('', [Validators.required, Validators.email])
       }),
       password: new FormControl('', [
         Validators.required,
-        Validators.minLength(8),
+        Validators.minLength(8)
       ]),
-      hobbies: new FormArray([new FormControl('', Validators.required)]), // FormArray is used to create an array of form controls
+      hobbies: new FormArray([new FormControl('', Validators.required)]) // FormArray is used to create an array of form controls
     });
   }
 

@@ -49,7 +49,7 @@ const [i, , j] = nested;
 console.log(i, j); // 2 [5, 6]
 
 const [k, , [l, m]] = nested;
-console.log(k, l, m);   // 2 5 6
+console.log(k, l, m); // 2 5 6
 
 //* Default values
 const [p = 1, q = 1, r = 1] = [8, 9];

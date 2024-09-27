@@ -2,7 +2,7 @@
 
 In SCSS können wir Regeln verschachteln, um uns einige Zeilen zu sparen. Zum Beispiel wird folgender SCSS-Code
 
-````CSS
+```CSS
 .card {
   display: block;
   padding: $base-padding;
@@ -23,11 +23,11 @@ In SCSS können wir Regeln verschachteln, um uns einige Zeilen zu sparen. Zum Be
     }
   }
 }
-````
+```
 
 zu diesem CSS-Code kompiliert:
 
-````CSS
+```CSS
 .card {
   display: block;
   padding: $base-padding;
@@ -48,4 +48,4 @@ zu diesem CSS-Code kompiliert:
 .card. card-body a {
   text-decoration: underline
 }
-````
+```

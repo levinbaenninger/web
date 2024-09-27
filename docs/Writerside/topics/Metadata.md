@@ -14,4 +14,3 @@ In diesem Kapitel werden folgende Themen behandelt:
 - [Sprache festlegen](Sprache-festlegen.md)
 - [Favicon einbinden](Favicon.md)
 - [CSS und JavaScript einbinden](CSS-und-JavaScript-einbinden.md)
-

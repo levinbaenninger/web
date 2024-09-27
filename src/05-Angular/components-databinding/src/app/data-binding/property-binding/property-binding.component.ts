@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './property-binding.component.html',
-  styles: ``,
+  styles: ``
 })
 export class PropertyBindingComponent {
   @Input() name!: string;

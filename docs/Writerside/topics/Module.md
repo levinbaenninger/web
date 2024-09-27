@@ -1,18 +1,18 @@
 # Module
 
-Mit Modulen können wir unseren Code in mehrere Dateien aufteilen, das macht das Projekt deutlich strukturierter und übersichtlicher. 
+Mit Modulen können wir unseren Code in mehrere Dateien aufteilen, das macht das Projekt deutlich strukturierter und übersichtlicher.
 
 Um mit Modulen arbeite zu können müssen wir zuerst in unserem <path>tsconfig.json</path>-File die Option `module` auf `ES2022` setzen. Zusätzlich müssen wir in unserem HTML-File folgendes machen:
 
-````HTML
+```HTML
 <script type="module" src="script.js"></script>
-````
+```
 
 Nun können wir beispielsweise unser Model für eine Invoice auslagern:
 
 <path>./Models/Invoice.ts</path>
 
-````Typescript
+```Typescript
 class Invoice {
   constructor(
     private client: string,
@@ -24,7 +24,7 @@ class Invoice {
     return `${this.client} owes CHF ${this.amount} for ${this.details}`;
   }
 }
-````
+```
 
 ## Exportieren und Importieren
 
@@ -32,16 +32,16 @@ Um nun die Klasse unserer separaten Datei nutzen zu können, müssen wir diese e
 
 <path>./Models/Invoice.ts</path>
 
-````Typescript
+```Typescript
 export class Invoice {
   ...
 }
-````
+```
 
 <path>./script.ts</path>
 
-````Typescript
+```Typescript
 import { Invoice } from './Models/Invoice';
 
 ...
-````
+```

@@ -7,18 +7,18 @@ auf den Index verlassen. Um dieses Problem zu lösen, gibt es in JS eine weitere
 
 In Objekten definieren wir **Schlüssel-Werte-Paare**. Mit diesen Paaren können wir jedem Wert einen Namen geben. Ein Objekt hat die folgende Syntax:
 
-````Javascript
+```Javascript
 const objName = {
 	key1: value1,
 	key2: value2,
 	...,
 	keyN: valueN,
 };
-````
+```
 
 ## Beispiel
 
-````Javascript
+```Javascript
 const levin = {
   firstName: 'Levin',
   lastName: 'Bänninger',
@@ -26,7 +26,7 @@ const levin = {
   job: 'Student',
   friends: ['Jonas', 'Marie', 'Peter'],
 };
-````
+```
 
 > Wie du sehen kannst, können wir alle Datentypen benutzen, sogar Arrays!
 

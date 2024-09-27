@@ -2,12 +2,12 @@
 
 const rest1 = {
   restaurantName: 'Classico Italiano',
-  numGuests: 20,
+  numGuests: 20
 };
 
 const rest2 = {
   restaurantName: 'La Piazza',
-  owner: 'Giovanni Rossi',
+  owner: 'Giovanni Rossi'
 };
 
 //? Nullish Coalescing Operator
