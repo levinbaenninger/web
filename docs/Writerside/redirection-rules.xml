@@ -71,4 +71,26 @@
         <description>Created after removal of "Forms" from Webentwicklung</description>
         <accepts>Forms.html</accepts>
     </rule>
+    <rule id="5a245870">
+        <description>Created after removal of "Funktionen, die Funktionen zurückgeben" from Webentwicklung</description>
+        <accepts>Funktionen-die-Funktionen-zurückgeben.html</accepts>
+    </rule>
+    <rule id="66ec462b">
+        <description>Created after removal of "Funktionen, die Callback Funktionen annehmen" from Webentwicklung
+        </description>
+        <accepts>Funktion-die-Callback-Funktionen-annehmen.html</accepts>
+    </rule>
+    <rule id="20b8b38c">
+        <description>Created after removal of "First Class und Higher Order Funktionen" from Webentwicklung
+        </description>
+        <accepts>Higher-Order.html</accepts>
+    </rule>
+    <rule id="593ad09c">
+        <description>Created after removal of "call und apply Methoden" from Webentwicklung</description>
+        <accepts>call-und-apply-Methoden.html</accepts>
+    </rule>
+    <rule id="33af1977">
+        <description>Created after removal of "bind Methode" from Webentwicklung</description>
+        <accepts>bind-Methode.html</accepts>
+    </rule>
 </rules>

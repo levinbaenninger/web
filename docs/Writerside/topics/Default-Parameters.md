@@ -1,4 +1,4 @@
-# Default Parameters
+# Standardparameter
 
 Mit **Default Parametern** können wir Standardwerte für Parameter setzen, falls beim Aufruf der Funktion dieser Parameter ausgelassen wird.
 Standardmässig, wenn wir keine Parameter mitgeben ist der Wert `undefined`.
