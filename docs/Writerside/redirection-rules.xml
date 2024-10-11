@@ -93,4 +93,28 @@
         <description>Created after removal of "bind Methode" from Webentwicklung</description>
         <accepts>bind-Methode.html</accepts>
     </rule>
+    <rule id="64dcf6f4">
+        <description>Created after removal of "Erstellen und füllen" from Webentwicklung</description>
+        <accepts>Erstellen-und-Füllen.html</accepts>
+    </rule>
+    <rule id="473eef40">
+        <description>Created after removal of "Der Rest-Operator" from Webentwicklung</description>
+        <accepts>Der-Rest-Operator.html</accepts>
+    </rule>
+    <rule id="f742f24">
+        <description>Created after removal of "Numerische Trennzeichen" from Webentwicklung</description>
+        <accepts>Numerische-Trennzeichen.html</accepts>
+    </rule>
+    <rule id="370d627f">
+        <description>Created after removal of "BigInt" from Webentwicklung</description>
+        <accepts>BigInt.html</accepts>
+    </rule>
+    <rule id="4b055cc0">
+        <description>Created after removal of "Operationen mit Daten" from Webentwicklung</description>
+        <accepts>Operationen-mit-Daten.html</accepts>
+    </rule>
+    <rule id="28bfb7f3">
+        <description>Created after removal of "Daten erstellen" from Webentwicklung</description>
+        <accepts>Daten-erstellen.html</accepts>
+    </rule>
 </rules>

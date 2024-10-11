@@ -276,7 +276,33 @@
             <toc-element topic="IIFE.md"/>
             <toc-element topic="Closures.md"/>
         </toc-element>
-        <toc-element topic="Array-Methods.md"/>
+        <toc-element topic="Array-Methods.md">
+            <toc-element topic="Simple-Array-Methods.md"/>
+            <toc-element topic="ForEach.md"/>
+            <toc-element topic="Datentransformation.md">
+                <toc-element topic="map-Methode.md"/>
+                <toc-element topic="filter-Methode.md"/>
+                <toc-element topic="reduce-Methode.md"/>
+            </toc-element>
+            <toc-element topic="find-Methode.md"/>
+            <toc-element topic="findIndex-Methode.md"/>
+            <toc-element topic="some-und-every.md"/>
+            <toc-element topic="flat-und-flatMap-Methode.md"/>
+            <toc-element topic="Arrays-Sortieren.md"/>
+        </toc-element>
+        <toc-element topic="Zahlen-Daten-Internationalization-und-Timers.md">
+            <toc-element topic="Zahlen.md">
+                <toc-element topic="Zahlen-konvertieren-und-überprüfen.md"/>
+                <toc-element topic="Mathematik-und-Runden.md"/>
+            </toc-element>
+            <toc-element topic="Daten.md">
+            </toc-element>
+            <toc-element topic="Internationalization.md">
+                <toc-element topic="Daten-internationalisieren.md"/>
+                <toc-element topic="Zahlen-internationalisieren.md"/>
+            </toc-element>
+            <toc-element topic="Timers.md"/>
+        </toc-element>
     </toc-element>
 
     <toc-element topic="TypeScript.md">
