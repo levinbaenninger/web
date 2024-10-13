@@ -21,19 +21,3 @@ haben. Dieses Objekt dient als Einstiegspunkt in das DOM. Das `document`-Objekt 
 ```Javascript
 document.querySelector();
 ```
-
-## Inhaltsverzeichnis - DOM
-
-In diesem Kapitel werden folgende Themen behandelt:
-
-### Auswahl und Manipulation von Elementen
-
-- [`querySelector()`](querySelector.md)
-- [`getElementById()`, `getElementsByClassName()`, ...](getElementByID-getElementByClassName.md)
-- [CSS-Styles manipulieren](CSS-Styles-manipulieren.md)
-- [Mit Klassen Arbeiten](Mit-Klassen-arbeiten.md)
-
-### Events
-
-- [Click Events](Click-Events.md)
-- [Keypress Events](Keypress-Event.md)

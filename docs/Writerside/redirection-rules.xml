@@ -117,4 +117,37 @@
         <description>Created after removal of "Daten erstellen" from Webentwicklung</description>
         <accepts>Daten-erstellen.html</accepts>
     </rule>
+    <rule id="4d0f2078">
+        <description>Created after removal of "querySelector()" from Webentwicklung</description>
+        <accepts>querySelector.html</accepts>
+    </rule>
+    <rule id="6ef755ce">
+        <description>Created after removal of "getElementById(), getElementByClassName(), ..." from Webentwicklung
+        </description>
+        <accepts>getElementByID-getElementByClassName.html</accepts>
+    </rule>
+    <rule id="2d97d41c">
+        <description>Created after removal of "CSS-Styles manipulieren" from Webentwicklung</description>
+        <accepts>CSS-Styles-manipulieren.html</accepts>
+    </rule>
+    <rule id="1c90938a">
+        <description>Created after removal of "Mit Klassen arbeiten" from Webentwicklung</description>
+        <accepts>Mit-Klassen-arbeiten.html</accepts>
+    </rule>
+    <rule id="7f83c6b9">
+        <description>Created after removal of "Click Events" from Webentwicklung</description>
+        <accepts>Click-Events.html</accepts>
+    </rule>
+    <rule id="473e0ded">
+        <description>Created after removal of "Keypress Events" from Webentwicklung</description>
+        <accepts>Keypress-Event.html</accepts>
+    </rule>
+    <rule id="915573c">
+        <description>Created after removal of "Auswahl und Manipulation" from Webentwicklung</description>
+        <accepts>Auswahl-und-Manipulation.html</accepts>
+    </rule>
+    <rule id="d59c3b8">
+        <description>Created after removal of "Events" from Webentwicklung</description>
+        <accepts>Events.html</accepts>
+    </rule>
 </rules>

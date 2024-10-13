@@ -222,18 +222,6 @@
                 <toc-element topic="Stikter-Modus.md"/>
             </toc-element>
         </toc-element>
-        <toc-element topic="DOM.md">
-            <toc-element topic="Auswahl-und-Manipulation.md">
-                <toc-element topic="querySelector.md"/>
-                <toc-element topic="getElementByID-getElementByClassName.md"/>
-                <toc-element topic="CSS-Styles-manipulieren.md"/>
-                <toc-element topic="Mit-Klassen-arbeiten.md"/>
-            </toc-element>
-            <toc-element topic="Events.md">
-                <toc-element topic="Click-Events.md"/>
-                <toc-element topic="Keypress-Event.md"/>
-            </toc-element>
-        </toc-element>
         <toc-element topic="JavaScript-Behind-The-Scenes.md">
             <toc-element topic="JavaScript-Engine-und-Runtime.md"/>
             <toc-element topic="Execution-Contexts-und-der-Call-Stack.md"/>
@@ -302,6 +290,11 @@
                 <toc-element topic="Zahlen-internationalisieren.md"/>
             </toc-element>
             <toc-element topic="Timers.md"/>
+        </toc-element>
+        <toc-element topic="DOM.md">
+            <toc-element topic="Wie-das-DOM-wirklich-funktioniert.md"/>
+            <toc-element topic="Elemente-auswählen-erstellen-und-löschen.md"/>
+            <toc-element topic="Styles-Attribute-und-Klassen.md"/>
         </toc-element>
     </toc-element>
 
