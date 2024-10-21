@@ -150,4 +150,12 @@
         <description>Created after removal of "Events" from Webentwicklung</description>
         <accepts>Events.html</accepts>
     </rule>
+    <rule id="80261dd">
+        <description>Created after removal of "Components" from Webentwicklung</description>
+        <accepts>Components.html</accepts>
+    </rule>
+    <rule id="2b5d3980">
+        <description>Created after removal of "Grundlagen" from Webentwicklung</description>
+        <accepts>Grundlagen-React.html</accepts>
+    </rule>
 </rules>
