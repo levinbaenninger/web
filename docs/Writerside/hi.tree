@@ -375,8 +375,24 @@
             </toc-element>
         </toc-element>
         <toc-element topic="React.md">
-            <toc-element topic="React-Projekt-erstellen.md"/>
-            <toc-element topic="Components.md"/>
+            <toc-element topic="Grundlagen-React.md">
+                <toc-element topic="React-Projekt-erstellen.md"/>
+                <toc-element topic="Komponenten-Props-und-JSX.md">
+                    <toc-element topic="Komponenten-React.md">
+                        <toc-element topic="Root-Komponente.md"/>
+                        <toc-element topic="Styling.md"/>
+                        <toc-element topic="Listen-rendern.md"/>
+                        <toc-element topic="Conditional-Rendering.md"/>
+                        <toc-element topic="Fragments.md"/>
+                    </toc-element>
+                    <toc-element topic="JSX.md"/>
+                    <toc-element topic="Props.md">
+                        <toc-element topic="Destructuring.md"/>
+                    </toc-element>
+                </toc-element>
+                <toc-element topic="Interaktive-Komponenten.md"/>
+                <toc-element topic="State-Management.md"/>
+            </toc-element>
         </toc-element>
     </toc-element>
 

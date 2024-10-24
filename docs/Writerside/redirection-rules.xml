@@ -158,4 +158,8 @@
         <description>Created after removal of "Grundlagen" from Webentwicklung</description>
         <accepts>Grundlagen-React.html</accepts>
     </rule>
+    <rule id="62a89654">
+        <description>Created after removal of "Components" from Webentwicklung</description>
+        <accepts>Components.html</accepts>
+    </rule>
 </rules>

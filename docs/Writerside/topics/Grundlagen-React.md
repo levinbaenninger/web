@@ -1,3 +1,3 @@
-# Components
+# Grundlagen
 
 Start typing here...
