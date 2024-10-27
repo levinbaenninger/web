@@ -162,4 +162,8 @@
         <description>Created after removal of "Components" from Webentwicklung</description>
         <accepts>Components.html</accepts>
     </rule>
+    <rule id="59735955">
+        <description>Created after removal of "State vs. Props" from Webentwicklung</description>
+        <accepts>State-vs-Props.html</accepts>
+    </rule>
 </rules>

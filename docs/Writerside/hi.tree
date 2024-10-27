@@ -390,7 +390,12 @@
                         <toc-element topic="Destructuring.md"/>
                     </toc-element>
                 </toc-element>
-                <toc-element topic="Interaktive-Komponenten.md"/>
+                <toc-element topic="Interaktive-Komponenten.md">
+                    <toc-element topic="Event-Handling.md"/>
+                    <toc-element topic="State.md">
+                    </toc-element>
+                    <toc-element topic="Formulare-React.md"/>
+                </toc-element>
                 <toc-element topic="State-Management.md"/>
             </toc-element>
         </toc-element>
