@@ -166,4 +166,8 @@
         <description>Created after removal of "State vs. Props" from Webentwicklung</description>
         <accepts>State-vs-Props.html</accepts>
     </rule>
+    <rule id="5c93461a">
+        <description>Created after removal of "Grundlagen" from Webentwicklung</description>
+        <accepts>Grundlagen-React.html</accepts>
+    </rule>
 </rules>
