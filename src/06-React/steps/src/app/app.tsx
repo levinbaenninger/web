@@ -2,6 +2,14 @@ import { useState } from 'react';
 import messages from './data/messages';
 
 const App = () => {
+  return (
+    <>
+      <Steps />
+    </>
+  );
+};
+
+function Steps() {
   const [step, setStep] = useState(1);
   const [isOpen, setIsOpen] = useState(true);
 
@@ -27,28 +35,65 @@ const App = () => {
             <div className={`${step >= 3 ? 'active' : ''}`}>3</div>
           </div>
 
-          <p className="message">
-            Step {step}: {messages[step - 1]}
-          </p>
+          <StepMessage step={step}>{messages[step - 1]}</StepMessage>
 
           <div className="buttons">
-            <button
+            <Button
+              backgroundColor="#7950f2"
+              textColor="#ffffff"
               onClick={handlePrevious}
-              style={{ backgroundColor: '#7950f2', color: '#ffffff' }}
             >
-              Previous
-            </button>
-            <button
+              👈 Previous
+            </Button>
+            <Button
+              backgroundColor="#7950f2"
+              textColor="#ffffff"
               onClick={handleNext}
-              style={{ backgroundColor: '#7950f2', color: '#ffffff' }}
             >
-              Next
-            </button>
+              Next 👉
+            </Button>
           </div>
         </div>
       )}
     </>
   );
+}
+
+type ButtonProps = {
+  textColor: string;
+  backgroundColor: string;
+  onClick: () => void;
+  children: React.ReactNode;
 };
+
+function Button({
+  textColor,
+  backgroundColor,
+  onClick,
+  children,
+}: ButtonProps) {
+  return (
+    <button
+      onClick={onClick}
+      style={{ backgroundColor: backgroundColor, color: textColor }}
+    >
+      {children}
+    </button>
+  );
+}
+
+type StepMessageProps = {
+  step: number;
+  children: React.ReactNode;
+};
+
+function StepMessage({ step, children }: StepMessageProps) {
+  return (
+    <p className="message">
+      <h3>Step {step}</h3>
+      {children}
+    </p>
+  );
+}
 
 export default App;

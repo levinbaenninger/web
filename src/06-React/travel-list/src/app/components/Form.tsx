@@ -1,6 +1,10 @@
 import { FormEvent, useState } from 'react';
 
-const Form = () => {
+type FormProps = {
+  onAddItem: (item: Item) => void;
+};
+
+const Form = ({ onAddItem }: FormProps) => {
   const [description, setDescription] = useState('');
   const [quantity, setQuantity] = useState(1);
 
@@ -9,7 +13,7 @@ const Form = () => {
 
     if (!description.trim()) return;
 
-    const item = { description, quantity, packed: false, id: Date.now() };
+    onAddItem({ description, quantity, packed: false, id: Date.now() });
 
     setDescription('');
     setQuantity(1);
