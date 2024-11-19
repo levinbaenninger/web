@@ -33,25 +33,21 @@ Das heisst, das ganze `<div>` mit dem Inhalt rendern wir nur, wenn die Variable 
 Mit dem Ternary-Operator können wir auch etwas anzeigen, wenn der Wert falsy ist.
 
 ```tsx
-export function Menu() {
-  return (
-    <main className="menu">
-      <h2>Our Menu</h2>
+return (
+  <main className="menu">
+    <h2>Our Menu</h2>
 
-      {pizzas.length > 0 ? (
-        <ul className="pizzas">
-          {pizzas.map((pizza) => (
-            <Pizza key={pizza.name} pizza={pizza} />
-          ))}
-        </ul>
-      ) : (
-        <p>Sorry, we're still working on our menu</p>
-      )}
-    </main>
-  );
-}
-
-export default Menu;
+    {pizzas.length > 0 ? (
+      <ul className="pizzas">
+        {pizzas.map((pizza) => (
+          <Pizza key={pizza.name} pizza={pizza} />
+        ))}
+      </ul>
+    ) : (
+      <p>Sorry, we're still working on our menu</p>
+    )}
+  </main>
+);
 ```
 
 In diesem Beispiel werden also je nachdem die Pizzen angezeigt oder ein Text über den aktuellen Status des Menüs.
@@ -61,19 +57,15 @@ In diesem Beispiel werden also je nachdem die Pizzen angezeigt oder ein Text üb
 Dasselbe funktioniert natürlich auch, um Text oder Klassen konditionell zu setzen.
 
 ```tsx
-export function Pizza({ pizza }: PizzaProps) {
-  return (
-    <li className={`pizza ${pizza.soldOut ? 'sold-out' : ''}`}>
-      <img src={pizza.photoName} alt={pizza.name} />
-      <div>
-        <h3>{pizza.name}</h3>
-        <p>{pizza.ingredients}</p>
-        <span>{pizza.soldOut ? 'Sold out' : `$${pizza.price}`}</span>
-      </div>
-    </li>
-  );
-}
-
-export default Pizza;
+return (
+  <li className={`pizza ${pizza.soldOut ? 'sold-out' : ''}`}>
+    <img src={pizza.photoName} alt={pizza.name} />
+    <div>
+      <h3>{pizza.name}</h3>
+      <p>{pizza.ingredients}</p>
+      <span>{pizza.soldOut ? 'Sold out' : `$${pizza.price}`}</span>
+    </div>
+  </li>
+);
 ```
 

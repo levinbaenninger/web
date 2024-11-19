@@ -10,7 +10,7 @@ Mit React können wir unserem JSX **Event-Handler** hinzufügen. Event-Handler s
 
 Um einen Event-Handler hinzuzufügen, definieren wir zunächst eine Funktion und übergeben diese dann als Prop an das entsprechende JSX-Tag.
 
-<pre class="language-tsx"><code class="lang-tsx">export function Button() {
+<pre class="language-tsx"><code class="lang-tsx">const Button = () => {
   const handleClick = () => alert('You clicked me!');
 
   return (
@@ -49,7 +49,7 @@ Wir übergeben dazu ein Prop, die die Komponente von der übergeordneten Kompone
 {% tab title="Button" %}
 {% code title="Button.tsx" %}
 ```tsx
-export function Button({ onClick, children }) {
+const Button = ({ onClick, children }) => {
   return (
     <button onClick={onClick}>
       {children}
@@ -65,7 +65,7 @@ export default Button;
 {% tab title="Upload Button" %}
 {% code title="UploadButton.tsx" %}
 ```tsx
-export function UploadButton() {
+const UploadButton = () => {
   return (
     <Button onClick={() => alert('Uploading')}>
       Play "{movieName}"
@@ -81,7 +81,7 @@ export default UploadButton;
 {% tab title="Play Button" %}
 {% code title="PlayButton.tsx" %}
 ```tsx
-export function PlayButton({ movieName }) {
+const PlayButton = ({ movieName }) => {
   const handlePlayClick = () => alert(`Playing ${moviename}!`);
 
   return (
@@ -99,7 +99,7 @@ export default PlayButton;
 {% tab title="Toolbar" %}
 {% code title="Toolbar.tsx" %}
 ```tsx
-export function Toolbar() {
+const Toolbar = () => {
   return (
     <div>
       <PlayButton movieName="Kiki's Delivery Service" />
@@ -122,11 +122,5 @@ Hier stellt die `Toolbar`-Komponente einen `PlayButton` und einen `UploadButton`
 Schliesslich akzeptiert die`Button`-Komponente eine Eigenschaft namens `onClick`. Sie übergibt dieses Prop direkt an den eingebauten Browser `<button>` mit `onClick={onClick}`. Dadurch wird React angewiesen, die übergebene Funktion bei einem Klick aufzurufen.
 
 Wenn man ein [Designsystem](https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969) verwendet, ist es üblich, dass Komponenten wie Schaltflächen zwar Styling enthalten, aber kein Verhalten festlegen. Stattdessen werden Komponenten wie `PlayButton` und `UploadButton` Event-Handler weitergeben.
-
-{% hint style="info" %}
-
-{% endhint %}
-
-
 
 [^1]: Hier wird die Methode `handleClick` ausgeführt, wenn ein Klick stattfindet

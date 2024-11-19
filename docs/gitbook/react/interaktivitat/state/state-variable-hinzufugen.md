@@ -57,11 +57,13 @@ const App = () => {
     </div>
   );
 };
+
+export default App;
 ```
 
-## Triff deinen ersten Hook
+## Dein erster Hook
 
-In React, `useState`, und ander Funktionen, die mit "`use`" starten, werden **Hook** genannt.&#x20;
+In React, `useState`, und andere Funktionen, die mit "`use`" starten, werden **Hook** genannt.&#x20;
 
 _Hooks_ sind spezielle Funktionen, die nur verfügbar sind, während React am [Rendern ](https://react.dev/learn/render-and-commit#step-1-trigger-a-render)ist. Sie lassen uns in verschiedene React Features "einhaken".
 

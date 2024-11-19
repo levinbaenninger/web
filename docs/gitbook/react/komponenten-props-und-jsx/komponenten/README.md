@@ -16,7 +16,7 @@ Komponenten sind das fundamentalste Konzept in React, da React-Applikationen vol
 Eine Komponente ist im Grunde genommen eine einfache Funktion, die uns Markup zurückgibt:
 
 ```tsx
-export function Pizza() {
+const Pizza = () => {
   return <div>Pizza</div>;
 }
 
@@ -28,7 +28,7 @@ export default Pizza;
 Die Komponente können wir nun in unserer `<App />`-Komponente nutzen:
 
 ```tsx
-export function App() {
+const App = () => {
   return <Pizza />;
 }
 
@@ -40,7 +40,7 @@ export default App;
 Nun wird der Text _Pizza_ auf unserer Webseite angezeigt. Natürlich können wir nicht nur Text in unserer Komponenten anzeigen, sondern auch alle anderen HTML-Tags, wie **Bilder**, **Videos**, **Code**, etc.
 
 ```tsx
-export function Pizza() {
+const Pizza = () => {
   return  return (
     <div>
       <img src="/pizzas/spinaci.jpg" alt="Pizza Spinaci" />
@@ -58,7 +58,7 @@ export default Pizza;
 In unseren Komponenten können wir natürlich auch ganz normalen JavaScript-Code schreiben und die Variablen dann in unserem Markup nutzen.
 
 ```tsx
-export function Footer() {
+const Footer = () => {
   const hour = new Date().getHours();
   const openHour = 8;
   const closeHour = 22;

@@ -33,7 +33,7 @@ type PizzaProps = {
   price: number;
 };
 
-function Pizza(props: PizzaProps) {
+const Pizza = (props: PizzaProps) => {
   return (
     <div>
       <img src={props.photoName} alt={props.name} />
@@ -42,6 +42,8 @@ function Pizza(props: PizzaProps) {
     </div>
   );
 }
+
+export default Pizza;
 ```
 
 {% hint style="info" %}

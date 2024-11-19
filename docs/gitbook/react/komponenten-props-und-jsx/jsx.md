@@ -7,8 +7,7 @@ icon: code
 JSX ist eine **deklarative** Syntax, um zu beschreiben, wie eine Komponente aussieht und wie sie funktioniert. Das heisst Komponenten müssen einen Block JSX zurückgeben.
 
 ```tsx
-export function Question({ question }: QuestionProps)
-{
+const Question = ({ question }: QuestionProps) => {
   const [upVotes, setUpVotes] = useState(0);
   const upVote = () => setUpVotes((v) => v + 1);
 

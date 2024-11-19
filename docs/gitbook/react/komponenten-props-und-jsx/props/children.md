@@ -30,7 +30,7 @@ Das `children`-Prop erhält die Daten, die zwischen dem öffnenden uns schliesse
 
 ## `children`-Prop annehmen
 
-<pre class="language-tsx"><code class="lang-tsx">export function Button({ textColor, backgroundColor, onClick, <a data-footnote-ref href="#user-content-fn-3">children</a> }) {
+<pre class="language-tsx"><code class="lang-tsx">const Button = ({ textColor, backgroundColor, onClick, <a data-footnote-ref href="#user-content-fn-3">children</a> }) => {
   return (
     &#x3C;button
       onClick={onClick}
@@ -40,6 +40,8 @@ Das `children`-Prop erhält die Daten, die zwischen dem öffnenden uns schliesse
     &#x3C;/button>
   );
 }
+
+export default Button;
 </code></pre>
 
 

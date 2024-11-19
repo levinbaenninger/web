@@ -7,7 +7,7 @@ icon: list
 In React können wir mit der [`.map()`-Methode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/map) Listen bzw. Arrays anzeigen lassen. So können wir z.B. für jedes Objekt in einem Array eine Komponente anzeigen lassen.
 
 ```tsx
-export function Menu() {
+const Menu = () => {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
