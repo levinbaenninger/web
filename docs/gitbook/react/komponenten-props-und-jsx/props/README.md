@@ -12,7 +12,7 @@ Props werden genutzt, um Daten von einer **Parent-Komponente zu einer Child-Komp
 
 Die Daten übergeben wir einfach über ein Attribut unserer Komponente:
 
-```tsx
+```jsx
 <Pizza
   name="Pizza Spinaci"
   ingredients="Tomato, mozarella, spinach, and ricotta cheese"
@@ -25,15 +25,8 @@ Die Daten übergeben wir einfach über ein Attribut unserer Komponente:
 
 In unserer Child-Komponente können wir ein Parameter namens `props` annehmen.
 
-```tsx
-type PizzaProps = {
-  name: string;
-  ingredients: string;
-  photoName: string;
-  price: number;
-};
-
-const Pizza = (props: PizzaProps) => {
+```jsx
+const Pizza = (props) => {
   return (
     <div>
       <img src={props.photoName} alt={props.name} />
@@ -49,3 +42,32 @@ export default Pizza;
 {% hint style="info" %}
 Wenn wir mit TypeScript arbeiten müssen wir noch den Typ für die Props definieren.
 {% endhint %}
+
+## Prop-Types
+
+Mit Prop-Types können wir Props validieren und Fehler abfangen. Prop-Types ist eine Library die wir zuerst installieren müssen:
+
+```bash
+npm install -D prop-types
+```
+
+Danach können wir unsere Props wie folgt definieren:
+
+<pre class="language-jsx"><code class="lang-jsx">Pizza.propTypes = {
+  <a data-footnote-ref href="#user-content-fn-1">pizza</a>: PropTypes.shape({
+    name: PropTypes.<a data-footnote-ref href="#user-content-fn-2">string</a>.<a data-footnote-ref href="#user-content-fn-3">isRequired</a>,
+    ingredients: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    photoName: PropTypes.string.isRequired,
+    soldOut: PropTypes.bool.isRequired,
+  }).isRequired,
+};
+</code></pre>
+
+Für mehr Informationen konsultiere die [offizielle Dokumentation](https://www.npmjs.com/package/prop-types?activeTab=readme).
+
+[^1]: Wir definieren ein Prop `pizza` welches ein Objekt ist mit den Properties `name`, `soldOut`, etc.
+
+[^2]: Datentyp des Properties
+
+[^3]: Muss zwingend vorhanden sein

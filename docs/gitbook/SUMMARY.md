@@ -22,4 +22,6 @@
     * [Was ist State?](react/interaktivitat/state/was-ist-state.md)
     * [State-Variable hinzufügen](react/interaktivitat/state/state-variable-hinzufugen.md)
   * [Formulare](react/interaktivitat/formulare.md)
-* [State Management](react/state-management.md)
+* [State Management](react/state-management/README.md)
+  * [State anheben](react/state-management/state-anheben.md)
+  * [Derived State](react/state-management/derived-state.md)

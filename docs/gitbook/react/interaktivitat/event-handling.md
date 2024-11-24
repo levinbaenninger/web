@@ -47,7 +47,7 @@ Wir übergeben dazu ein Prop, die die Komponente von der übergeordneten Kompone
 
 {% tabs %}
 {% tab title="Button" %}
-{% code title="Button.tsx" %}
+{% code title="Button.jsx" %}
 ```tsx
 const Button = ({ onClick, children }) => {
   return (
@@ -63,7 +63,7 @@ export default Button;
 {% endtab %}
 
 {% tab title="Upload Button" %}
-{% code title="UploadButton.tsx" %}
+{% code title="UploadButton.jsx" %}
 ```tsx
 const UploadButton = () => {
   return (
@@ -79,7 +79,7 @@ export default UploadButton;
 {% endtab %}
 
 {% tab title="Play Button" %}
-{% code title="PlayButton.tsx" %}
+{% code title="PlayButton.jsx" %}
 ```tsx
 const PlayButton = ({ movieName }) => {
   const handlePlayClick = () => alert(`Playing ${moviename}!`);
@@ -97,7 +97,7 @@ export default PlayButton;
 {% endtab %}
 
 {% tab title="Toolbar" %}
-{% code title="Toolbar.tsx" %}
+{% code title="Toolbar.jsx" %}
 ```tsx
 const Toolbar = () => {
   return (

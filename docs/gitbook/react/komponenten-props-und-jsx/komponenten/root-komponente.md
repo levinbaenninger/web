@@ -8,18 +8,16 @@ Die Root-Komponente rendert unsere komplette Seite. Diese sieht wie folgt aus:
 
 ```tsx
 import { StrictMode } from 'react';
-import * as ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+import App from './components/App.jsx';
+import './styles.css';
 
-import App from './app/app';
-
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>
 );
+
 ```
 
 Hier wird also das Element mit der ID `root` aus unserem DOM genommen und daraus eine React-Root erstellt. Auf dieser `root` können wir jetzt unsere Standardkomponente `<App />` rendern.

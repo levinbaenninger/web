@@ -4,10 +4,10 @@ icon: wrench
 
 # Destructuring
 
-Bei Props kann es mühsam sein, wenn wir immer wieder `props` schreiben muss, um auf die Daten zuzugreifen. Um das zu lösen, können wir [Destructuring ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring\_assignment)nutzen.
+Bei Props kann es mühsam sein, wenn wir immer wieder `props` schreiben muss, um auf die Daten zuzugreifen. Um das zu lösen, können wir [Destructuring ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)nutzen.
 
 ```tsx
-const Pizza({ pizza }: PizzaProps) => {
+const Pizza({ pizza }) => {
   if (pizza.soldOut) {
     return (
       <li className="pizza sold-out">

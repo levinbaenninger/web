@@ -10,11 +10,11 @@ In React gibt es mehrere Möglichkeiten Formulare zu erstellen, Controlled, Unco
 
 Mit **Controlled Forms** speichern wir jedes Input-Field in einer State-Variable und setzen der Wert jedes Inputs nach jedem Re-Render der Komponente. Das gibt uns mehr Möglichkeiten, um Validierungen oder Manipulationen vorzunehmen (bspw. um Telefonnummern korrekt zu formatieren).
 
-<pre class="language-tsx"><code class="lang-tsx">const Form = ({ onAddItem }: FormProps) => {
+<pre class="language-jsx"><code class="lang-jsx">const Form = ({ onAddItem }) => {
   <a data-footnote-ref href="#user-content-fn-1">const [description, setDescription] = useState('');</a>
   <a data-footnote-ref href="#user-content-fn-2">const [quantity, setQuantity] = useState(1);</a>
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     <a data-footnote-ref href="#user-content-fn-3">if (!description.trim()) return;</a>
@@ -59,15 +59,15 @@ export default Form;
 
 Anstatt für jedes Input-Field eine eigene State-Variable zu erstellen, können wir ein einzelnes Objekt nutzen.
 
-<pre class="language-tsx"><code class="lang-tsx">const Form = ({ onAddItem }: FormProps) => {
-  <a data-footnote-ref href="#user-content-fn-11">const [item, setItem] = useState&#x3C;Item></a>({
+<pre class="language-tsx"><code class="lang-tsx">const Form = ({ onAddItem }) => {
+  <a data-footnote-ref href="#user-content-fn-11">const [item, setItem] = useState</a>({
     description: '',
     quantity: 1,
     packed: false,
     id: Date.now(),
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     if (!item.description.trim()) return;
@@ -77,7 +77,7 @@ Anstatt für jedes Input-Field eine eigene State-Variable zu erstellen, können 
     setItem({ description: '', quantity: 1, packed: false, id: Date.now() });
   };
 
-  <a data-footnote-ref href="#user-content-fn-12">const handleChange = (e: ChangeEvent&#x3C;HTMLInputElement | HTMLSelectElement>)</a> => {
+  <a data-footnote-ref href="#user-content-fn-12">const handleChange = (e)</a> => {
     const { name, value } = e.target;
     setItem((prevItem) => ({ ...prevItem, [name]: value }));
   };
@@ -120,7 +120,17 @@ export default Form;
 TODO
 {% endhint %}
 
+## Uncontrolled Forms
 
+{% hint style="danger" %}
+TODO
+{% endhint %}
+
+## useForm-Hook
+
+{% hint style="danger" %}
+TODO
+{% endhint %}
 
 [^1]: State-Variable für das erste Input-Field
 

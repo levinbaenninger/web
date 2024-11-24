@@ -41,7 +41,7 @@ Nun wird der Text _Pizza_ auf unserer Webseite angezeigt. Natürlich können wir
 
 ```tsx
 const Pizza = () => {
-  return  return (
+  return (
     <div>
       <img src="/pizzas/spinaci.jpg" alt="Pizza Spinaci" />
       <h2>Pizza Spinaci</h2>
