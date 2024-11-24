@@ -40,13 +40,6 @@
 
         <!--    Optionally add additional cards and links to topics that are not in this section but may be relevant.    -->
         <misc>
-            <cards>
-                <title>Angular</title>
-                <a href="Angular.md">Angular</a>
-                <a href="Grundlegendes-Angular.md">Grundlagen</a>
-                <a href="Komponenten.md">Components</a>
-                <a href="Data-Binding.md">Data Binding</a>
-            </cards>
 
             <links>
                 <group>
