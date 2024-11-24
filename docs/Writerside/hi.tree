@@ -331,48 +331,19 @@
         <toc-element topic="Mixins.md"/>
     </toc-element>
     <toc-element topic="Frameworks.md">
-        <toc-element topic="Angular.md">
-            <toc-element topic="Grundlegendes-Angular.md">
-                <toc-element topic="Installation.md"/>
-                <toc-element topic="Applikation-erstellen.md"/>
-                <toc-element topic="Grundaufbau.md"/>
-            </toc-element>
-            <toc-element topic="Komponenten.md"/>
-            <toc-element topic="Data-Binding.md">
-                <toc-element topic="String-Interpolation.md"/>
-                <toc-element topic="Property-Binding.md"/>
-                <toc-element topic="Event-Binding.md"/>
-                <toc-element topic="Two-Way-Binding.md"/>
-            </toc-element>
-            <toc-element topic="Directives.md">
-                <toc-element topic="Attribute-Directives.md"/>
-                <toc-element topic="Structural-Directives.md"/>
-            </toc-element>
-            <toc-element topic="Services.md"/>
-            <toc-element topic="Routing.md">
-                <toc-element topic="Routes-aufsetzen-konfigurieren-und-aufrufen.md"/>
-                <toc-element topic="Navigation-mittels-Links.md"/>
-                <toc-element topic="Routingparameter.md">
-                    <toc-element topic="Query-Parameter.md"/>
-                    <toc-element topic="Fragements.md"/>
-                </toc-element>
-                <toc-element topic="Child-Routes.md"/>
-                <toc-element topic="Umleitungen-Weiterleitungen.md"/>
-                <toc-element topic="Aktive-Pfade.md"/>
-            </toc-element>
-            <toc-element topic="Formulare.md">
-                <toc-element topic="Template-Driven.md"/>
-                <toc-element topic="Reactive.md"/>
-            </toc-element>
-            <toc-element topic="Pipes.md"/>
-            <toc-element topic="HTTP.md">
-                <toc-element topic="Error-Handling.md"/>
-                <toc-element topic="Daten-aktualisieren.md"/>
-            </toc-element>
-            <toc-element topic="Unit-Testing.md"/>
-            <toc-element topic="Verschiedenes-ng.md">
-                <toc-element topic="Referenzen-im-HTML.md"/>
-            </toc-element>
+        <toc-element topic="Angular-2.md">
+            <toc-element topic="Angular-CLI.md"/>
+            <toc-element topic="Components-und-Templates.md"/>
+            <toc-element topic="Directives-2.md"/>
+            <toc-element topic="Pipes-2.md"/>
+            <toc-element topic="Services-und-Dependency-Injection.md"/>
+            <toc-element topic="Change-Detection.md"/>
+            <toc-element topic="RxJS.md"/>
+            <toc-element topic="HTTP-Requests.md"/>
+            <toc-element topic="Formulare-2.md"/>
+            <toc-element topic="Routing-2.md"/>
+            <toc-element topic="Code-Splitting-und-Deferrable-Views.md"/>
+            <toc-element topic="Deploying-CSR-SSR-SGA.md"/>
         </toc-element>
         <toc-element topic="React.md">
             <toc-element topic="React-Projekt-erstellen.md"/>
@@ -400,7 +371,12 @@
                 <toc-element topic="State-hochheben.md"/>
                 <toc-element topic="State-ableiten.md"/>
             </toc-element>
-            <toc-element topic="React-Cheetsheet-M294.md"/>
+            <toc-element topic="Komposition-und-Reusability.md">
+                <toc-element topic="UI-in-Komponenten-aufteilen.md"/>
+                <toc-element topic="Kategorien-von-Komponenten.md"/>
+                <toc-element topic="Prop-Drilling.md"/>
+                <toc-element topic="Komposition.md"/>
+            </toc-element>
         </toc-element>
     </toc-element>
 

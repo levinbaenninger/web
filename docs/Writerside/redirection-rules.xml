@@ -170,4 +170,8 @@
         <description>Created after removal of "Grundlagen" from Webentwicklung</description>
         <accepts>Grundlagen-React.html</accepts>
     </rule>
+    <rule id="21754e20">
+        <description>Created after removal of "React Cheatsheet (M294)" from Webentwicklung</description>
+        <accepts>React-Cheetsheet-M294.html</accepts>
+    </rule>
 </rules>
