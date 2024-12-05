@@ -121,7 +121,53 @@ const Accordion = () => {
 {% step %}
 ### State-Variable zur gemeinsamen Eltern-Komponente hinzufügen
 
+Wenn wir den State anheben verändert es oft die Art und Weise, wie der Zustand gespeichert wird.
 
+In diesem Fall sollte immer nur ein `Panel` gleichzeitig aktiv sein. Das bedeutet, dass die gemeinsame Elternkomponente, das `Accordion`, verfolgen muss, welches Panel gerade aktiv ist. Anstatt einen booleschen Wert zu verwenden, könnte sie eine Zahl als Index des aktiven Panels für die Zustandsvariable nutzen:
+
+```jsx
+const [activeIndex, setActiveIndex] = useState(0);
+```
+
+Wenn `activeIndex` den Wert `0` hat, ist das erste `Panel` aktiv, und wenn der Wert `1` ist, ist das zweite `Panel` aktiv.
+
+Ein Klick auf den "Show"-Button in einem der `Panel`s muss den aktiven Index im Accordion ändern. Ein Panel kann den `activeIndex`-Zustand nicht direkt setzen, weil dieser innerhalb des Accordions definiert ist. Die Accordion-Komponente muss explizit dem Panel erlauben, ihren Zustand zu ändern, indem sie einen [Event-Handler als Prop](../interaktivitat/event-handling.md#event-handlers-als-props) weitergibt:
+
+{% code title="Accordion.jsx" %}
+```jsx
+<>
+  <Panel
+    isActive={activeIndex === 0}
+    onShow={() => setActiveIndex(0)}
+  >
+    ...
+  </Panel>
+  <Panel
+    isActive={activeIndex === 1}
+    onShow={() => setActiveIndex(1)}
+  >
+    ...
+  </Panel>
+</>
+```
+{% endcode %}
+
+Der `Button` innerhalb des `Panel`s wird nun das `onShow`-Prop als seinen Event-Handler nutzen:
+
+{% code title="Panel.jsx" %}
+```jsx
+<section className="panel">
+  <h3>{title}</h3>
+    {isActive ? (
+      <p>{children}</p>
+    ) : (
+    <button onClick={onShow}>
+      Show
+    </button>
+  )}
+</section>
+```
+{% endcode %}
 {% endstep %}
 {% endstepper %}
 

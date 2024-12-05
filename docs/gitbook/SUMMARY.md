@@ -25,3 +25,7 @@
 * [State Management](react/state-management/README.md)
   * [State anheben](react/state-management/state-anheben.md)
   * [Derived State](react/state-management/derived-state.md)
+* [Komposition und Reusability](react/komposition-und-reusability/README.md)
+  * [Komponentenstrukturierung](react/komposition-und-reusability/komponentenstrukturierung.md)
+  * [Prop Drilling](react/komposition-und-reusability/prop-drilling.md)
+  * [Komposition](react/komposition-und-reusability/komposition.md)
