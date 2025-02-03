@@ -29,6 +29,7 @@
   * [Object Methods](javascript/objekte-und-datenstrukturen/object-methods.md)
   * [Destructuring](javascript/objekte-und-datenstrukturen/destructuring.md)
   * [Sets und Maps](javascript/objekte-und-datenstrukturen/sets-und-maps.md)
+* [Strings](javascript/strings.md)
 * [Moderne JavaScript-Features](javascript/moderne-javascript-features/README.md)
   * [Template Literals](javascript/moderne-javascript-features/template-literals.md)
   * [Optionale Verkettung](javascript/moderne-javascript-features/optionale-verkettung.md)

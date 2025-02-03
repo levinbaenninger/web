@@ -1,0 +1,6 @@
+---
+icon: text-size
+---
+
+# Strings
+
