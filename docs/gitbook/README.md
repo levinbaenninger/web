@@ -1,5 +1,6 @@
 ---
 icon: hand-wave
+description: Diese Dokumentation befasst sich mit der Webentwicklung.
 layout:
   title:
     visible: true
@@ -15,3 +16,10 @@ layout:
 
 # Willkommen
 
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}

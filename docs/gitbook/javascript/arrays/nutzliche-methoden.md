@@ -1,0 +1,6 @@
+---
+icon: toolbox
+---
+
+# Nützliche Methoden
+

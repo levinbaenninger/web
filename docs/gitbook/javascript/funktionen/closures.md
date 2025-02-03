@@ -1,0 +1,6 @@
+---
+icon: lambda
+---
+
+# Closures
+

@@ -1,0 +1,6 @@
+---
+icon: brain-circuit
+---
+
+# Kurzschlussausdrücke
+

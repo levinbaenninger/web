@@ -1,0 +1,6 @@
+---
+icon: binary
+---
+
+# Datentypen
+
