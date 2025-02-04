@@ -1,5 +1,5 @@
 ---
-icon: question
+icon: react
 ---
 
 # Was ist React?

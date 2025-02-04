@@ -1,5 +1,6 @@
 ---
 icon: function
+description: Hier lernst du alles über Funktionen in JavaScript.
 ---
 
 # Funktionen

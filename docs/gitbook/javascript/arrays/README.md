@@ -1,5 +1,8 @@
 ---
 icon: brackets-square
+description: >-
+  Arrays sind wie ein grosser Container, in den wir Variablen werfen können, um
+  sie später zu referenzieren.
 ---
 
 # Arrays
@@ -12,8 +15,8 @@ icon: brackets-square
 [iteration-uber-arrays.md](iteration-uber-arrays.md)
 {% endcontent-ref %}
 
-{% content-ref url="sortieren-und-filtern.md" %}
-[sortieren-und-filtern.md](sortieren-und-filtern.md)
+{% content-ref url="sortieren.md" %}
+[sortieren.md](sortieren.md)
 {% endcontent-ref %}
 
 {% content-ref url="nutzliche-methoden.md" %}
