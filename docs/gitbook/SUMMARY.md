@@ -52,8 +52,6 @@
   * [Internationalisierung](javascript/zahlen-daten-und-internationalisierung/internationalisierung.md)
 * [JavaScript Engine und Performance](javascript/javascript-engine-und-performance/README.md)
   * [Execution Context und Call Stack](javascript/javascript-engine-und-performance/execution-context-und-call-stack.md)
-  * [Memory Management und Garbage Collection](javascript/javascript-engine-und-performance/memory-management-und-garbage-collection.md)
-  * [Performance-Optimierung](javascript/javascript-engine-und-performance/performance-optimierung.md)
 
 ## React
 
