@@ -1,5 +1,6 @@
 ---
 icon: sparkle
+description: Hier lernst du alles über die neuesten JavaScript-Features.
 ---
 
 # Moderne JavaScript-Features
@@ -10,10 +11,6 @@ icon: sparkle
 
 {% content-ref url="nullish-coalescing-operator.md" %}
 [nullish-coalescing-operator.md](nullish-coalescing-operator.md)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="spread-und-rest-operator.md" %}

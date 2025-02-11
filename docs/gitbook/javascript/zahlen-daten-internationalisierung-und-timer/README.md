@@ -1,8 +1,9 @@
 ---
 icon: hashtag
+description: Hier lernst du alles rund um Zahlen, Daten, Internationalization und Timer.
 ---
 
-# Zahlen, Daten und Internationalisierung
+# Zahlen, Daten, Internationalisierung und Timer
 
 {% content-ref url="mathematische-operationen.md" %}
 [mathematische-operationen.md](mathematische-operationen.md)

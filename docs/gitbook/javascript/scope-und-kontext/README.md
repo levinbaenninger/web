@@ -1,5 +1,6 @@
 ---
 icon: expand
+description: Hier lernst du alles rund um den Scope und den Kontext.
 ---
 
 # Scope und Kontext

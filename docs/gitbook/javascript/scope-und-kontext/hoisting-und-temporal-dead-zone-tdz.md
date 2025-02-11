@@ -22,4 +22,4 @@ Jedoch funktioniert Hoisting nicht für alle Variablentypen gleich:
 
 ## Temporal Dead Zone (TDZ)﻿ <a href="#temporal-dead-zone-tdz" id="temporal-dead-zone-tdz"></a>
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Die Temporal Dead Zone</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Die Temporal Dead Zone</p></figcaption></figure>

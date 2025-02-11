@@ -1,5 +1,6 @@
 ---
 icon: engine
+description: Hier lernst du alles über die JavaScript Engine und Performance.
 ---
 
 # JavaScript Engine und Performance
@@ -10,7 +11,7 @@ Die JavaScript-Engine ist das Programm, das unseren Code **ausführt**. Jeder Br
 
 Sie hat einen **Call Stack** und einen **Heap**. Auf dem Call Stack wird unser gesamter Code unter Verwendung des sogenannten Ausführungskontexts ausgeführt, während auf dem Heap unsere Objekte gespeichert werden.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Call Stack und Heap</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption><p>Call Stack und Heap</p></figcaption></figure>
 
 ### Kompilation vs. Interpretation﻿ <a href="#kompilation-vs-interpretation" id="kompilation-vs-interpretation"></a>
 
@@ -20,19 +21,19 @@ Ein Prozessor versteht nur Nullen und Einsen, deshalb muss jedes einzelne Comput
 
 Bei der Kompilierung wird der gesamte Quellcode auf einmal in Maschinencode umgewandelt. Dieser Maschinencode wird dann in eine portable Datei geschrieben, die auf jedem Computer ausgeführt werden kann. Wir haben hier also zwei Schritte:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Kompilation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Kompilation</p></figcaption></figure>
 
 #### **Interpretation**﻿
 
 Ein Interpreter durchläuft den Quellcode und führt ihn Zeile für Zeile aus. JavaScript war früher eine rein interpretierte Sprache, aber das Problem mit interpretierten Sprachen ist, dass sie viel, viel langsamer sind als kompilierte Sprachen.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Interpretation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Interpretation</p></figcaption></figure>
 
 #### **Just-In-Time (JIT) Kompilation**﻿
 
 JavaScript verwendet jetzt eine sogenannte JIT-Kompilierung. Das ist eine Mischung aus Kompilierung und Interpretation. Dabei wird der gesamte Code auf einmal in Maschinencode umgewandelt und dann sofort ausgeführt.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Die JIT Kompilation von JavaScript﻿ <a href="#die-jit-kompilation-von-javascript" id="die-jit-kompilation-von-javascript"></a>
 
