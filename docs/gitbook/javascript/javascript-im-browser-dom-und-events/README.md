@@ -4,8 +4,8 @@ icon: chrome
 
 # JavaScript im Browser (DOM und Events)
 
-{% content-ref url="einfuhrung-in-das-dom.md" %}
-[einfuhrung-in-das-dom.md](einfuhrung-in-das-dom.md)
+{% content-ref url="das-dom.md" %}
+[das-dom.md](das-dom.md)
 {% endcontent-ref %}
 
 {% content-ref url="elemente-auswahlen-erstellen-und-manipulieren.md" %}
@@ -16,8 +16,8 @@ icon: chrome
 [events-und-event-listener.md](events-und-event-listener.md)
 {% endcontent-ref %}
 
-{% content-ref url="event-delegation.md" %}
-[event-delegation.md](event-delegation.md)
+{% content-ref url="event-propagation/event-delegation.md" %}
+[event-delegation.md](event-propagation/event-delegation.md)
 {% endcontent-ref %}
 
 {% content-ref url="styles-attribute-und-klassen.md" %}

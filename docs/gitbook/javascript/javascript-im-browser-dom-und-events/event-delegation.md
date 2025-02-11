@@ -1,6 +1,0 @@
----
-icon: share
----
-
-# Event Delegation
-
