@@ -1,6 +1,0 @@
----
-icon: earth-africa
----
-
-# Internationalisierung
-
