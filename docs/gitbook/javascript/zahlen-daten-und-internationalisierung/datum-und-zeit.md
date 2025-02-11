@@ -41,31 +41,29 @@ Auf einem Datumsobjekt gibt es verschiedenste `get`-Methoden, welche uns einen b
 
 Mit den `set`-Methoden können wir bestimmte Teile des Datums verändern:
 
-```javascript
-future.setFullYear(2040);
+<pre class="language-javascript"><code class="lang-javascript">future.setFullYear(2040);
 future.setMonth(6);
 future.setDate(12);
 future.setHours(13);
 future.setMinutes(15);
 future.setSeconds(20);
 
-console.log(future); // Sun Jul 12 2040 13:15:20 GMT+0200 (Central European Summer Time)
-```
+<a data-footnote-ref href="#user-content-fn-9">console.log(future);</a>
+</code></pre>
 
 #### `toString`-Methoden﻿ <a href="#tostring-methoden" id="tostring-methoden"></a>
 
 Es gibt noch weitere Methoden, welche uns unser Datumsobjekt in einen String umwandeln, den wir dann bspw. einer API senden können:
 
-```javascript
-console.log(future.toISOString()); // 2040-07-12T11:15:20.000Z --> UTC time
-console.log(future.toString()); // Sun Jul 12 2040 13:15:20 GMT+0200 (Central European Summer Time)
-console.log(future.toDateString()); // Sun Jul 12 2040
-console.log(future.toTimeString()); // 13:15:20 GMT+0200 (Central European Summer Time)
-console.log(future.toLocaleString()); // 7/12/2040, 1:15:20 PM
-console.log(future.toLocaleDateString()); // 7/12/2040
-console.log(future.toLocaleTimeString()); // 1:15:20 PM
-console.log(future.toUTCString()); // Sun, 12 Jul 2040 11:15:20 GMT
-```
+<pre class="language-javascript"><code class="lang-javascript"><a data-footnote-ref href="#user-content-fn-10">console.log(future.toISOString());</a>
+<a data-footnote-ref href="#user-content-fn-11">console.log(future.toString());</a>
+<a data-footnote-ref href="#user-content-fn-12">console.log(future.toDateString());</a>
+c<a data-footnote-ref href="#user-content-fn-13">onsole.log(future.toTimeString());</a>
+<a data-footnote-ref href="#user-content-fn-14">console.log(future.toLocaleString());</a>
+<a data-footnote-ref href="#user-content-fn-15">console.log(future.toLocaleDateString());</a>
+<a data-footnote-ref href="#user-content-fn-16">console.log(future.toLocaleTimeString());</a>
+<a data-footnote-ref href="#user-content-fn-17">console.log(future.toUTCString());</a>
+</code></pre>
 
 Die Methode `toISOString()` ist besonders nützlich, wenn wir mit APIs arbeiten, die das Datum im UTC-Format verlangen.
 
@@ -88,3 +86,21 @@ Die Methode `toLocaleString()` ist abhängig vom Standort des Nutzers: Darstellu
 [^7]: 0
 
 [^8]: 2142244980000
+
+[^9]: `Sun Jul 12 2040 13:15:20 GMT+0200 (Central European Summer Time)`
+
+[^10]: `2040-07-12T11:15:20.000Z` -> UTC time
+
+[^11]: `Sun Jul 12 2040 13:15:20 GMT+0200 (Central European Summer Time)`
+
+[^12]: `Sun Jul 12 2040`
+
+[^13]: `13:15:20 GMT+0200 (Central European Summer Time)`
+
+[^14]: `7/12/2040, 1:15:20 PM`
+
+[^15]: `7/12/2040`
+
+[^16]: `1:15:20 PM`
+
+[^17]: `Sun, 12 Jul 2040 11:15:20 GMT`
