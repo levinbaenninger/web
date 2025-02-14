@@ -61,6 +61,39 @@ Mit diesem Property können wir nachschauen, welchen Prototype eine Instanz hat.
 console.log(levin.__proto__);
 ```
 
+## Statische Methoden
+
+Statische Methoden sind nicht an ein Objekt geknüpft sondern an den Constructor. Das heisst wir können die Methode nur auf dem Constructor aufrufen, nicht aber auf dem Objekt.
+
+<pre class="language-javascript"><code class="lang-javascript">Person.hey = function () {
+  console.log('Hey there 👋');
+};
+
+<a data-footnote-ref href="#user-content-fn-7">Person.hey();</a>
+</code></pre>
+
+## Vererbung
+
+```javascript
+const Student = function (firstName, lastName, birthYear, course) {
+  Person.call(this, firstName, lastName, birthYear);
+  this.course = course;
+};
+
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.constructor = Student;
+
+Student.prototype.introduce = function () {
+  console.log(`My name is ${this.firstname} and I study ${this.course}`);
+};
+
+const mike = new Student('Mike', 'Johnson', 2010, 'Computer Science');
+mike.introduce();
+mike.calcAge();
+```
+
+Wir setzen den Protoype von Student also auf den Prototype von Person. So können wir alle Methoden vom Person Prototype ebenfalls nutzen.
+
 [^1]: `Person {firstname: 'Levin', lastname: 'Bänninger', birthYear: 2007}`&#x20;
 
 
@@ -79,3 +112,5 @@ console.log(levin.__proto__);
 [^5]: `16`
 
 [^6]: Homo Sapiens Homo Sapiens
+
+[^7]: Hey there 👋
