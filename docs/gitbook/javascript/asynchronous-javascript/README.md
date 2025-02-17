@@ -1,8 +1,8 @@
 ---
+icon: group-arrows-rotate
 description: >-
   Hier lernst du alles rund um Promises, async/await, AJAX, den Event-Loop und
   mehr.
-icon: group-arrows-rotate
 ---
 
 # Asynchronous JavaScript
@@ -49,6 +49,14 @@ p.style.color = 'red';
 Der Time läuft asynchron ab, das heisst die Textfarbe wird rot obwohl der Timer eigentlich die Ausführung stoppt. Der Timer wird jedoch im Hintergrund ausgeführt, dann nach 5 Sekunden wird die Callback-Funktion darin aufgerufen.
 
 </details>
+
+{% content-ref url="ajax.md" %}
+[ajax.md](ajax.md)
+{% endcontent-ref %}
+
+{% content-ref url="promises.md" %}
+[promises.md](promises.md)
+{% endcontent-ref %}
 
 
 
