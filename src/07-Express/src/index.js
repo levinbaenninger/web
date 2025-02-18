@@ -11,11 +11,24 @@ const mockUsers = [
   { id: 5, firstName: 'Sara', lastName: 'Smith' },
   { id: 6, firstName: 'Steve', lastName: 'Brown' },
   { id: 7, firstName: 'Sarah', lastName: 'Lee' },
-  { id: 8, firstName: 'Jane', lastName: 'Doe' }
+  { id: 8, lastName: 'Doe' }
 ];
 
-app.get('/api/users', (_, res) => {
-  res.json(mockUsers);
+app.get('/api/users', (req, res) => {
+  const { filter, value } = req.query;
+
+  if (!filter && !value) return res.json(mockUsers);
+  if (!filter || !value)
+    return res.status(400).json({ error: 'Invalid query' });
+
+  if (mockUsers.some((user) => filter in user)) {
+    const filteredUsers = mockUsers.filter((user) =>
+      user[filter]?.toLowerCase().includes(value.toLowerCase())
+    );
+    return res.json(filteredUsers);
+  } else {
+    return res.status(400).json({ error: 'Invalid filter' });
+  }
 });
 
 app.get('/api/users/:id', (req, res) => {
