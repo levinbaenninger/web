@@ -201,6 +201,16 @@ catch (err) {
 
 {% hint style="success" %}
 In Modules, kann auch ein top-level `await` genutzt werden, das heisst, man braucht keine IIFE mehr.
+
+<pre class="language-javascript"><code class="lang-javascript">const getLastPost = async () => {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const data = await res.json();
+  
+  return { title: data.at(-1).title, text: data.at(-1).body };
+}
+
+const lastPost = <a data-footnote-ref href="#user-content-fn-6">await getLastPost();</a>
+</code></pre>
 {% endhint %}
 
 ## Building Promises
@@ -279,3 +289,5 @@ const getCapitals = async (...countries) => {
 [^4]: Errors können wie gewohnt auch manuell geworfen werden
 
 [^5]: Der `catch`-Block gibt uns Zugriff auf den Fehler, der geworfen wurde.
+
+[^6]: Hier wird natürlich dementsprechend die Codeausführung im Module gestoppt, bis der Post da ist.
