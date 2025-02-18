@@ -1,6 +1,6 @@
 ---
-description: Hier lernst du alles rund um objektorientierte Programmierung in JavaScript.
 icon: object-exclude
+description: Hier lernst du alles rund um objektorientierte Programmierung in JavaScript.
 ---
 
 # Objektorientierte Programmierung
@@ -61,7 +61,21 @@ OOP wurde mit dem Ziel entwickelt, Code zu organisieren, um ihn flexibler und wa
 
 </details>
 
+{% content-ref url="prototypes.md" %}
+[prototypes.md](prototypes.md)
+{% endcontent-ref %}
 
+{% content-ref url="constructor-functions.md" %}
+[constructor-functions.md](constructor-functions.md)
+{% endcontent-ref %}
+
+{% content-ref url="es6-classes.md" %}
+[es6-classes.md](es6-classes.md)
+{% endcontent-ref %}
+
+{% content-ref url="die-create-methode.md" %}
+[die-create-methode.md](die-create-methode.md)
+{% endcontent-ref %}
 
 [^1]: Art von Code; "wie" schreiben wir und organisieren wir Code?
 
