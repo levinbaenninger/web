@@ -1,6 +1,7 @@
 import express from 'express';
 
 const app = express();
+app.use(express.json());
 const PORT = process.env.PORT || 3000;
 
 const mockUsers = [
@@ -39,8 +40,71 @@ app.get('/api/users/:id', (req, res) => {
 
   const user = mockUsers.find((user) => user.id === parsedId);
   if (!user) return res.status(404).json({ error: 'User not found' });
-
   res.json(user);
+});
+
+app.post('/api/users', (req, res) => {
+  const { firstName, lastName } = req.body;
+
+  const user = {
+    id: mockUsers.at(-1).id + 1,
+    firstName,
+    lastName
+  };
+
+  mockUsers.push(user);
+  return res.status(201).json(user);
+});
+
+app.put('/api/users/:id', (req, res) => {
+  const {
+    body,
+    params: { id }
+  } = req;
+  const parsedId = parseInt(id, 10);
+
+  if (isNaN(parsedId)) return res.status(400).json({ error: 'Invalid ID' });
+
+  const userIndex = mockUsers.findIndex((user) => user.id === parsedId);
+  if (userIndex === -1)
+    return res.status(404).json({ error: 'User not found' });
+
+  const updatedUser = (mockUsers[userIndex] = { id: parsedId, ...body });
+  return res.json(updatedUser);
+});
+
+app.patch('/api/users/:id', (req, res) => {
+  const {
+    body,
+    params: { id }
+  } = req;
+
+  const parsedId = parseInt(id, 10);
+  if (isNaN(parsedId)) return res.status(400).json({ error: 'Invalid ID' });
+
+  const userIndex = mockUsers.findIndex((user) => user.id === parsedId);
+  if (userIndex === -1)
+    return res.status(404).json({ error: 'User not found' });
+
+  const updatedUser = (mockUsers[userIndex] = {
+    ...mockUsers[userIndex],
+    ...body
+  });
+  return res.json(updatedUser);
+});
+
+app.delete('/api/users/:id', (req, res) => {
+  const { id } = req.params;
+  const parsedId = parseInt(id, 10);
+
+  if (isNaN(parsedId)) return res.status(400).json({ error: 'Invalid ID' });
+
+  const userIndex = mockUsers.findIndex((user) => user.id === parsedId);
+  if (userIndex === -1)
+    return res.status(404).json({ error: 'User not found' });
+
+  mockUsers.splice(userIndex, 1);
+  return res.sendStatus(204);
 });
 
 app.listen(PORT, () => {
