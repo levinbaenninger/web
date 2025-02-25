@@ -1,6 +1,0 @@
----
-icon: swap
----
-
-# Routers
-

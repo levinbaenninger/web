@@ -1,6 +1,0 @@
----
-icon: user-check
----
-
-# Authentication
-

@@ -104,8 +104,5 @@
   * [DELETE Requests](express/requests/delete-requests.md)
 * [Middleware](express/middleware.md)
 * [Validation](express/validation.md)
-* [Routers](express/routers.md)
 * [Cookies](express/cookies.md)
-* [Sessions](express/sessions.md)
-* [Authentication](express/authentication.md)
 * [Databases](express/databases.md)

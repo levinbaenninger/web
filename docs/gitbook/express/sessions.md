@@ -1,6 +1,0 @@
----
-icon: clock
----
-
-# Sessions
-
