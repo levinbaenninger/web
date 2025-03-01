@@ -50,25 +50,11 @@ const year = 1989;
   const food = 'Avocado toast';
 }
 
-<a data-footnote-ref href="#user-content-fn-2">console.log(millenial);</a>
+<a data-footnote-ref href="#user-content-fn-1">console.log(millenial);</a>
 </code></pre>
 
 * Variablen sind nur **innerhalb des Blocks** zugänglich
 * Gilt nur für `let` und `const` Variablen
 * Funktionen sind ebenfalls **Block Scoped** (im Strict Mode)
 
-{% content-ref url="this-keyword.md" %}
-[this-keyword.md](this-keyword.md)
-{% endcontent-ref %}
-
-{% content-ref url="call-apply-und-bind.md" %}
-[call-apply-und-bind.md](call-apply-und-bind.md)
-{% endcontent-ref %}
-
-{% content-ref url="hoisting-und-temporal-dead-zone-tdz.md" %}
-[hoisting-und-temporal-dead-zone-tdz.md](hoisting-und-temporal-dead-zone-tdz.md)
-{% endcontent-ref %}
-
 [^1]: `ReferenceError`
-
-[^2]: `ReferenceError`

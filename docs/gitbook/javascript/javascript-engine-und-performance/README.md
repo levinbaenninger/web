@@ -57,9 +57,3 @@ Schliesslich enthält eine JS-Laufzeitumgebung auch eine sogenannte **Callback-Q
 Wenn also ein Ereignis eintritt, z.B. ein Klick, wird die Callback-Funktion aufgerufen. Das Erste, was nach dem Ereignis passiert, ist, dass die Callback-Funktion in die **Callback-Warteschlange** gestellt wird. Wenn der Callback-Stack **leer** ist, wird die Callback-Funktion an den Stack übergeben, damit sie ausgeführt werden kann. Dies geschieht in der sogenannten **Ereignisschleife**.
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption><p>JavaScript Runtime</p></figcaption></figure>
-
-
-
-{% content-ref url="execution-context-und-call-stack.md" %}
-[execution-context-und-call-stack.md](execution-context-und-call-stack.md)
-{% endcontent-ref %}
